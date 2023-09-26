@@ -1,0 +1,263 @@
+@charset "utf-8";
+section {
+  margin-bottom: 0;
+}
+/* 클래스 배너 */
+.group-header {
+  width: 100%;
+  padding-top: 150px;
+}
+.group-header h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #e8eddf;
+}
+.group-banner {
+  width: 100%;
+  margin-top: 33px;
+  padding: 30px 35px;
+  border-radius: 25px;
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* 게시글 작성 */
+.board_insert {
+  width: 100%;
+  margin-top: 40px;
+  padding: 50px 0;
+  background-color: #eee;
+}
+#board_form {
+  width: 100%;
+  margin-bottom: 30px;
+  color: #000;
+}
+#board_form fieldset {
+  display: flex;
+  flex-flow: nowrap;
+  margin-bottom: 20px;
+}
+#board_form label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 150px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#board_form label.must::before {
+  content: "*";
+  color: red;
+  font-size: 16px;
+  margin-right: 5px;
+}
+#board_form label.notAfter {
+  padding-left: 10px;
+}
+.board_insert input[type="text"],
+.board_insert textarea,
+.board_insert select {
+  font-size: 16px;
+  padding: 7px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.board_insert input {
+  width: 45%;
+}
+
+.search-box {
+  position: relative;
+  width: 45%;
+}
+.search-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.search-wrap input[type="text"] {
+  width: 93%;
+  margin-bottom: 0;
+  border: none;
+}
+.search-wrap button {
+  font-size: 16px;
+  padding: 8.1px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+#searchResults {
+  position: absolute;
+  display: none;
+  width: 100%;
+  min-height: 250px;
+  overflow-y: hidden;
+  border: 0.8px solid #e0e0e0;
+  border-radius: 3px;
+  background-color: #fff;
+  z-index: 1;
+}
+#searchResults li {
+  font-size: 14px;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#board_form .boardNum-wrap {
+  position: relative;
+  width: 10%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+}
+#board_form .boardNum-wrap .boardNum-btn {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#board_form .boardNum-wrap .boardNum-btn.down {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#board_form .boardNum-wrap .boardNum-btn.up {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#board_form .boardNum-wrap input {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+#board_form #boardClass {
+  width: 45%;
+  height: 30px;
+  padding: 0 30px 0 10px;
+}
+#board_form #boardContent {
+  width: 85%;
+  height: 200px;
+  resize: none;
+}
+#board_form #boardImage {
+  font-size: 15px;
+}
+#board_form fieldset:last-child {
+  margin-bottom: 0;
+}
+.board_insert .add-post {
+  display: flex;
+  justify-content: flex-end;
+}
+.add-post #addPostBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.footer {
+  margin-top: 0;
+}
+/*  */
+/*  */
+.board {
+  background-color: #fff;
+  padding-bottom: 100px;
+}
+.board-wrap {
+  /* min-height: 845px; */
+}
+.board-list {
+  /* min-height: 720px; */
+  padding-top: 34px;
+  font-size: 15px;
+  color: #000;
+  text-align: center;
+}
+.board-list h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+.board-list-title {
+  width: 100%;
+}
+.board-list-title th {
+  font-size: 16px;
+  font-weight: bold;
+}
+.board-list-title thead {
+  border-bottom: 3px solid #616161;
+}
+.board-list-title tr * {
+  padding: 20px 10px;
+  cursor: pointer;
+}
+.board-list-title tbody tr {
+  border-bottom: 1px solid #000;
+}
+.paging {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
+  padding-bottom: 50px;
+  font-size: 14px;
+  color: #666;
+}
+.paging a {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.paging-num {
+  border-bottom: 1px solid #666;
+}
+.paging-num.active {
+  font-weight: bold;
+  color: #f5cb5c;
+}
+.board-btn {
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  color: #000;
+}
+.board-btn a {
+  display: inline-block;
+  background-color: #f5cb5c;
+  padding: 15px 50px;
+}
+.board-btn:hover a {
+  background-color: #f8c740;
+}
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}

@@ -1,0 +1,346 @@
+.main-board .board-header h2{
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.main-board .board-wrap{
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  /* background-color: rgb(255, 0, 0); */
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+}
+
+.main-board .board-sub-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.main-board .board-sub-title span{
+  font-size: 20px;
+  color: #f5cb5c;
+  font-weight: 700;
+}
+
+/* 인기 중고 검색어 */
+.main-board .best-search{
+  width: 35%;
+}
+
+.main-board .best-search-wrap{
+  gap: 30px;
+}
+
+.main-board .best-search-wrap .search-item-box{
+  display: flex;
+  gap: 20px;
+  flex-flow: column wrap;
+  /* align-content: flex-start; */
+  height: 310px;
+}
+
+.main-board .best-search-wrap .search-item{
+  background-color: #333533;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+  border-radius: 50px;
+  padding: 3px 25px;
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+
+.main-board .best-search-wrap .search-item span{
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.main-board .best-search-wrap .search-item.first{
+  background-color: #111;
+  border: 2px solid #e8eddf;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.7), 0 10px 10px rgba(0,0,0,0.67);
+}
+
+
+/* 신규 게시글 */
+.main-board .new-board{
+  width: 55%;
+}
+
+.main-board .new-board .plus{
+  padding-right: 10px;
+}
+
+.main-board .new-board-wrap .new-board-item-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-board .new-board-item{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e8eddf;
+  transition: 0.3s;
+}
+
+.main-board .new-board-item:first-child{
+  border-top: 1px solid #e8eddf;
+}
+
+.main-board .new-board-item .board-tag{
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 900;
+  padding: 3px 5px;
+  height: 20px;
+}
+
+.main-board .new-board-item .sale{
+  background: red;
+  margin-right: 10px;
+  color: #e8eddf;
+}
+
+.main-board .new-board-item .done{
+  background-color: green;
+  color: #e8eddf;
+}
+
+.main-board .new-board-item .img{
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: none;
+}
+
+.main-board .new-board-item .board-info-txt{
+  width: 70%;
+  flex: 1;
+  width: calc(100% - 200px);
+}
+
+.main-board .new-board-item .board-info-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.main-board .new-board-item .board-date{
+  font-size: 14px;
+  width: 50px;
+  text-align: right;
+  margin-left: 10px;
+}
+
+.main-board .new-board-item .board-name{
+  font-size: 18px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space:nowrap;
+  width: calc(100% - 70px);
+}
+
+.main-board .new-board-item .price{
+  display: none;
+}
+
+.main-board .new-board-item .board-info-bottom{
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  margin-top: 30px;
+  display: none;
+}
+
+.main-board .new-board-item .badge-area{
+  display: flex;
+  gap: 10px;
+}
+
+.main-board .new-board-item .badge,
+.main-board .new-board-item .badge2{
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 0px 3px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.main-board .new-board-item .go-btn{
+  float: right;
+}
+
+/* hover */
+.main-board .new-board-item:hover{
+  background: #ffbb00;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #242423;
+}
+
+.main-board .new-board-item:hover .img{
+  display: block;
+}
+
+.main-board .new-board-item:hover .price{
+  display: block;
+}
+
+.main-board .new-board-item:hover .board-info-bottom{
+  display: flex;
+}
+
+/* 반응형 */
+@media all and (max-width: 1024px) {
+  .main-board .board-wrap{
+    gap: 15px;
+  }
+  .main-board .board-header h2{
+    font-size: 30px;
+  }
+  .main-board .board-header span{
+    font-size: 14px;
+  }
+  .main-board .best-search-wrap .search-item{
+    padding: 3px 15px;
+    flex: 1;
+  }
+  .main-board .best-search-wrap .search-item span{
+    font-size: 20px;
+  }
+  .main-board .best-search-wrap .search-item p{
+    font-size: 16px;
+  }
+  .main-board .new-board-item{
+    gap: 15px;
+  }
+  .main-board .new-board-item .board-name{
+    font-size: 16px;
+  }
+  .main-board .new-board-item .board-date{
+    font-size: 12px;
+  }
+  .main-board .new-board-item .img{
+    width: 90px;
+    height: 90px;
+  }
+  .main-board .new-board-item .board-info-bottom {
+    margin-top: 22px;
+  }
+}
+/* mobile */
+@media all and (max-width: 768px) {
+  .main-board .board-header h2{
+    font-size: 30px;
+  }
+  .main-board .board-header span{
+    font-size: 13px;
+  }
+  .main-board .board-sub-title{
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .main-board .board-box{
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  .main-board .board-wrap{
+    flex-direction: column;
+  }
+  .main-board .best-search{
+    margin-bottom: 40px;
+  }
+  .main-board .best-search-wrap{
+    width: 100%;
+    flex-direction: column;
+  }
+  .main-board .best-search-wrap .search-wrap{
+    width: 100%;
+    padding: 0;
+  }
+  .main-board .best-search-wrap .search-item-box{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    gap: 10px;
+  }
+  .main-board .new-board-wrap{
+    padding: 0;
+  }
+  .main-board .new-board{
+    margin-bottom: 0;
+  }
+  .main-board .new-board-item:hover{
+    padding: 10px 15px;
+  }
+}
+@media all and (max-width: 635px) {
+  .main-board .best-search-wrap .search-item span{
+    font-size: 17px;
+  }
+  .main-board .best-search-wrap .search-item p{
+    font-size: 13px;
+  }
+}
+@media all and (max-width: 480px){
+  .main-board .board-header h2{
+    font-size: 25px;
+    margin: 2px;
+  }
+  .main-board .board-sub-title{
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .main-board .new-board-item{
+    padding: 15px 10px;
+    gap: 10px;
+  }
+  .main-board .new-board-item .img{
+    width: 70px;
+    height: 70px;
+  }
+  .main-board .new-board-item .board-name {
+    font-size: 14px;
+  }
+  .main-board .new-board-item .board-date{
+    font-size: 12px;
+    margin: 0;
+    width: auto;
+  }
+  .main-board .new-board-item .board-tag{
+    font-size: 10px;
+    padding: 0.5px 3px;
+    height: 15px;
+  }
+  .main-board .new-board-item .price{
+    font-size: 13px;
+  }
+  .main-board .new-board-item .board-info-bottom {
+    margin-top: 13px;
+}
+  .main-board .new-board-item .badge,
+  .main-board .new-board-item .badge2{
+    font-size: 10px;
+    padding: 0px 2px;
+    line-height: 15px;
+  }
+  .main-board .new-board-item:hover {
+    padding: 10px 10px;
+}
+};

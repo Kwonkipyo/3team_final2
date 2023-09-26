@@ -1,0 +1,291 @@
+.visual{
+  width: 100%;
+  margin: 0;
+  max-height: 963px;
+}
+.visual video{
+  display: inline;
+  height: 100vh;
+  width: 100vw;
+  max-width: 1903px;
+  max-height: 963px;
+  object-fit: cover;
+}
+.visual .visual-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  height: 0;  
+  flex-direction: row;
+}
+.visual .swiper-wrapper{
+  position: relative;
+}
+.visual .swiper-wrapper p{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  z-index: 9999;
+  font-family: 'SBAggroB';
+  font-size: 90px;
+  text-align: center;
+}
+.visual-button{
+  position: relative;
+  top: -180px;
+  z-index: 999;
+  width: calc(70% / 4);
+  height: 90px;
+  border-radius: 10px;
+  background-color: #242423;
+  display: flex;
+  align-items: center;
+}
+.visual-button a{
+  padding-left: 50px;
+  width: 100%;
+}
+.visual-button span:first-child{
+  font-size: 25px;
+  font-weight: bold;
+}
+.visual-button:hover span:first-child{
+  color: #F5CB5B;
+}
+.visual-button i{
+  position: relative;
+  right: 30px;
+  rotate: -45deg;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.visual-button:hover i{
+  opacity: 1;
+}
+.visual-menu p{
+  position: absolute;
+  top: -45px;
+  z-index: 10;
+}
+
+
+/* 스크롤 화살표 */
+@-webkit-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@-moz-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	50% {
+	opacity: 1;
+	top: 50%;
+	}
+	100% {
+	opacity: 1;
+	top: 29%;
+	}
+}
+.scroll-btn {
+	display: block;
+	position: absolute;
+  bottom: 10px;
+	left: 0;
+	right: 0;
+	text-align: center;
+  z-index: 1;
+  opacity: 0.8;
+}
+.scroll-btn > * {
+	display: inline-block;
+	line-height: 18px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #7f8c8d;
+	color: #ffffff;
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 2px;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+	color: #ffffff;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+	position: relative;
+	display: block;
+	width: 30px;
+	height: 45px;
+	margin: 0 auto 20px;
+	box-sizing: border-box;
+	border: 3px solid white;
+	border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+	position: absolute;
+	display: block;
+	top: 29%;
+	left: 60%;
+	width: 4px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	background: white;
+	border-radius: 50px;
+	animation: ani-mouse 1.5s linear infinite;
+}
+@media all and (max-width:1024px){
+  .visual .swiper-slide{
+    height: 99%;
+  }
+.visual .visual-button a{
+  font-size: 13px;
+  padding-left:25px;
+}
+.visual .visual-button span:first-child{
+  font-size: 22px;
+}
+.visual .visual-button i{
+  right:15px;
+}
+.visual .swiper-wrapper p{
+  font-size: 70px;
+}
+}
+@media all and (max-width:768px){
+  .arrow{
+    left: 48.7%;
+  }
+.visual-button{
+  height: 80px;
+  width: calc(90% / 4);
+}
+.visual .visual-button a{
+  font-size: 12px;
+  padding-left:18px;
+}
+.visual .visual-button span:first-child{
+  font-size: 17px;
+}
+.visual .visual-button i{
+  right:15px;
+}
+.visual .swiper-wrapper p{
+  font-size: 60px;
+}
+}
+@media all and (max-width:480px){
+  .arrow{
+    left: 48%;
+  }
+  .visual-menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.visual video{
+  height: 670px;
+}
+  .visual-button{
+    width: 48%; 
+    height: 60px;
+    top: -200px;
+    text-align: center;
+}
+  .visual-button:first-child{
+    margin-bottom: 10px;
+}
+  .visual-button:nth-child(2){
+    margin-bottom: 10px;
+}
+  .visual .visual-button a{
+    font-size: 12px;
+    padding-left:0px;
+}
+  .visual .visual-button span:first-child{
+    font-size: 15px;
+}
+.visual .visual-button span:last-child{
+  font-size: 10px;
+}
+  .visual .visual-button i{
+    font-size: 0;
+}
+  .visual .swiper-wrapper p{
+    font-size: 39px;
+}
+.scroll-btn{
+  display: none;
+}
+}
+@media all and (max-width:320px){
+  .arrow{
+    left: 47%;
+  }
+  .visual-menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .visual-button{
+    width: calc(90% / 2); 
+    height: 80px;
+    top: -200px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .visual .visual-button a{
+    font-size: 12px;
+    padding-left:0px;
+  }
+  .visual .visual-button span:first-child{
+    font-size: 17px;
+  }
+  .visual .visual-button i{
+    font-size: 0;
+  }
+  .visual .swiper-wrapper p{
+    font-size: 35px;
+  }
+  }

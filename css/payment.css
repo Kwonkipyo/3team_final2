@@ -1,0 +1,197 @@
+@charset "utf-8";
+section {
+  margin-bottom: 0;
+}
+/* 클래스 배너 */
+.group-header {
+  width: 100%;
+  padding-top: 150px;
+}
+.group-header h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #e8eddf;
+}
+/* 결제부분 */
+.payment-section {
+  width: 100%;
+  margin: 30px 0 60px;
+  color: #000;
+}
+.payment-wrap {
+  width: 100%;
+}
+.payment-box {
+  width: 100%;
+  padding: 23px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.payment-box h2 {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.payment-box .student-wrap {
+  width: 100%;
+  padding: 23px;
+  border-radius: 15px;
+  background-color: #f4f4f4;
+}
+.payment-box .student-wrap fieldset {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.payment-box .student-wrap fieldset:last-child {
+  margin-bottom: 0;
+}
+.payment-box .student-wrap label {
+  width: 100px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.payment-box .student-wrap input {
+  width: 20%;
+  min-width: 200px;
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+.payment-box .text-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  /* height: 80px; */
+}
+.payment-box .text-wrap h3 {
+  font-size: 16px;
+  font-weight: 900;
+}
+.payment-box .text-wrap p {
+  color: #a0a0a0;
+  font-weight: bold;
+}
+.payment-box .class-wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #f4f4f4;
+  color: #6c6c6c;
+}
+.payment-box .class-wrap .images {
+  width: 65px;
+  height: 65px;
+  border-radius: 10px;
+  margin-right: 10px;
+  background: url("/images/sub-visual.jpg") no-repeat center;
+  background-size: cover;
+}
+.payment-box .class-wrap p:first-child {
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 3px;
+}
+.payment-box > p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/*  */
+.payment-box .dropdown-selected {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment-box .dropdown-selected p {
+  margin: 0;
+}
+.payment-box .dropdown-selected i {
+  font-size: 16px;
+}
+.payment-box .dropdown-list {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.payment-box .dropdown-list-item {
+  padding: 10px;
+}
+.payment-box .coupon-dropdown-label {
+  display: flex;
+  flex-direction: column;
+}
+.payment-box .coupon-dropdown-title {
+  font-weight: bold;
+}
+.payment-box .coupon-dropdown-desc small {
+  color: #666;
+}
+/* 드롭다운 메뉴 열린 상태 스타일 */
+.show {
+  display: block;
+}
+/*  */
+
+.payment-box .radio_box {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #e0e0e0;
+}
+.payment-box .radio_box fieldset {
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+.payment-box .radio_box fieldset:last-child {
+  border-bottom: 0;
+}
+.payment-box.check-box {
+  display: flex;
+  justify-content: space-between;
+}
+.payment-wrap .pay {
+  width: 100%;
+  padding: 23px;
+  background-color: #383838;
+  border-radius: 15px;
+  border: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1024px) {
+  .payment-wrap .pay {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    z-index: 999;
+  }
+  .top-button {
+    bottom: 95px;
+  }
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}

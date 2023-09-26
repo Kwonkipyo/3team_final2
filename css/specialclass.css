@@ -1,0 +1,158 @@
+.specialclass{
+    background: url("../images/specialclass-bg.jpg") no-repeat center / cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+}
+
+.specialclass .inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.specialclass .specialclass-item-box{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    gap: 10%;
+}
+
+.specialclass::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.specialclass .specialclass-info{
+}
+
+.specialclass .specialclass-info span{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.6;
+    display: block;
+}
+
+.specialclass .specialclass-info p{
+    font-size: 14px;
+    margin-top: 20px;
+    width: 200px;
+}
+
+.specialclass .specialclass-info .specialclass-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid;
+    font-size: 15px;
+    margin-top: 50px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.specialclass .specialclass-info .specialclass-btn:hover{
+    background-color: #e8eddf;
+    border: 1px solid #e8eddf;
+    color: #5E5952;
+    font-weight: 900;
+}
+
+.specialclass .specialclass-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.specialclass .specialclass-item img{
+}
+
+.specialclass .specialclass-item span{
+    text-align: center;
+}
+
+
+/* 반응형 */
+@media all and (max-width: 1024px) {
+    .specialclass .specialclass-info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .specialclass .specialclass-info span{
+        font-size: 30px;
+    }
+    .specialclass .specialclass-info p{
+        font-size: 14px;
+    }
+    .specialclass .specialclass-info .specialclass-btn{
+        padding: 15px 15px;
+        font-size: 14px;
+        margin-top: 40px;
+    }
+}
+/* mobile */
+@media all and (max-width: 768px) {
+    .specialclass{
+        height: auto;
+    }
+    .specialclass .inner{
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+    .specialclass .specialclass-info{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .specialclass .specialclass-info .specialclass-btn{
+        position: absolute;
+        transform: translateX(-50%);
+        margin-top: 0;
+        bottom: 50px;
+        left: 50%;
+    }
+    .specialclass .specialclass-info span{
+        font-size: 30px;
+    }
+    .specialclass .specialclass-info p{
+        width: 100%;
+    }
+    .specialclass .specialclass-item-box{
+        width: 100%;
+        margin-bottom: 110px;
+        margin-top: 50px;
+        justify-content: space-between;
+    }
+}
+@media all and (max-width: 480px) {
+    .specialclass .specialclass-item-box{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .specialclass .specialclass-item{
+        flex-direction: row;
+        width: 100%;
+        gap: 50px;
+    }
+    .specialclass .specialclass-item span{
+    }
+    .specialclass .specialclass-item img{
+        width: 45%;
+    }
+    .specialclass .specialclass-info span{
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width: 320px){
+    .specialclass .specialclass-item span{
+        font-size: 12px;
+    }
+}

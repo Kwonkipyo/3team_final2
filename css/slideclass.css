@@ -1,0 +1,261 @@
+.aiclass{
+    margin-bottom: 0;
+    padding-bottom: 100px;
+}
+
+.newclass{
+    text-align: left;
+    margin-bottom: 0;
+    padding-bottom: 200px;
+}
+
+.sw-aiclass,
+.sw-newclass{
+    width: 100%;
+    overflow: visible;
+}
+
+.aiclass .swiper-wrapper,
+.newclass .swiper-wrapper{
+    width: 100%;
+    transition-timing-function: linear;
+}
+
+.class-slide{
+    height: 250px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.class-slide:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.7), 0 10px 10px rgba(0,0,0,0.67);
+}
+
+.class-box{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aiclass .class-box{
+    align-items: flex-start;
+}
+
+.newclass .class-box{
+    align-items: flex-end;
+}
+
+.class-box .class-txt{
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.class-box .class-txt .class-price{
+    text-align: right;
+}
+
+.bestclass-title,
+.aiclass-title,
+.newclass-title{
+    font-weight: 700;
+    margin-bottom: 30px;
+    align-items: baseline;
+}
+
+.bestclass-title span,
+.aiclass-title > span,
+.newclass-title span{
+    font-size: 20px;
+    display: inline;
+    margin-right: 10px;
+    color: #aeb3a6;
+}
+
+.bestclass-title p,
+.aiclass-title p,
+.newclass-title p{
+    font-size: 35px;
+    display: inline;
+}
+
+.aiclass .plus,
+.newclass .plus{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.newclass .plus{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+}
+
+.plus i,
+.plus i{
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.plus:hover i,
+.plus:hover i{
+    transform: translateX(3px);
+}
+
+/* .class-pause{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 30px;
+    left: 500px;
+    color: #e8eddf;
+    background-color: #3b3b3b;
+    padding: 2px 7px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+} */
+
+.class-type {
+    padding: 3px 10px;
+    font-weight: 700;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-left: 10px;
+    opacity: 1;
+}
+
+.class-type.baking{
+    background-color: rgb(255, 94, 0);
+}
+
+.class-type.drawing{
+    background-color: rgb(0, 17, 255);
+}
+
+.class-type.craft{
+    background-color: rgb(89, 0, 255);
+}
+
+.class-type.lifestyle{
+    background-color: rgb(33, 150, 52);
+}
+
+.class-type.sport{
+    background-color: rgb(255, 0, 55);
+}
+
+.class-type.music{
+    background-color: rgb(83, 50, 0);
+}
+
+.class-type.cook{
+    background-color: rgb(0, 119, 255);
+}
+
+/* aiclass */
+/* newclass */
+
+/* 반응형 */
+@media all and (max-width: 1024px) {
+    .class-slide{
+        height: 200px;
+        width: 250px;
+    }
+    .bestclass-title p,
+    .aiclass-title p,
+    .newclass-title p{
+        font-size: 30px;
+    }
+    .bestclass-title span,
+    .aiclass-title span,
+    .newclass-title span{
+        font-size: 18px;
+    }
+    .class-box .class-txt{
+        height: 80px;
+        padding: 10px 15px 5px;
+        font-size: 14px;
+    }
+    .class-type {
+        padding: 2px 8px;
+        font-size: 14px;
+    }
+}
+/* mobile */
+@media all and (max-width: 768px) {
+    .bestclass-title span,
+    .aiclass-title > span,
+    .newclass-title span{
+        font-size: 17px;
+        margin-right: 8px;
+    }
+    .bestclass-title p,
+    .aiclass-title p,
+    .newclass-title p{
+        font-size: 30px;
+    }
+    .plus,
+    .plus{
+        font-size: 14px;
+    }
+}
+@media all and (max-width: 600px) {
+    .bestclass-title,
+    .aiclass-title,
+    .newclass-title{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .newclass-title{
+        align-items: flex-end;
+    }
+    .aiclass .plus,
+    .newclass .plus{
+        top: 40px;
+    }
+}
+@media all and (max-width: 480px){
+    .class-slide{
+        height: 150px;
+        width: 200px;
+        border-radius: 15px;
+    }
+    .class-box .class-txt{
+        height: 60px;
+        padding: 8px 10px 5px;
+        font-size: 12px;
+    }
+    .class-type {
+        padding: 2px 6px;
+        font-size: 12px;
+    }
+    .bestclass-title span,
+    .aiclass-title > span,
+    .newclass-title span{
+        font-size: 15px;
+    }
+    .bestclass-title p,
+    .aiclass-title p,
+    .newclass-title p{
+        font-size: 25px;
+    }
+    .aiclass .plus,
+    .newclass .plus{
+        font-size: 12px;
+        top: 40px;
+    }
+}

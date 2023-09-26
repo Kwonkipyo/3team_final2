@@ -1,0 +1,270 @@
+@charset "utf-8";
+section {
+  margin-bottom: 0;
+}
+/* 클래스 배너 */
+.group-header {
+  width: 100%;
+  padding-top: 150px;
+  position: relative;
+}
+.group-header .bg-title{
+  position: absolute;
+  top: -25px;
+  right: 0;
+  font-size: 100px;
+  font-weight: 900;
+  z-index: -1;
+  opacity: 0.5;
+}
+.group-header h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #e8eddf;
+}
+.group-banner {
+  width: 100%;
+  margin-top: 33px;
+  padding: 30px 35px;
+  border-radius: 25px;
+  background-color: #fff;
+  display: flex;
+}
+.group-banner-left p {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: -0.2px;
+}
+.group-banner-right {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 30px;
+}
+.group-banner-right button {
+  background-color: transparent;
+  border: none;
+}
+.group-banner-right button a {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 25px;
+  border-radius: 30px;
+  background-color: #f5cb5c;
+  color: #000;
+  border: none;
+}
+/* 게시판 탭 */
+.board-tap .taps {
+  width: 100%;
+  margin: 34px 0;
+  color: #e8eddf;
+}
+.board-tap .taps ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.board-tap .taps ul li {
+  font-size: 16px;
+  padding: 10px 15px;
+}
+.board-tap .taps ul li:nth-child(3) {
+  padding-right: 30px;
+}
+.board-tap .taps ul li:last-child {
+  padding: 0;
+}
+.board-tap .taps a.active {
+  font-weight: bold;
+  color: #f5cb5c;
+}
+.searchbox {
+  width: 100%;
+  height: 100%;
+  padding: 10px 25px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.searchbox input {
+  font-size: 15px;
+  border: none;
+}
+.searchbox i {
+  color: #9d9d9d;
+}
+/* 게시판 */
+.board {
+  background-color: #fff;
+  padding-bottom: 100px;
+}
+.board-wrap {
+  /* min-height: 845px; */
+}
+.board-list {
+  /* min-height: 720px; */
+  padding-top: 34px;
+  font-size: 15px;
+  color: #000;
+  text-align: center;
+}
+.board-list h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.board-list-title {
+  width: 100%;
+  margin-top: 30px;
+}
+.board-list-title th {
+  font-size: 16px;
+  font-weight: bold;
+}
+.board-list-title thead {
+  border-bottom: 3px solid #616161;
+}
+.board-list-title tr * {
+  padding: 20px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.board-list-title tbody tr {
+  border-bottom: 1px solid #242423;
+}
+.board-list-title tbody tr td:nth-child(2) {
+  text-align: left;
+  padding: 20px 50px;
+}
+.board-list-title tbody tr td:last-child {
+  color: blue;
+}
+.paging {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
+  padding-bottom: 50px;
+  font-size: 14px;
+  color: #666;
+}
+.paging a {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.paging-num {
+  border-bottom: 1px solid #666;
+}
+.paging-num.active {
+  font-weight: bold;
+  color: #f5cb5c;
+}
+.board-btn {
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  color: #000;
+}
+.board-btn a {
+  display: inline-block;
+  background-color: #f5cb5c;
+  padding: 15px 50px;
+}
+.board-btn:hover a {
+  background-color: #f8c740;
+}
+.footer {
+  margin-top: 0;
+}
+
+/* 필독 */
+#postList .notice{
+  background-color: #f5cb5c;
+  font-weight: 700;
+}
+#postList .notice td:first-child{
+  color: rgb(255, 46, 46);
+}
+#postList .notice td i{
+  padding: 0;
+  overflow: visible;
+  margin-right: 3px;
+  font-size: 14px;
+}
+
+@media all and (max-width: 1024px) {
+  .group-header h2 {
+    font-size: 28px;
+  }
+  .group-banner-left p {
+    font-size: 21px;
+  }
+  .group-banner-right button a {
+    font-size: 14px;
+  }
+  .board-tap .taps ul li {
+    font-size: 14px;
+  }
+  .searchbox input {
+    font-size: 14px;
+  }
+  .board-list {
+    font-size: 14px;
+  }
+  .board-list h2 {
+    font-size: 24px;
+  }
+  .board-list-title th {
+    font-size: 15px;
+  }
+  .paging {
+    font-size: 13px;
+  }
+  .board-btn {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 768px) {
+  .group-header h2 {
+    font-size: 26px;
+  }
+  .group-banner-left p {
+    font-size: 18px;
+  }
+  .group-banner-right button a {
+    font-size: 13px;
+  }
+  .board-tap .taps ul li {
+    font-size: 13px;
+  }
+  .searchbox input {
+    font-size: 13px;
+  }
+  .board-list {
+    font-size: 13px;
+  }
+  .board-list h2 {
+    font-size: 22px;
+  }
+  .board-list-title th {
+    font-size: 14px;
+  }
+  .paging {
+    font-size: 12px;
+  }
+  .board-btn {
+    font-size: 14px;
+  }
+  .board-list-title tbody tr td:nth-child(2) {
+    padding: 20px;
+  }
+  
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}
