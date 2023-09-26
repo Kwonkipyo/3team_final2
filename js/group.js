@@ -33,7 +33,7 @@ window.addEventListener("load", function () {
       <td>${writer}</td>
       <td>${date}</td>
       <td>${userNum}명</td>
-      <td>진행 중</td>
+      <td><div class="group-tag">진행 중</div></td>
     `;
 
     // 새 게시글을 화면에 추가하는 역할
