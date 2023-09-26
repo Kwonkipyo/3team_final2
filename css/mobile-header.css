@@ -1,0 +1,28 @@
+.mobile-header{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: none;
+    background-color: #111;
+    z-index: 99;
+    font-size: 14px;
+    box-shadow: 5px -3px 6px rgba(0,0,0,0.16), 0 -3px 6px rgba(0,0,0,0.23);
+}
+.mb-bottom-header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mb-bottom-header ul li a{
+    padding: 15px 0;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+@media all and (max-width:480px){
+    .mobile-header{
+        display: block;
+    }
+}
