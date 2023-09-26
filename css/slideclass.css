@@ -1,55 +1,48 @@
-.aiclass{
-    margin-bottom: 0;
-    padding-bottom: 100px;
-}
-
+.bestclass,
+.aiclass,
 .newclass{
-    text-align: left;
-    margin-bottom: 0;
-    padding-bottom: 200px;
+    margin-bottom: 50px;
 }
 
-.sw-aiclass,
-.sw-newclass{
+.item-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.item-wrap1{
+    margin-bottom: 30px;
+}
+
+.item-wrap2{
+    display: none;
     width: 100%;
-    overflow: visible;
 }
 
-.aiclass .swiper-wrapper,
-.newclass .swiper-wrapper{
+.item-wrap{
     width: 100%;
-    transition-timing-function: linear;
+    /* overflow: hidden; */
 }
 
-.class-slide{
-    height: 250px;
-    width: 300px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 25px;
+.class-item{
     overflow: hidden;
     transition: 0.3s;
+    width: 250px;
+    height: auto;
 }
 
-.class-slide:hover{
+.class-item:hover{
     transform: translateY(-10px);
     box-shadow: 0 14px 28px rgba(0,0,0,0.7), 0 10px 10px rgba(0,0,0,0.67);
 }
 
 .class-box{
-    display: flex;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
     width: 100%;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.aiclass .class-box{
-    align-items: flex-start;
-}
-
-.newclass .class-box{
-    align-items: flex-end;
+    height: 200px;
 }
 
 .class-box .class-txt{
@@ -68,6 +61,7 @@
 }
 
 .bestclass-title,
+.goodclass-title,
 .aiclass-title,
 .newclass-title{
     font-weight: 700;
@@ -76,6 +70,7 @@
 }
 
 .bestclass-title span,
+.goodclass-title span,
 .aiclass-title > span,
 .newclass-title span{
     font-size: 20px;
@@ -85,12 +80,14 @@
 }
 
 .bestclass-title p,
+.goodclass-title p,
 .aiclass-title p,
 .newclass-title p{
     font-size: 35px;
     display: inline;
 }
 
+.bestclass .plus,
 .aiclass .plus,
 .newclass .plus{
     position: absolute;
@@ -98,35 +95,14 @@
     top: 20px;
 }
 
-.newclass .plus{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: baseline;
-}
-
-.plus i,
 .plus i{
     margin-left: 5px;
     transition: 0.3s;
 }
 
-.plus:hover i,
 .plus:hover i{
     transform: translateX(3px);
 }
-
-/* .class-pause{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 30px;
-    left: 500px;
-    color: #e8eddf;
-    background-color: #3b3b3b;
-    padding: 2px 7px;
-    border-radius: 50px;
-    border: none;
-    font-size: 16px;
-} */
 
 .class-type {
     padding: 3px 10px;
@@ -135,6 +111,15 @@
     margin-top: 5px;
     margin-left: 10px;
     opacity: 1;
+}
+
+.class-plus{
+    width: 50%;
+    margin: 0 auto;
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 50px;
 }
 
 .class-type.baking{
@@ -170,16 +155,18 @@
 
 /* 반응형 */
 @media all and (max-width: 1024px) {
-    .class-slide{
+    .class-item{
         height: 200px;
         width: 250px;
     }
-    .bestclass-title p,
+    .bestclass-title,
+    .goodclass-title p,
     .aiclass-title p,
     .newclass-title p{
         font-size: 30px;
     }
-    .bestclass-title span,
+    .bestclass-title,
+    .goodclass-title span,
     .aiclass-title span,
     .newclass-title span{
         font-size: 18px;
@@ -196,40 +183,40 @@
 }
 /* mobile */
 @media all and (max-width: 768px) {
-    .bestclass-title span,
+    .bestclass-title,
+    .goodclass-title span,
     .aiclass-title > span,
     .newclass-title span{
         font-size: 17px;
         margin-right: 8px;
     }
-    .bestclass-title p,
+    .bestclass-title,
+    .goodclass-title p,
     .aiclass-title p,
     .newclass-title p{
         font-size: 30px;
     }
-    .plus,
     .plus{
         font-size: 14px;
     }
 }
 @media all and (max-width: 600px) {
     .bestclass-title,
+    .goodclass-title,
     .aiclass-title,
     .newclass-title{
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
     }
-    .newclass-title{
-        align-items: flex-end;
-    }
+    .bestclass .plus,
     .aiclass .plus,
     .newclass .plus{
         top: 40px;
     }
 }
 @media all and (max-width: 480px){
-    .class-slide{
+    .class-item{
         height: 150px;
         width: 200px;
         border-radius: 15px;
@@ -243,16 +230,19 @@
         padding: 2px 6px;
         font-size: 12px;
     }
-    .bestclass-title span,
+    .bestclass-title,
+    .goodclass-title span,
     .aiclass-title > span,
     .newclass-title span{
         font-size: 15px;
     }
-    .bestclass-title p,
+    .bestclass-title,
+    .goodclass-title p,
     .aiclass-title p,
     .newclass-title p{
         font-size: 25px;
     }
+    .bestclass .plus,
     .aiclass .plus,
     .newclass .plus{
         font-size: 12px;
