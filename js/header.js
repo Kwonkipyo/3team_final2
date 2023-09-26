@@ -97,4 +97,18 @@ $(document).ready(function () {
     $(".mb-cate-depth").slideToggle();
     isOpen = !isOpen;  // Toggle the state
   });
+
+  let isMobileSearchboxVisible = false;
+
+  $('.fa-magnifying-glass').click(function () {
+    $('.mobile-searchbox').show();
+    isMobileSearchboxVisible = true;
+  });
+  $('.mb-searchbox-close').click(function () {
+    $('.mobile-searchbox').hide();
+    isMobileSearchboxVisible = false;
+  });
+  if (!isMobileSearchboxVisible) {
+    $('.mobile-searchbox').hide();
+  }
 });
