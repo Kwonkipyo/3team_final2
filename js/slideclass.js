@@ -61,11 +61,15 @@ window.addEventListener("load", function () {
                 <span class="class-type ${item.class}">${item.tag}</span>
                 <p class="class-ranking">${item.ranking}</p>
             </div>
+            <p class="class-count">
+              <i class="fa-solid fa-bullhorn"></i>
+              <span>${item.count}</span>건이 진행되었어요!
+            </p>
             <div class="class-txt">
                 <!-- 제품정보 -->
                 <p class="class-info">${item.name}</p>
                 <!-- 제품가격 -->
-                <p class="class-price">${priceToString(item.price)}원</p>
+                <p class="class-price">~ ${priceToString(item.price)}원</p>
             </div>
         </a>
         `;
@@ -93,7 +97,7 @@ window.addEventListener("load", function () {
                 <!-- 제품정보 -->
                 <p class="class-info">${item.name}</p>
                 <!-- 제품가격 -->
-                <p class="class-price">${priceToString(item.price)}원</p>
+                <p class="class-price">~ ${priceToString(item.price)}원</p>
             </div>
         </a>
         `;
@@ -121,7 +125,7 @@ window.addEventListener("load", function () {
                 <!-- 제품정보 -->
                 <p class="class-info">${item.name}</p>
                 <!-- 제품가격 -->
-                <p class="class-price">${priceToString(item.price)}원</p>
+                <p class="class-price">~ ${priceToString(item.price)}원</p>
             </div>
         </a>
         `;
@@ -146,11 +150,15 @@ window.addEventListener("load", function () {
                 <span class="class-type ${item.class}">${item.tag}</span>
                 <p class="class-ranking">${item.ranking}</p>
             </div>
+            <p class="class-count">
+              <i class="fa-solid fa-bullhorn"></i>
+              <span>${item.count}</span>건이 진행되었어요!
+            </p>
             <div class="class-txt">
                 <!-- 제품정보 -->
                 <p class="class-info">${item.name}</p>
                 <!-- 제품가격 -->
-                <p class="class-price">${priceToString(item.price)}원</p>
+                <p class="class-price">~ ${priceToString(item.price)}원</p>
             </div>
         </a>
         `;
@@ -178,7 +186,7 @@ window.addEventListener("load", function () {
                 <!-- 제품정보 -->
                 <p class="class-info">${item.name}</p>
                 <!-- 제품가격 -->
-                <p class="class-price">${priceToString(item.price)}원</p>
+                <p class="class-price">~ ${priceToString(item.price)}원</p>
             </div>
         </a>
         `;
@@ -206,7 +214,7 @@ window.addEventListener("load", function () {
                 <!-- 제품정보 -->
                 <p class="class-info">${item.name}</p>
                 <!-- 제품가격 -->
-                <p class="class-price">${priceToString(item.price)}원</p>
+                <p class="class-price">~ ${priceToString(item.price)}원</p>
             </div>
         </a>
         `;
@@ -220,7 +228,10 @@ window.addEventListener("load", function () {
 
   // .class-plus 요소를 선택
   const bestPlusButton = document.querySelector(".best-plus");
+  const bestPlusIcon = document.querySelector(".best-plus i");
   const bestWrap2 = document.querySelector(".best-wrap2");
+  const classPlusBlock = document.querySelector(".class-plus-block");
+  const classPlusNone = document.querySelector(".class-plus-none");
   const aiPlusButton = document.querySelector(".ai-plus");
   const aiWrap2 = document.querySelector(".ai-wrap2");
   const newPlusButton = document.querySelector(".new-plus");
@@ -230,9 +241,16 @@ window.addEventListener("load", function () {
     if (bestWrap2.style.display === "none" || bestWrap2.style.display === "") {
       bestWrap2.style.display = "flex";
       bestPlusButton.style.transform = "translateY(10px)";
+      bestPlusIcon.style.transform = "rotate(180deg)";
+      classPlusBlock.style.display = "none"
+      classPlusNone.style.display = "block"
     } else {
       bestWrap2.style.display = "none";
       bestPlusButton.style.transform = "translateY(0)";
+      bestPlusIcon.style.transform = "rotate(0deg)";
+      classPlusBlock.style.display = "block"
+      classPlusNone.style.display = "none"
+      
     }
   });
   aiPlusButton.addEventListener("click", function () {
