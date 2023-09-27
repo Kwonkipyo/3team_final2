@@ -25,9 +25,10 @@ section {
 .group-banner {
   width: 100%;
   margin-top: 33px;
-  padding: 30px 35px;
+  padding: 40px 35px;
   border-radius: 25px;
-  background-color: #fff;
+  background: url("../images/group-banner.jpg") no-repeat center center;
+  background-size: cover;
   display: flex;
 }
 .group-banner-left p {
@@ -36,6 +37,9 @@ section {
   font-weight: 500;
   line-height: 34px;
   letter-spacing: -0.2px;
+}
+.group-banner-left p:first-child {
+  font-weight: bold;
 }
 .group-banner-right {
   display: flex;
@@ -105,7 +109,7 @@ section {
 .board-list {
   /* min-height: 720px; */
   padding-top: 34px;
-  font-size: 15px;
+  font-size: 16px;
   color: #fff;
   color: #e8eddf;
   text-align: center;
@@ -135,18 +139,28 @@ section {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.board-list-title #post-notice tr td:first-child,
+.board-list-title #post-notice tr td:nth-child(2) {
+  font-weight: 900;
+}
 .board-list-title tbody tr {
-  border-bottom: 1px solid #242423;
+  border-bottom: 1px solid #555752;
+}
+.board-list-title tbody tr td:nth-child(1) {
+  font-size: 15px;
 }
 .board-list-title tbody tr td:nth-child(2) {
   text-align: left;
   padding: 20px 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
 }
 .board-list-title tbody tr td:last-child {
   color: blue;
 }
-
-.group-tag {
+.board-list-title .group-tag {
   display: inline-block;
   border-radius: 50px;
   font-size: 13px;
@@ -155,7 +169,6 @@ section {
   background-color: royalblue;
   color: #e8eddf;
 }
-
 .paging {
   display: flex;
   justify-content: center;
@@ -195,7 +208,7 @@ section {
 }
 /* 필독 */
 .board-list-title .notice {
-  background-color: #f5cb5c;
+  background-color: #ffdf87;
   color: #000;
   font-weight: 700;
 }
@@ -240,13 +253,43 @@ section {
   .board-btn {
     font-size: 16px;
   }
+  .board-list-title .group-tag {
+    font-size: 12px;
+  }
 }
 @media all and (max-width: 768px) {
+  .group-banner {
+    padding: 60px 35px;
+    background: url("../images/group-banner2.jpg") no-repeat center center;
+    display: flex;
+  }
+  .group-banner span {
+    display: block;
+  }
+  .group-banner-left p {
+    line-height: 38px;
+  }
+  .board-list-title tr th:nth-child(1),
+  .board-list-title tr td:nth-child(1),
+  .board-list-title tr th:nth-child(4),
+  .board-list-title tr td:nth-child(4),
+  .board-list-title colgroup col:nth-child(1),
+  .board-list-title colgroup col:nth-child(4) {
+    display: none;
+  }
+  /* .board-list-title colgroup col:nth-child(3),
+  .board-list-title colgroup col:nth-child(n + 5) {
+    width: 20%;
+  } */
+  .board-list-title tr td,
+  .board-list-title tr th {
+    padding: 10px 5px;
+  }
   .group-header h2 {
     font-size: 26px;
   }
   .group-banner-left p {
-    font-size: 18px;
+    font-size: 16px;
   }
   .group-banner-right button a {
     font-size: 13px;
@@ -277,6 +320,9 @@ section {
   }
 }
 @media all and (max-width: 480px) {
+  .group-banner-left p {
+    font-size: 16px;
+  }
 }
 @media all and (max-width: 320px) {
 }
