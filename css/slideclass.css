@@ -1,73 +1,66 @@
-.aiclass{
-    margin-bottom: 0;
-    padding-bottom: 100px;
-}
-
+.bestclass,
+.aiclass,
 .newclass{
-    text-align: left;
-    margin-bottom: 0;
-    padding-bottom: 200px;
+    margin-bottom: 50px;
 }
 
-.sw-aiclass,
-.sw-newclass{
+.item-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.item-wrap1{
+    margin-bottom: 30px;
+}
+
+.item-wrap2{
+    display: none;
     width: 100%;
-    overflow: visible;
 }
 
-.aiclass .swiper-wrapper,
-.newclass .swiper-wrapper{
+.item-wrap{
     width: 100%;
-    transition-timing-function: linear;
+    /* overflow: hidden; */
 }
 
-.class-slide{
-    height: 250px;
-    width: 300px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 25px;
+.class-item{
     overflow: hidden;
     transition: 0.3s;
+    width: calc((100% - 60px) / 2);
+    height: auto;
 }
 
-.class-slide:hover{
+.class-item:hover{
     transform: translateY(-10px);
-    box-shadow: 0 14px 28px rgba(0,0,0,0.7), 0 10px 10px rgba(0,0,0,0.67);
 }
 
 .class-box{
-    display: flex;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
     width: 100%;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
+    padding-bottom: 60%;
+    position: relative;
+    overflow: hidden;
 }
 
-.aiclass .class-box{
-    align-items: flex-start;
-}
-
-.newclass .class-box{
-    align-items: flex-end;
-}
-
-.class-box .class-txt{
-    width: 100%;
-    height: 90px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 10px 20px;
+.class-item .class-txt{
+    margin-top: 10px;
+    /* background-color: aqua; */
+    height: 70px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.class-box .class-txt .class-price{
+.class-item .class-txt .class-price{
     text-align: right;
 }
 
 .bestclass-title,
+.goodclass-title,
 .aiclass-title,
 .newclass-title{
     font-weight: 700;
@@ -76,6 +69,7 @@
 }
 
 .bestclass-title span,
+.goodclass-title span,
 .aiclass-title > span,
 .newclass-title span{
     font-size: 20px;
@@ -85,12 +79,14 @@
 }
 
 .bestclass-title p,
+.goodclass-title p,
 .aiclass-title p,
 .newclass-title p{
     font-size: 35px;
     display: inline;
 }
 
+.bestclass .plus,
 .aiclass .plus,
 .newclass .plus{
     position: absolute;
@@ -98,43 +94,47 @@
     top: 20px;
 }
 
-.newclass .plus{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: baseline;
-}
-
-.plus i,
 .plus i{
     margin-left: 5px;
     transition: 0.3s;
 }
 
-.plus:hover i,
 .plus:hover i{
     transform: translateX(3px);
 }
 
-/* .class-pause{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 30px;
-    left: 500px;
-    color: #e8eddf;
-    background-color: #3b3b3b;
-    padding: 2px 7px;
-    border-radius: 50px;
-    border: none;
-    font-size: 16px;
-} */
-
 .class-type {
-    padding: 3px 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 2px 10px;
+    font-size: 15px;
     font-weight: 700;
     border-radius: 50px;
-    margin-top: 5px;
-    margin-left: 10px;
-    opacity: 1;
+}
+
+.class-ranking{
+    position: absolute;
+    font-family: 'SBAggroB';
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 50px;
+    bottom: 0;
+    left: -10px;
+    color: #111;
+    padding-left: 20px;
+    /* background: linear-gradient(0deg, rgba(0,0,0,0.7) 10%, rgba(0,0,0,0) 100%); */
+    border-radius: 0 0 10px 10px;
+    text-shadow: -1px 0 #ededdf, 0 1px #ededdf, 1px 0 #ededdf, 0 -1px #ededdf;
+}
+
+.class-plus{
+    width: 50%;
+    margin: 0 auto;
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 50px;
 }
 
 .class-type.baking{
@@ -170,66 +170,55 @@
 
 /* 반응형 */
 @media all and (max-width: 1024px) {
-    .class-slide{
-        height: 200px;
-        width: 250px;
-    }
-    .bestclass-title p,
+    .bestclass-title,
+    .goodclass-title p,
     .aiclass-title p,
     .newclass-title p{
         font-size: 30px;
     }
-    .bestclass-title span,
+    .bestclass-title,
+    .goodclass-title span,
     .aiclass-title span,
     .newclass-title span{
         font-size: 18px;
     }
-    .class-box .class-txt{
-        height: 80px;
-        padding: 10px 15px 5px;
-        font-size: 14px;
-    }
-    .class-type {
-        padding: 2px 8px;
-        font-size: 14px;
-    }
 }
 /* mobile */
 @media all and (max-width: 768px) {
-    .bestclass-title span,
+    .bestclass-title,
+    .goodclass-title span,
     .aiclass-title > span,
     .newclass-title span{
         font-size: 17px;
         margin-right: 8px;
     }
-    .bestclass-title p,
+    .bestclass-title,
+    .goodclass-title p,
     .aiclass-title p,
     .newclass-title p{
         font-size: 30px;
     }
-    .plus,
     .plus{
         font-size: 14px;
     }
 }
 @media all and (max-width: 600px) {
     .bestclass-title,
+    .goodclass-title,
     .aiclass-title,
     .newclass-title{
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
     }
-    .newclass-title{
-        align-items: flex-end;
-    }
+    .bestclass .plus,
     .aiclass .plus,
     .newclass .plus{
         top: 40px;
     }
 }
 @media all and (max-width: 480px){
-    .class-slide{
+    .class-item{
         height: 150px;
         width: 200px;
         border-radius: 15px;
@@ -243,16 +232,19 @@
         padding: 2px 6px;
         font-size: 12px;
     }
-    .bestclass-title span,
+    .bestclass-title,
+    .goodclass-title span,
     .aiclass-title > span,
     .newclass-title span{
         font-size: 15px;
     }
-    .bestclass-title p,
+    .bestclass-title,
+    .goodclass-title p,
     .aiclass-title p,
     .newclass-title p{
         font-size: 25px;
     }
+    .bestclass .plus,
     .aiclass .plus,
     .newclass .plus{
         font-size: 12px;
