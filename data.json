@@ -1,365 +1,403 @@
 {
-  "bestclass": [
-    {
-      "name": "고민으로 잠 못드는 당신을 위한 타로클래스",
-      "price": 20300,
-      "tag": "라이프스타일",
-      "pic": "newclass-tarot.jpg",
-      "id": "0",
-      "class": "lifestyle",
-      "link": "#"
-    },
-    {
-      "name": "전통의 현대적 재해석, 비밀장신구와 함께 엮는 전통 매듭 액세서리",
-      "price": 32000,
-      "tag": "공예",
-      "pic": "newclass-acc.jpg",
-      "id": "1",
+    "bestclass": [
+      {
+        "name": "고민으로 잠 못드는 당신을 위한 타로클래스",
+        "price": 20300,
+        "tag": "라이프스타일",
+        "pic": "newclass-tarot.jpg",
+        "id": "0",
+        "class": "lifestyle",
+        "link": "#",
+        "ranking": "1"
+      },
+      {
+        "name": "전통의 현대적 재해석, 비밀장신구와 함께 엮는 전통 매듭 액세서리",
+        "price": 32000,
+        "tag": "공예",
+        "pic": "newclass-acc.jpg",
+        "id": "1",
+        "class": "craft",
+        "link": "#",
+        "ranking": "2"
+      },
+      {
+        "name": "나의 리틀 포레스트, 가드너에게 배우는 셀프 홈가드닝",
+        "price": 37000,
+        "tag": "라이프스타일",
+        "pic": "newclass-plant.jpg",
+        "id": "2",
+        "class": "lifestyle",
+        "link": "#",
+        "ranking": "3"
+      },
+      {
+        "name": "퇴근 후 만나는 나의 가죽 공방, 가죽공예 기초부터 완성까지",
+        "price": 39000,
+        "tag": "공예",
+        "pic": "newclass-leather.jpg",
+        "id": "3",
+        "class": "craft",
+        "link": "#",
+        "ranking": "4"
+      }
+    ],
+    "aiclass": [
+      {
+        "name": "집에서도 만들 수 있는 나만의 디저트 카페",
+        "price": 24000,
+        "tag": "베이킹 · 디저트",
+        "pic": "dlclass-baking.jpg",
+        "id": "0",
+        "class": "baking",
+        "link": "#"
+      },
+      {
+        "name": "뜨개질뜨개질~~~~",
+        "price": 43000,
+        "tag": "공예",
+        "pic": "dlclass-cake.jpg",
+        "id": "1",
+        "class": "baking",
+        "link": "#"
+      },
+      {
+        "name": "나의 마음을 힐링하는 수채화 드로잉",
+        "price": 29000,
+        "tag": "드로잉",
+        "pic": "dlclass-drawing.jpg",
+        "id": "2",
+        "class": "drawing",
+        "link": "#"
+      },
+      {
+        "name": "캘리그라피 전문가와 찾아가는 나만의 손글씨",
+        "price": 3600,
+        "tag": "라이프스타일",
+        "pic": "dlclass-calli.jpg",
+        "id": "3",
+        "class": "lifestyle",
+        "link": "#"
+      }
+    ],
+    "newclass": [
+      {
+        "name": "고민으로 잠 못드는 당신을 위한 타로클래스",
+        "price": 20300,
+        "tag": "라이프스타일",
+        "pic": "newclass-tarot.jpg",
+        "id": "0",
+        "class": "lifestyle",
+        "link": "#"
+      },
+      {
+        "name": "전통의 현대적 재해석, 비밀장신구와 함께 엮는 전통 매듭 액세서리",
+        "price": 32000,
+        "tag": "공예",
+        "pic": "newclass-acc.jpg",
+        "id": "1",
+        "class": "craft",
+        "link": "#"
+      },
+      {
+        "name": "나의 리틀 포레스트, 가드너에게 배우는 셀프 홈가드닝",
+        "price": 37000,
+        "tag": "라이프스타일",
+        "pic": "newclass-plant.jpg",
+        "id": "2",
+        "class": "lifestyle",
+        "link": "#"
+      },
+      {
+        "name": "나의 리틀 포레스트, 가드너에게 배우는 셀프 홈가드닝",
+        "price": 37000,
+        "tag": "라이프스타일",
+        "pic": "newclass-plant.jpg",
+        "id": "2",
+        "class": "lifestyle",
+        "link": "#"
+      }
+    ],
+    "bestclass2": [
+      {
+        "name": "비보이 & 비걸을 위한 브레이킹 입문 클래스",
+        "price": 43000,
+        "tag": "운동",
+        "pic": "newclass-dance.jpg",
+        "id": "4",
+        "class": "sport",
+        "link": "#",
+        "ranking": "5"
+      },
+      {
+        "name": "누워만 있어도 피로가 풀리는 홈필라테스 배우기",
+        "price": 23000,
+        "tag": "운동",
+        "pic": "newclass-ex.jpg",
+        "id": "5",
+        "class": "sport",
+        "link": "#",
+        "ranking": "6"
+      },
+      {
+        "name": "기초부터 응용까지, 취미는 기타",
+        "price": 27000,
+        "tag": "음악",
+        "pic": "newclass-guitar.jpg",
+        "id": "6",
+        "class": "music",
+        "link": "#",
+        "ranking": "7"
+      },
+      {
+        "name": "아기자기한 캐릭터푸드 만들기",
+        "price": 35000,
+        "tag": "요리 · 음료",
+        "pic": "newclass-cook.jpg",
+        "id": "7",
+        "class": "cook",
+        "link": "#",
+        "ranking": "8"
+      },
+      {
+        "name": "초보용 반주법과 기본 피아노 코드 배우기",
+        "price": 49900,
+        "tag": "음악",
+        "pic": "newclass-piano.jpg",
+        "id": "8",
+        "class": "music",
+        "link": "#",
+        "ranking": "9"
+      },
+      {
+        "name" : "특별한 도안으로 나만의 꽃밭을 만드는 페이퍼 아트",
+        "price": 35000, 
+        "tag": "공예", 
+        "pic": "newclass-paper.jpg", 
+        "id": "9", 
+        "class": "craft",
+        "link":"#",
+        "ranking": "10"
+      }
+    ],
+    "aiclass2": [
+      {
+        "name": "근력 강화, 체지방을 감소시키는 나만의 시간, 다이어트 요가 클래스",
+        "price": 5000,
+        "tag": "운동",
+        "pic": "dlclass-yoga.jpg",
+        "id": "4",
+        "class": "sport",
+        "link": "#"
+      },
+      {
+        "name": "조향사에게 배우는 조향 기초, 나만의 향기를 만들어요.",
+        "price": 30000,
+        "tag": "공예",
+        "pic": "dlclass-perfume.jpg",
+        "id": "5",
+        "class": "craft",
+        "link": "#"
+      },
+      {
+        "name": "치명적인 매력을 가진 단 하나뿐인 나만의 작품 레진공예",
+        "price": 46800,
+        "tag": "공예",
+        "pic": "dlclass-resin.jpg",
+        "id": "6",
+        "class": "craft",
+        "link": "#"
+      },
+      {
+        "name": "초보자도 누구나 집에서 쉽게 귀여운 머랭쿠키 만들기",
+        "price": 20300,
+        "tag": "베이킹 · 디저트",
+        "pic": "dlclass-baking2.jpg",
+        "id": "7",
+        "class": "baking",
+        "link": "#"
+      },
+      {
+        "name": "연필 하나로 담아내는 섬세함, 인물화 드로잉",
+        "price": 39000,
+        "tag": "드로잉",
+        "pic": "dlclass-drawing2.jpg",
+        "id": "8",
+        "class": "drawing",
+        "link": "#"
+      },
+      {
+      "name" : "함께 만드는 귀여운 코바늘 인형", 
+      "price": 30000, 
+      "tag": "공예", 
+      "pic": "dlclass-doll.jpg", 
+      "id": "9", 
       "class": "craft",
-      "link": "#"
-    },
-    {
-      "name": "나의 리틀 포레스트, 가드너에게 배우는 셀프 홈가드닝",
-      "price": 37000,
-      "tag": "라이프스타일",
-      "pic": "newclass-plant.jpg",
-      "id": "2",
-      "class": "lifestyle",
-      "link": "#"
-    }
-  ],
-  "aiclass": [
-    {
-      "name": "집에서도 만들 수 있는 나만의 디저트 카페",
-      "price": 24000,
-      "tag": "베이킹 · 디저트",
-      "pic": "dlclass-baking.jpg",
-      "id": "0",
-      "class": "baking",
-      "link": "#"
-    },
-    {
-      "name": "뜨개질뜨개질~~~~",
-      "price": 43000,
-      "tag": "공예",
-      "pic": "dlclass-cake.jpg",
-      "id": "1",
-      "class": "baking",
-      "link": "#"
-    },
-    {
-      "name": "나의 마음을 힐링하는 수채화 드로잉",
-      "price": 29000,
-      "tag": "드로잉",
-      "pic": "dlclass-drawing.jpg",
-      "id": "2",
-      "class": "drawing",
-      "link": "#"
-    }
-  ],
-  "newclass": [
-    {
-      "name": "고민으로 잠 못드는 당신을 위한 타로클래스",
-      "price": 20300,
-      "tag": "라이프스타일",
-      "pic": "newclass-tarot.jpg",
-      "id": "0",
-      "class": "lifestyle",
-      "link": "#"
-    },
-    {
-      "name": "전통의 현대적 재해석, 비밀장신구와 함께 엮는 전통 매듭 액세서리",
-      "price": 32000,
-      "tag": "공예",
-      "pic": "newclass-acc.jpg",
-      "id": "1",
-      "class": "craft",
-      "link": "#"
-    },
-    {
-      "name": "나의 리틀 포레스트, 가드너에게 배우는 셀프 홈가드닝",
-      "price": 37000,
-      "tag": "라이프스타일",
-      "pic": "newclass-plant.jpg",
-      "id": "2",
-      "class": "lifestyle",
-      "link": "#"
-    }
-  ],
-  "bestclass2": [
-    {
-      "name": "퇴근 후 만나는 나의 가죽 공방, 가죽공예 기초부터 완성까지",
-      "price": 39000,
-      "tag": "공예",
-      "pic": "newclass-leather.jpg",
-      "id": "3",
-      "class": "craft",
-      "link": "#"
-    },
-    {
-      "name": "비보이 & 비걸을 위한 브레이킹 입문 클래스",
-      "price": 43000,
-      "tag": "운동",
-      "pic": "newclass-dance.jpg",
-      "id": "4",
-      "class": "sport",
-      "link": "#"
-    },
-    {
-      "name": "누워만 있어도 피로가 풀리는 홈필라테스 배우기",
-      "price": 23000,
-      "tag": "운동",
-      "pic": "newclass-ex.jpg",
-      "id": "6",
-      "class": "sport",
-      "link": "#"
-    },
-    {
-      "name": "기초부터 응용까지, 취미는 기타",
-      "price": 27000,
-      "tag": "음악",
-      "pic": "newclass-guitar.jpg",
-      "id": "7",
-      "class": "music",
-      "link": "#"
-    },
-    {
-      "name": "아기자기한 캐릭터푸드 만들기",
-      "price": 35000,
-      "tag": "요리 · 음료",
-      "pic": "newclass-cook.jpg",
-      "id": "8",
-      "class": "cook",
-      "link": "#"
-    },
-    {
-      "name": "초보용 반주법과 기본 피아노 코드 배우기",
-      "price": 49900,
-      "tag": "음악",
-      "pic": "newclass-piano.jpg",
-      "id": "9",
-      "class": "music",
-      "link": "#"
-    }
-  ],
-  "aiclass2": [
-    {
-      "name": "캘리그라피 전문가와 찾아가는 나만의 손글씨",
-      "price": 3600,
-      "tag": "라이프스타일",
-      "pic": "dlclass-calli.jpg",
-      "id": "4",
-      "class": "lifestyle",
-      "link": "#"
-    },
-    {
-      "name": "근력 강화, 체지방을 감소시키는 나만의 시간, 다이어트 요가 클래스",
-      "price": 5000,
-      "tag": "운동",
-      "pic": "dlclass-yoga.jpg",
-      "id": "5",
-      "class": "sport",
-      "link": "#"
-    },
-    {
-      "name": "조향사에게 배우는 조향 기초, 나만의 향기를 만들어요.",
-      "price": 30000,
-      "tag": "공예",
-      "pic": "dlclass-perfume.jpg",
-      "id": "6",
-      "class": "craft",
-      "link": "#"
-    },
-    {
-      "name": "치명적인 매력을 가진 단 하나뿐인 나만의 작품 레진공예",
-      "price": 46800,
-      "tag": "공예",
-      "pic": "dlclass-resin.jpg",
-      "id": "7",
-      "class": "craft",
-      "link": "#"
-    },
-    {
-      "name": "초보자도 누구나 집에서 쉽게 귀여운 머랭쿠키 만들기",
-      "price": 20300,
-      "tag": "베이킹 · 디저트",
-      "pic": "dlclass-baking2.jpg",
-      "id": "8",
-      "class": "baking",
-      "link": "#"
-    },
-    {
-      "name": "연필 하나로 담아내는 섬세함, 인물화 드로잉",
-      "price": 39000,
-      "tag": "드로잉",
-      "pic": "dlclass-drawing2.jpg",
-      "id": "9",
-      "class": "drawing",
-      "link": "#"
-    }
-  ],
-  "newclass2": [
-    {
-      "name": "퇴근 후 만나는 나의 가죽 공방, 가죽공예 기초부터 완성까지",
-      "price": 39000,
-      "tag": "공예",
-      "pic": "newclass-leather.jpg",
-      "id": "3",
-      "class": "craft",
-      "link": "#"
-    },
-    {
-      "name": "비보이 & 비걸을 위한 브레이킹 입문 클래스",
-      "price": 43000,
-      "tag": "운동",
-      "pic": "newclass-dance.jpg",
-      "id": "4",
-      "class": "sport",
-      "link": "#"
-    },
-    {
-      "name": "누워만 있어도 피로가 풀리는 홈필라테스 배우기",
-      "price": 23000,
-      "tag": "운동",
-      "pic": "newclass-ex.jpg",
-      "id": "6",
-      "class": "sport",
-      "link": "#"
-    },
-    {
-      "name": "기초부터 응용까지, 취미는 기타",
-      "price": 27000,
-      "tag": "음악",
-      "pic": "newclass-guitar.jpg",
-      "id": "7",
-      "class": "music",
-      "link": "#"
-    },
-    {
-      "name": "아기자기한 캐릭터푸드 만들기",
-      "price": 35000,
-      "tag": "요리 · 음료",
-      "pic": "newclass-cook.jpg",
-      "id": "8",
-      "class": "cook",
-      "link": "#"
-    },
-    {
-      "name": "초보용 반주법과 기본 피아노 코드 배우기",
-      "price": 49900,
-      "tag": "음악",
-      "pic": "newclass-piano.jpg",
-      "id": "9",
-      "class": "music",
-      "link": "#"
-    }
-  ],
-  "search": [
-    {
-      "name": "뜨개실",
-      "ranking": "1",
-      "first": "first"
-    },
-    {
-      "name": "베이킹",
-      "ranking": "2"
-    },
-    {
-      "name": "우쿨렐레",
-      "ranking": "3"
-    },
-    {
-      "name": "터프팅건",
-      "ranking": "4"
-    },
-    {
-      "name": "요가매트",
-      "ranking": "5"
-    },
-    {
-      "name": "레진아트",
-      "ranking": "6"
-    },
-    {
-      "name": "레고",
-      "ranking": "7"
-    },
-    {
-      "name": "쿠키틀",
-      "ranking": "8"
-    },
-    {
-      "name": "서핑보드",
-      "ranking": "9"
-    },
-    {
-      "name": "화분",
-      "ranking": "10"
-    }
-  ],
-  "newboard": [
-    {
-      "name": "레고 기차 7939 판매합니다 - 컨디션 매우 좋음",
-      "tag": "판매중",
-      "tagClass": "sale",
-      "price": 190000,
-      "date": "5분 전",
-      "pic": "board-img1.jpg",
-      "badge": "미개봉",
-      "badge2": "배송비포함",
-      "link": "#"
-    },
-    {
-      "name": "비즈, 키링 부자재 세트 팝니다",
-      "tag": "판매중",
-      "tagClass": "sale",
-      "price": 10000,
-      "date": "7분 전",
-      "pic": "board-img2.jpg",
-      "badge": "미개봉",
-      "link": "#"
-    },
-    {
-      "name": "[무료나눔] 네온사인 만들기 DIY 세트 킷",
-      "tag": "판매완료",
-      "tagClass": "done",
-      "price": 0,
-      "date": "20분 전",
-      "pic": "board-img3.jpg",
-      "badge": "미개봉",
-      "badge2": "무료나눔",
-      "link": "#"
-    },
-    {
-      "name": "파버카스텔 피트 연필 파스텔 24색 미개봉 새상품",
-      "tag": "판매중",
-      "tagClass": "sale",
-      "price": 43000,
-      "date": "38분 전",
-      "pic": "board-img4.jpg",
-      "badge": "미개봉",
-      "badge2": "배송비포함",
-      "link": "#"
-    },
-    {
-      "name": "(가격내림)마베프 테이블이젤 M17",
-      "tag": "판매완료",
-      "tagClass": "done",
-      "price": 89000,
-      "date": "1시간 전",
-      "pic": "board-img5.jpg",
-      "badge": "배송비포함",
-      "link": "#"
-    },
-    {
-      "name": "(거의 새제품) 아반티 우쿨렐레 콘서트 AU-103 판매",
-      "tag": "판매완료",
-      "tagClass": "done",
-      "price": 90000,
-      "date": "1시간 전",
-      "pic": "board-img6.jpg",
-      "badge": "배송비포함",
-      "link": "#"
-    }
-  ]
-}
+      "link":"#"
+      }
+    ],
+    "newclass2": [
+      {
+        "name": "퇴근 후 만나는 나의 가죽 공방, 가죽공예 기초부터 완성까지",
+        "price": 39000,
+        "tag": "공예",
+        "pic": "newclass-leather.jpg",
+        "id": "3",
+        "class": "craft",
+        "link": "#"
+      },
+      {
+        "name": "비보이 & 비걸을 위한 브레이킹 입문 클래스",
+        "price": 43000,
+        "tag": "운동",
+        "pic": "newclass-dance.jpg",
+        "id": "4",
+        "class": "sport",
+        "link": "#"
+      },
+      {
+        "name": "누워만 있어도 피로가 풀리는 홈필라테스 배우기",
+        "price": 23000,
+        "tag": "운동",
+        "pic": "newclass-ex.jpg",
+        "id": "6",
+        "class": "sport",
+        "link": "#"
+      },
+      {
+        "name": "기초부터 응용까지, 취미는 기타",
+        "price": 27000,
+        "tag": "음악",
+        "pic": "newclass-guitar.jpg",
+        "id": "7",
+        "class": "music",
+        "link": "#"
+      },
+      {
+        "name": "아기자기한 캐릭터푸드 만들기",
+        "price": 35000,
+        "tag": "요리 · 음료",
+        "pic": "newclass-cook.jpg",
+        "id": "8",
+        "class": "cook",
+        "link": "#"
+      },
+      {
+        "name": "초보용 반주법과 기본 피아노 코드 배우기",
+        "price": 49900,
+        "tag": "음악",
+        "pic": "newclass-piano.jpg",
+        "id": "9",
+        "class": "music",
+        "link": "#"
+      }
+    ],
+    "search": [
+      {
+        "name": "뜨개실",
+        "ranking": "1",
+        "first": "first"
+      },
+      {
+        "name": "베이킹",
+        "ranking": "2"
+      },
+      {
+        "name": "우쿨렐레",
+        "ranking": "3"
+      },
+      {
+        "name": "터프팅건",
+        "ranking": "4"
+      },
+      {
+        "name": "요가매트",
+        "ranking": "5"
+      },
+      {
+        "name": "레진아트",
+        "ranking": "6"
+      },
+      {
+        "name": "레고",
+        "ranking": "7"
+      },
+      {
+        "name": "쿠키틀",
+        "ranking": "8"
+      },
+      {
+        "name": "서핑보드",
+        "ranking": "9"
+      },
+      {
+        "name": "화분",
+        "ranking": "10"
+      }
+    ],
+    "newboard": [
+      {
+        "name": "레고 기차 7939 판매합니다 - 컨디션 매우 좋음",
+        "tag": "판매중",
+        "tagClass": "sale",
+        "price": 190000,
+        "date": "5분 전",
+        "pic": "board-img1.jpg",
+        "badge": "미개봉",
+        "badge2": "배송비포함",
+        "link": "#"
+      },
+      {
+        "name": "비즈, 키링 부자재 세트 팝니다",
+        "tag": "판매중",
+        "tagClass": "sale",
+        "price": 10000,
+        "date": "7분 전",
+        "pic": "board-img2.jpg",
+        "badge": "미개봉",
+        "link": "#"
+      },
+      {
+        "name": "[무료나눔] 네온사인 만들기 DIY 세트 킷",
+        "tag": "판매완료",
+        "tagClass": "done",
+        "price": 0,
+        "date": "20분 전",
+        "pic": "board-img3.jpg",
+        "badge": "미개봉",
+        "badge2": "무료나눔",
+        "link": "#"
+      },
+      {
+        "name": "파버카스텔 피트 연필 파스텔 24색 미개봉 새상품",
+        "tag": "판매중",
+        "tagClass": "sale",
+        "price": 43000,
+        "date": "38분 전",
+        "pic": "board-img4.jpg",
+        "badge": "미개봉",
+        "badge2": "배송비포함",
+        "link": "#"
+      },
+      {
+        "name": "(가격내림)마베프 테이블이젤 M17",
+        "tag": "판매완료",
+        "tagClass": "done",
+        "price": 89000,
+        "date": "1시간 전",
+        "pic": "board-img5.jpg",
+        "badge": "배송비포함",
+        "link": "#"
+      },
+      {
+        "name": "(거의 새제품) 아반티 우쿨렐레 콘서트 AU-103 판매",
+        "tag": "판매완료",
+        "tagClass": "done",
+        "price": 90000,
+        "date": "1시간 전",
+        "pic": "board-img6.jpg",
+        "badge": "배송비포함",
+        "link": "#"
+      }
+    ]
+  }
+  
