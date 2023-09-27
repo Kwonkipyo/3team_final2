@@ -222,144 +222,111 @@
       </div>
       <!-- 헤더 -->
       <header class="header">
-        <div class="header-top">
-          <a href="index.html" class="logo"
-            ><img src="images/Class&.png" alt="메인로고"
-          /></a>
-          <div class="sign-menu">
-            <div class="cntr">
-              <div class="cntr-innr">
-                <label class="search" for="inpt_search">
-                  <input id="inpt_search" type="text" />
-                </label>
+        <div class="inner">
+          <div class="header-top">
+            <a href="index.html" class="logo"><img src="images/Class&.png" alt="메인로고"></a>
+            <div class="sign-menu">
+              <div class="cntr">
+                <div class="cntr-innr">
+                  <label class="search" for="inpt_search">
+                    <input id="inpt_search" type="text" />
+                  </label>
+                </div>
               </div>
-            </div>
-            <div id="dashboard-section">
-              <div id="username-display"></div>
-              <i class="fa-solid fa-angle-down"></i>
-              <div id="dropdown-menu">
-                <!-- 드롭다운 메뉴 아이템들 -->
-                <a href="#">마이페이지</a>
-                <a href="#">쿠폰</a>
-                <a href="#">내 강의실</a>
-                <a href="#">회원정보수정</a>
-                <a href="#">클래스 개설하기</a>
-                <a href="#" id="logout-button">로그아웃</a>
+              <div id="dashboard-section">
+                <div id="username-display"></div>
+                <i class="fa-solid fa-angle-down"></i>
+                <div id="dropdown-menu">
+                  <!-- 드롭다운 메뉴 아이템들 -->
+                  <a href="#">마이페이지</a>
+                  <a href="#">쿠폰</a>
+                  <a href="#">내 강의실</a>
+                  <a href="#">회원정보수정</a>
+                  <a href="#">클래스 개설하기</a>
+                  <a href="#" id="logout-button">로그아웃</a>
+                </div>
               </div>
-            </div>
-            <i
-              class="fa-solid fa-bars"
-              id="toggle-menu"
-              style="color: #ffffff"
-            ></i>
-            <div class="mb-menu">
+              <i class="fa-solid fa-bars" id="toggle-menu" style="color: #ffffff;"></i>
+              <div class="mb-menu">
               <span id="login-section"><a href="login.html">SIGN IN</a></span>
               <span id="signup-section"><a href="signup.html">SIGN UP</a></span>
             </div>
-            <div class="mobile-searchbox">
-              <input
-                type="text"
-                class="mb-search-input"
-                placeholder="Search Class,Menu"
-              />
-              <span class="mb-searchbox-close">Cancle</span>
-              <div class="search-box-back">
-                <h2>추천 검색어</h2>
-                <a href="#">공예</a>
-                <a href="#">베이킹</a>
-                <a href="#">디저트</a>
-                <a href="#">선생님</a>
-                <a href="#">인기 클래스</a>
-                <a href="#">신규 클래스</a>
-                <a href="">리뷰</a>
-                <a href="#">음악</a>
-                <a href="#">하모니카</a>
-                <a href="#">드로잉</a>
-                <a href="#">운동</a>
-                <a href="#">사진</a>
-                <a href="#">영상</a>
+              <div class="header-select">
+                <select name="select" id="header-select">
+                  <option value="kor">KOR</option>
+                  <option value="eng">ENG</option>
+                  <option value="jap">JPN</option>
+                </select>
               </div>
             </div>
-            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
-            <div class="header-select">
-              <select name="select" id="header-select">
-                <option value="kor">KOR</option>
-                <option value="eng">ENG</option>
-                <option value="jap">JPN</option>
-              </select>
-            </div>
-          </div>
-          <div class="header-mb-cate" id="mobile-menu">
-            <div class="mb-menu-cate">
-              <span class="mb-cate-click"
-                ><a href="#">카테고리</a>
-                <i class="fa-solid fa-chevron-down" style="color: #ffffff"></i
-              ></span>
-              <i
-                class="fa-solid fa-xmark"
-                id="close-menu"
-                style="color: #ffffff"
-              ></i>
+            <div class="header-mb-cate" id="mobile-menu">
+              <div class="mb-menu-cate">
+              <span class="mb-cate-click"><a href="#">카테고리</a>
+                <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i></span>
+              <i class="fa-solid fa-xmark" id="close-menu" style="color: #ffffff;"></i>
               <div class="mb-cate-depth">
-                <ul class="mb-depth">
-                  <li><a href="#">디지털 드로잉</a></li>
-                  <li><a href="#">드로잉</a></li>
-                  <li><a href="#">공예</a></li>
-                  <li><a href="#">요리·음료</a></li>
-                  <li><a href="#">베이킹·디저트</a></li>
-                  <li><a href="#">음악</a></li>
-                  <li><a href="#">운동</a></li>
-                  <li><a href="#">라이프스타일</a></li>
-                  <li><a href="#">사진·영상</a></li>
-                </ul>
-                <ul class="mb-depth">
-                  <li><a href="#">금융·제테크</a></li>
-                  <li><a href="#">창업·부업</a></li>
-                  <li><a href="#">성공 마인드</a></li>
-                </ul>
-                <ul class="mb-depth">
-                  <li><a href="#">프로그래밍</a></li>
-                  <li><a href="#">데이터사이언스</a></li>
-                  <li><a href="#">제품 기획</a></li>
-                  <li><a href="#">비즈니스</a></li>
-                  <li><a href="#">생산성</a></li>
-                  <li><a href="#">마케팅</a></li>
-                  <li><a href="#">디자인</a></li>
-                  <li><a href="#">영상/3D</a></li>
-                  <li><a href="#">어도비 캠퍼스</a></li>
-                </ul>
-                <ul class="mb-depth">
-                  <li><a href="#">영어</a></li>
-                  <li><a href="#">외국어 시험</a></li>
-                  <li><a href="#">제2 외국어</a></li>
-                </ul>
-                <ul class="mb-depth">
-                  <li><a href="#">아이 교육</a></li>
-                  <li><a href="#">부모 교육</a></li>
-                </ul>
-              </div>
+              <ul class="mb-depth">
+                <li><a href="sub.html">디지털 드로잉</a></li>
+                <li><a href="sub.html">드로잉</a></li>
+                <li><a href="sub.html">공예</a></li>
+                <li><a href="sub.html">요리·음료</a></li>
+                <li><a href="sub.html">베이킹·디저트</a></li>
+                <li><a href="sub.html">음악</a></li>
+                <li><a href="sub.html">운동</a></li>
+                <li><a href="sub.html">라이프스타일</a></li>
+                <li><a href="sub.html">사진·영상</a></li>
+              </ul>
+              <ul class="mb-depth">
+                <li><a href="sub.html">금융·제테크</a></li>
+                <li><a href="sub.html">창업·부업</a></li>
+                <li><a href="sub.html">성공 마인드</a></li>
+              </ul>
+              <ul class="mb-depth">
+                <li><a href="sub.html">프로그래밍</a></li>
+                <li><a href="sub.html">데이터사이언스</a></li>
+                <li><a href="sub.html">제품 기획</a></li>
+                <li><a href="sub.html">비즈니스</a></li>
+                <li><a href="sub.html">생산성</a></li>
+                <li><a href="sub.html">마케팅</a></li>
+                <li><a href="sub.html">디자인</a></li>
+                <li><a href="sub.html">영상/3D</a></li>
+                <li><a href="sub.html">어도비 캠퍼스</a></li>
+              </ul>
+              <ul class="mb-depth">
+                <li><a href="sub.html">영어</a></li>
+                <li><a href="sub.html">외국어 시험</a></li>
+                <li><a href="sub.html">제2 외국어</a></li>
+              </ul>
+              <ul class="mb-depth">
+                <li><a href="sub.html">아이 교육</a></li>
+                <li><a href="sub.html">부모 교육</a></li>
+              </ul>
+            </div>
             </div>
             <div class="mb-menu-link">
               <ul>
-                <li><a href="group.html">공동구매</a></li>
-                <li><a href="#">중고거래</a></li>
-                <li><a href="#">게시판</a></li>
-                <li><a href="#">고객센터</a></li>
+                <li><a href="group.html">공동구매 게시판</a></li>
+                <li><a href="#">중고거래 게시판</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">Q&A</a></li>
               </ul>
             </div>
+            </div>
           </div>
-        </div>
-        <div class="header-bottom">
-          <ul class="gnb">
-            <li>
-              <a href="#" class="gnb-cate"
-                >카테고리
-                <i class="fa-solid fa-chevron-down" style="color: #ffffff"></i>
-                <i class="fa-solid fa-chevron-up" style="color: #ffffff"></i>
-              </a>
-            </li>
-            <div class="header-catemenu">
-              <div class="catemenu-txt">
+          <div class="header-bottom">
+            <ul class="gnb">
+              <li>
+                <a href="#" class="gnb-cate"
+                  >카테고리
+                  <i
+                    class="fa-solid fa-chevron-down"
+                    style="color: #ffffff"
+                  ></i>
+                  <i class="fa-solid fa-chevron-up" style="color: #ffffff"></i>
+                </a>
+              </li>
+              <div class="header-catemenu">
+                <div class="catemenu-txt">
                 <ul class="depth2">
                   <li><a href="#">디지털 드로잉</a></li>
                   <li><a href="#">드로잉</a></li>
@@ -397,12 +364,13 @@
                   <li><a href="#">부모 교육</a></li>
                 </ul>
               </div>
-            </div>
-            <li><a href="group.html">공동구매</a></li>
-            <li><a href="#">중고거래</a></li>
-            <li><a href="#">게시판</a></li>
-            <li><a href="#">고객센터</a></li>
-          </ul>
+              </div>
+              <li><a href="group.html">공동구매</a></li>
+              <li><a href="#">중고거래</a></li>
+              <li><a href="#">게시판</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </div>
         </div>
       </header>
       <!-- 서브페이지 전체 -->
@@ -952,6 +920,10 @@
                     ></a>
                   </button>
                   <p class="linked-text">더 저렴히 시작하고 싶으신가요?</p>
+                </div>
+                <div class="class-count">
+                  <i class="fa-solid fa-bullhorn"></i>
+                  <p><span>1035</span> 건이 진행되었어요!</p>
                 </div>
               </div>
             </div>
