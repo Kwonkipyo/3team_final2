@@ -61,13 +61,15 @@ window.addEventListener("load", function () {
                 <span class="class-type ${item.class}">${item.tag}</span>
                 <p class="class-ranking">${item.ranking}</p>
             </div>
+            <div class="class-txt">
             <p class="class-count">
               <i class="fa-solid fa-bullhorn"></i>
               <span>${item.count}</span>건이 진행되었어요!
             </p>
-            <div class="class-txt">
                 <!-- 제품정보 -->
                 <p class="class-info">${item.name}</p>
+                <!-- 강사명 -->
+                <p class="class-teacher">${item.teacher}</p>
                 <!-- 제품가격 -->
                 <p class="class-price">~ ${priceToString(item.price)}원</p>
             </div>
@@ -96,6 +98,8 @@ window.addEventListener("load", function () {
             <div class="class-txt">
                 <!-- 제품정보 -->
                 <p class="class-info">${item.name}</p>
+                <!-- 강사명 -->
+                <p class="class-teacher">${item.teacher}</p>
                 <!-- 제품가격 -->
                 <p class="class-price">~ ${priceToString(item.price)}원</p>
             </div>
@@ -124,6 +128,8 @@ window.addEventListener("load", function () {
             <div class="class-txt">
                 <!-- 제품정보 -->
                 <p class="class-info">${item.name}</p>
+                <!-- 강사명 -->
+                <p class="class-teacher">${item.teacher}</p>
                 <!-- 제품가격 -->
                 <p class="class-price">~ ${priceToString(item.price)}원</p>
             </div>
@@ -145,22 +151,24 @@ window.addEventListener("load", function () {
 
     BEST_CLASS2.forEach(function (item) {
       let tag = `
-        <a href="${item.link}" class="class-item">
-            <div class="class-box" style="background-image: url('images/${item.pic}')">
-                <span class="class-type ${item.class}">${item.tag}</span>
-                <p class="class-ranking">${item.ranking}</p>
-            </div>
-            <p class="class-count">
-              <i class="fa-solid fa-bullhorn"></i>
-              <span>${item.count}</span>건이 진행되었어요!
-            </p>
-            <div class="class-txt">
-                <!-- 제품정보 -->
-                <p class="class-info">${item.name}</p>
-                <!-- 제품가격 -->
-                <p class="class-price">~ ${priceToString(item.price)}원</p>
-            </div>
-        </a>
+      <a href="${item.link}" class="class-item">
+          <div class="class-box" style="background-image: url('images/${item.pic}')">
+              <span class="class-type ${item.class}">${item.tag}</span>
+              <p class="class-ranking">${item.ranking}</p>
+          </div>
+          <div class="class-txt">
+          <p class="class-count">
+            <i class="fa-solid fa-bullhorn"></i>
+            <span>${item.count}</span>건이 진행되었어요!
+          </p>
+              <!-- 제품정보 -->
+              <p class="class-info">${item.name}</p>
+              <!-- 강사명 -->
+                <p class="class-teacher">${item.teacher}</p>
+              <!-- 제품가격 -->
+              <p class="class-price">~ ${priceToString(item.price)}원</p>
+          </div>
+      </a>
         `;
       html += tag;
     });
@@ -185,6 +193,8 @@ window.addEventListener("load", function () {
             <div class="class-txt">
                 <!-- 제품정보 -->
                 <p class="class-info">${item.name}</p>
+                <!-- 강사명 -->
+                <p class="class-teacher">${item.teacher}</p>
                 <!-- 제품가격 -->
                 <p class="class-price">~ ${priceToString(item.price)}원</p>
             </div>
@@ -213,6 +223,8 @@ window.addEventListener("load", function () {
             <div class="class-txt">
                 <!-- 제품정보 -->
                 <p class="class-info">${item.name}</p>
+                <!-- 강사명 -->
+                <p class="class-teacher">${item.teacher}</p>
                 <!-- 제품가격 -->
                 <p class="class-price">~ ${priceToString(item.price)}원</p>
             </div>
@@ -239,7 +251,7 @@ window.addEventListener("load", function () {
 
   bestPlusButton.addEventListener("click", function () {
     if (bestWrap2.style.display === "none" || bestWrap2.style.display === "") {
-      bestWrap2.style.display = "flex";
+      bestWrap2.style.display = "block";
       bestPlusButton.style.transform = "translateY(10px)";
       bestPlusIcon.style.transform = "rotate(180deg)";
       classPlusBlock.style.display = "none"
@@ -255,7 +267,7 @@ window.addEventListener("load", function () {
   });
   aiPlusButton.addEventListener("click", function () {
     if (aiWrap2.style.display === "none" || aiWrap2.style.display === "") {
-      aiWrap2.style.display = "flex";
+      aiWrap2.style.display = "block";
       aiPlusButton.style.transform = "translateY(10px)";
     } else {
       aiWrap2.style.display = "none";
@@ -264,7 +276,7 @@ window.addEventListener("load", function () {
   });
   newPlusButton.addEventListener("click", function () {
     if (newWrap2.style.display === "none" || newWrap2.style.display === "") {
-      newWrap2.style.display = "flex";
+      newWrap2.style.display = "block";
       newPlusButton.style.transform = "translateY(10px)";
     } else {
       newWrap2.style.display = "none";
