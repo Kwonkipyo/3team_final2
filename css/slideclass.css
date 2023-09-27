@@ -1,7 +1,8 @@
 .bestclass,
 .aiclass,
 .newclass{
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .item-box{
@@ -44,6 +45,25 @@
     padding-bottom: 60%;
     position: relative;
     overflow: hidden;
+}
+
+.class-item .class-count{
+    margin-top: 10px;
+    color: #acdbc4;
+    /* color: #f5cb5c; */
+    font-weight: 700;
+}
+
+.class-item .class-count i{
+    transform: rotate(-15deg);
+    margin-right: 5px;
+}
+
+.class-item .class-count span{
+    font-size: 25px;
+    margin-right: 5px;
+    font-weight: 900;
+    color: #5de29f;
 }
 
 .class-item .class-txt{
@@ -129,12 +149,24 @@
 }
 
 .class-plus{
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 40%;
     margin: 0 auto;
-    background-color: black;
+    background-color: #242423;
     text-align: center;
-    padding: 10px 0;
+    padding: 7px 0;
     border-radius: 50px;
+    transition: 0.2s;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.class-plus:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.7), 0 10px 10px rgba(0,0,0,0.67);
+    background-color: #3f3417;
 }
 
 .class-type.baking{

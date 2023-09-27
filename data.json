@@ -8,17 +8,19 @@
         "id": "0",
         "class": "lifestyle",
         "link": "#",
-        "ranking": "1"
+        "ranking": "1",
+        "count": "1035"
       },
       {
-        "name": "전통의 현대적 재해석, 비밀장신구와 함께 엮는 전통 매듭 액세서리",
+        "name": "나만의 속도에 맞춰 즐기는 따듯한 취미, 뜨개질 클래스",
         "price": 32000,
         "tag": "공예",
         "pic": "newclass-acc.jpg",
         "id": "1",
         "class": "craft",
         "link": "#",
-        "ranking": "2"
+        "ranking": "2",
+        "count": "1003"
       },
       {
         "name": "나의 리틀 포레스트, 가드너에게 배우는 셀프 홈가드닝",
@@ -28,7 +30,8 @@
         "id": "2",
         "class": "lifestyle",
         "link": "#",
-        "ranking": "3"
+        "ranking": "3",
+        "count": "982"
       },
       {
         "name": "퇴근 후 만나는 나의 가죽 공방, 가죽공예 기초부터 완성까지",
@@ -38,7 +41,8 @@
         "id": "3",
         "class": "craft",
         "link": "#",
-        "ranking": "4"
+        "ranking": "4",
+        "count": "938"
       }
     ],
     "aiclass": [
@@ -126,7 +130,8 @@
         "id": "4",
         "class": "sport",
         "link": "#",
-        "ranking": "5"
+        "ranking": "5",
+        "count": "867"
       },
       {
         "name": "누워만 있어도 피로가 풀리는 홈필라테스 배우기",
@@ -136,7 +141,8 @@
         "id": "5",
         "class": "sport",
         "link": "#",
-        "ranking": "6"
+        "ranking": "6",
+        "count": "835"
       },
       {
         "name": "기초부터 응용까지, 취미는 기타",
@@ -146,7 +152,8 @@
         "id": "6",
         "class": "music",
         "link": "#",
-        "ranking": "7"
+        "ranking": "7",
+        "count": "798"
       },
       {
         "name": "아기자기한 캐릭터푸드 만들기",
@@ -156,7 +163,8 @@
         "id": "7",
         "class": "cook",
         "link": "#",
-        "ranking": "8"
+        "ranking": "8",
+        "count": "767"
       },
       {
         "name": "초보용 반주법과 기본 피아노 코드 배우기",
@@ -166,7 +174,8 @@
         "id": "8",
         "class": "music",
         "link": "#",
-        "ranking": "9"
+        "ranking": "9",
+        "count": "710"
       },
       {
         "name" : "특별한 도안으로 나만의 꽃밭을 만드는 페이퍼 아트",
@@ -176,7 +185,8 @@
         "id": "9", 
         "class": "craft",
         "link":"#",
-        "ranking": "10"
+        "ranking": "10",
+        "count": "688"
       }
     ],
     "aiclass2": [

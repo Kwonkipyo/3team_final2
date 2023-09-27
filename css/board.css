@@ -71,6 +71,10 @@
 }
 
 /* 신규 게시글 */
+.main-board .new-board{
+  margin-top: 50px;
+}
+
 .main-board .new-board .plus {
   padding-right: 10px;
 }
@@ -102,13 +106,13 @@
 }
 
 .main-board .new-board-item .sale {
-  background: red;
+  background: rgb(255, 51, 24);
   margin-right: 10px;
   color: #e8eddf;
 }
 
 .main-board .new-board-item .done {
-  background-color: green;
+  background-color: rgb(33, 134, 33);
   color: #e8eddf;
 }
 
