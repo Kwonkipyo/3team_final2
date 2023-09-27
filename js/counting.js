@@ -1,27 +1,31 @@
 let scrollStarted = false;
 
-window.addEventListener('scroll', () => {
-  const scrollPosition = window.scrollY;
+// Wait for the DOM content to be fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+  // Set your target counts and increment values here
+  const targetUserCount = 124873;
+  const targetTeacherCount = 243;
+  const targetClassCount = 386;
+  const targetLectureCount = 34816;
 
-  if (scrollPosition > 0 && !scrollStarted) {
-    scrollStarted = true;
-    // Set your target counts and increment values here
-    const targetUserCount = 124873;
-    const targetTeacherCount = 243;
-    const targetClassCount = 386;
-    const targetLectureCount = 34816;
+  const userIncrement = 413;  // Increment for user count
+  const teacherIncrement = 1;  // Increment for teacher count
+  const classIncrement = 1;  // Increment for class count
+  const lectureIncrement = 134;  // Increment for lecture count
 
-    const userIncrement = 413;  // Increment for user count
-    const teacherIncrement = 1;  // Increment for teacher count
-    const classIncrement = 1;  // Increment for class count
-    const lectureIncrement = 134;  // Increment for lecture count
-
-    startCounting(
-      targetUserCount, targetTeacherCount, targetClassCount, targetLectureCount,
-      userIncrement, teacherIncrement, classIncrement, lectureIncrement
-    );
-  }
+  // Call the function to start counting
+  startCounting(
+    targetUserCount, targetTeacherCount, targetClassCount, targetLectureCount,
+    userIncrement, teacherIncrement, classIncrement, lectureIncrement
+  );
 });
+
+// Define the startCounting function here
+function startCounting(targetUserCount, targetTeacherCount, targetClassCount, targetLectureCount,
+  userIncrement, teacherIncrement, classIncrement, lectureIncrement) {
+  // Your counting logic goes here
+  // You can use setInterval or other methods to increment the counts over time
+}
 
 function startCounting(
   maxUserCount, maxTeacherCount, maxClassCount, maxLectureCount,

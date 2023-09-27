@@ -17,8 +17,12 @@ $(document).ready(function () {
   $(document).on("click", function (e) {
     const headerCatemenu = $(".header-catemenu");
     const gnbCate = $(".gnb-cate");
-    if (!headerCatemenu.is(e.target) && headerCatemenu.has(e.target).length === 0
-      && !gnbCate.is(e.target) && gnbCate.has(e.target).length === 0) {
+    if (
+      !headerCatemenu.is(e.target) &&
+      headerCatemenu.has(e.target).length === 0 &&
+      !gnbCate.is(e.target) &&
+      gnbCate.has(e.target).length === 0
+    ) {
       headerCatemenu.slideUp(300);
       gnbCate.removeClass("active"); // 모든 밑줄 제거
       $(".gnb-cate .fa-chevron-down").show(); // fa-chevron-down 아이콘 보이기
@@ -28,87 +32,98 @@ $(document).ready(function () {
   // 헤더 스크롤 이벤트
   const header = $(".header");
   const headerTop = $(".header-top");
+  const headerBottom = $(".header-bottom");
   const headerCatemenu = $(".header-catemenu");
   const userIcon = $(".fa-circle-user");
+
+  let prevScrollPos = 0; // 이전 스크롤 위치를 저장할 변수
 
   // 스크롤 이벤트를 바인딩하기 전에 창 너비를 확인하는 조건 추가
   if ($(window).width() > 480) {
     // 480px보다 넓은 화면에 대해서만 스크롤 이벤트 리스너를 추가합니다
     $(window).scroll(function () {
-      if ($(this).scrollTop() > 50) {
-        header.css({
-          "height": "50px",
-          "box-shadow": "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)",
-          "background-color": "#111"
-        });
-        headerTop.hide();
-        userIcon.show();
+      const currentScrollPos = $(this).scrollTop();
+
+      if (currentScrollPos > prevScrollPos) {
+        // 스크롤을 내릴 때
+        if (currentScrollPos > 50) {
+          headerTop.hide();
+          userIcon.show();
+          // header-bottom 배경색 변경
+          headerBottom.css({
+            height: "50px",
+            "box-shadow":
+              "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)",
+            "background-color": "#111",
+          });
+        }
       } else {
-        header.css({
-          "height": "auto",
-          "box-shadow": "none",
-          "background-color": "transparent"
-        });
+        // 스크롤을 올릴 때
         headerTop.show();
         userIcon.hide();
+        headerTop.css("background-color", "#111");
       }
+
       // header-catemenu 위치 조정
       const headerHeight = header.height();
-      if ($(this).scrollTop() > headerHeight) {
+      if (currentScrollPos > headerHeight) {
         headerCatemenu.addClass("sticky");
       } else {
         headerCatemenu.removeClass("sticky");
       }
+
+      prevScrollPos = currentScrollPos; // 이전 스크롤 위치 업데이트
     });
   }
-  $("#inpt_search").on('focus', function () {
-    $(this).parent('label').addClass('active');
+  $("#inpt_search").on("focus", function () {
+    $(this).parent("label").addClass("active");
   });
-  
-  $("#inpt_search").on('blur', function () {
-    if($(this).val().length == 0)
-      $(this).parent('label').removeClass('active');
+
+  $("#inpt_search").on("blur", function () {
+    if ($(this).val().length == 0)
+      $(this).parent("label").removeClass("active");
   });
   // 페이지 새로고침할때마다 스크롤 제일 위로 이동하는 코드
-  $(document).keydown(function(event) {
-    if (event.which == 116) { // F5 키의 keyCode는 116입니다
-        // event.preventDefault(); // 기본 동작을 중지합니다 (페이지 새로 고침을 막음)
-        // $(window).scrollTop(0); // 스크롤을 페이지의 맨 위로 이동
+  $(document).keydown(function (event) {
+    if (event.which == 116) {
+      // F5 키의 keyCode는 116입니다
+      // event.preventDefault(); // 기본 동작을 중지합니다 (페이지 새로 고침을 막음)
+      // $(window).scrollTop(0); // 스크롤을 페이지의 맨 위로 이동
     }
   });
 
-  $('#mobile-menu').hide();
+  $("#mobile-menu").hide();
 
   // 모바일 메뉴 열기
-  $('#toggle-menu').click(function() {
-    $('#mobile-menu').slideToggle();
-    $('body').toggleClass('menu-open');  // Toggle the class
+  $("#toggle-menu").click(function () {
+    $("#mobile-menu").slideToggle();
+    $("body").toggleClass("menu-open"); // Toggle the class
   });
 
   // 모바일 메뉴 닫기
-  $('#close-menu').click(function() {
-    $('#mobile-menu').slideUp();
-    $('body').removeClass('menu-open');  // Remove the class
+  $("#close-menu").click(function () {
+    $("#mobile-menu").slideUp();
+    $("body").removeClass("menu-open"); // Remove the class
   });
 
   $(".mb-cate-depth").slideUp(); // 처음에 숨겨두기
-  
-  $(".mb-cate-click").click(function(){
+
+  $(".mb-cate-click").click(function () {
     $(".mb-cate-depth").slideToggle();
-    isOpen = !isOpen;  // Toggle the state
+    isOpen = !isOpen; // Toggle the state
   });
 
   let isMobileSearchboxVisible = false;
 
-  $('.fa-magnifying-glass').click(function () {
-    $('.mobile-searchbox').show();
+  $(".fa-magnifying-glass").click(function () {
+    $(".mobile-searchbox").show();
     isMobileSearchboxVisible = true;
   });
-  $('.mb-searchbox-close').click(function () {
-    $('.mobile-searchbox').hide();
+  $(".mb-searchbox-close").click(function () {
+    $(".mobile-searchbox").hide();
     isMobileSearchboxVisible = false;
   });
   if (!isMobileSearchboxVisible) {
-    $('.mobile-searchbox').hide();
+    $(".mobile-searchbox").hide();
   }
 });
