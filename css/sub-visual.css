@@ -4,6 +4,7 @@
 }
 .sub-inner {
   display: flex;
+  /* flex-direction: row-reverse; */
   position: relative;
   gap: 0 60px;
   width: 100%;
@@ -118,12 +119,6 @@
   width: 100%;
   display: flex;
 }
-.icon-text-type:hover,
-.icon-text-type:hover,
-.icon-text-type:hover {
-  transform: scale(1.1);
-  transition: 0.1s;
-}
 .icon-text-type {
   display: flex;
   flex-direction: column;
@@ -132,6 +127,13 @@
   font-weight: 300;
   text-align: center;
   margin-right: 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.icon-text-type:hover,
+.icon-text-type:hover,
+.icon-text-type:hover {
+  outline: solid 1px #ccc;
 }
 .icon-text-type i {
   font-size: 25px;
@@ -213,10 +215,10 @@
 }
 @media all and (max-width: 480px){
   .visual-image{
-    height: 220px;
+    height: auto;
   }
   .visual-image img {
-    height: 220px;
+    height: auto;
   }
   .tx-1{
     gap: 18px;
