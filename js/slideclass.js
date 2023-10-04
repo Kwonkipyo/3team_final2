@@ -62,10 +62,10 @@ window.addEventListener("load", function () {
                 <p class="class-ranking">${item.ranking}</p>
             </div>
             <div class="class-txt">
-            <p class="class-count">
-              <i class="fa-solid fa-bullhorn"></i>
-              <span>${item.count}</span>건이 진행되었어요!
-            </p>
+              <p class="class-txt-top class-count">
+                <i class="fa-solid fa-bullhorn"></i>
+                <span>${item.count}</span>건이 진행되었어요!
+              </p>
                 <!-- 제품정보 -->
                 <p class="class-info">${item.name}</p>
                 <!-- 강사명 -->
@@ -96,6 +96,10 @@ window.addEventListener("load", function () {
                 <span class="class-type ${item.class}">${item.tag}</span>
             </div>
             <div class="class-txt">
+              <p class="class-txt-top class-grade">
+              <i class="fa-solid fa-bullhorn"></i>
+                평점이 <span>${item.grade}</span>점이에요!
+              </p>
                 <!-- 제품정보 -->
                 <p class="class-info">${item.name}</p>
                 <!-- 강사명 -->
@@ -126,6 +130,10 @@ window.addEventListener("load", function () {
                 <span class="class-type ${item.class}">${item.tag}</span>
             </div>
             <div class="class-txt">
+              <p class="class-txt-top class-new">
+              <i class="fa-solid fa-bullhorn"></i>
+                <span>${item.date}</span> 오픈했어요!
+              </p>
                 <!-- 제품정보 -->
                 <p class="class-info">${item.name}</p>
                 <!-- 강사명 -->
@@ -157,10 +165,10 @@ window.addEventListener("load", function () {
               <p class="class-ranking">${item.ranking}</p>
           </div>
           <div class="class-txt">
-          <p class="class-count">
-            <i class="fa-solid fa-bullhorn"></i>
-            <span>${item.count}</span>건이 진행되었어요!
-          </p>
+            <p class="class-txt-top class-count">
+              <i class="fa-solid fa-bullhorn"></i>
+                <span>${item.count}</span>건이 진행되었어요!
+            </p>
               <!-- 제품정보 -->
               <p class="class-info">${item.name}</p>
               <!-- 강사명 -->
@@ -191,6 +199,10 @@ window.addEventListener("load", function () {
                 <span class="class-type ${item.class}">${item.tag}</span>
             </div>
             <div class="class-txt">
+              <p class="class-txt-top class-grade">
+              <i class="fa-solid fa-bullhorn"></i>
+                평점이 <span>${item.grade}</span>점이에요!
+              </p>
                 <!-- 제품정보 -->
                 <p class="class-info">${item.name}</p>
                 <!-- 강사명 -->
@@ -221,6 +233,10 @@ window.addEventListener("load", function () {
                 <span class="class-type ${item.class}">${item.tag}</span>
             </div>
             <div class="class-txt">
+              <p class="class-txt-top class-new">
+              <i class="fa-solid fa-bullhorn"></i>
+                <span>${item.date}</span> 오픈했어요!
+              </p>
                 <!-- 제품정보 -->
                 <p class="class-info">${item.name}</p>
                 <!-- 강사명 -->

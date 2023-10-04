@@ -58,6 +58,7 @@
         "id": "0",
         "class": "baking",
         "link": "sub.html",
+        "grade": "4.98",
         "teacher": "로나"
       },
       {
@@ -68,6 +69,7 @@
         "id": "1",
         "class": "baking",
         "link": "sub.html",
+        "grade": "4.95",
         "teacher": "빵실베이킹"
       },
       {
@@ -78,6 +80,7 @@
         "id": "2",
         "class": "drawing",
         "link": "sub.html",
+        "grade": "4.94",
         "teacher": "드로우레인저"
       },
       {
@@ -88,6 +91,7 @@
         "id": "3",
         "class": "lifestyle",
         "link": "sub.html",
+        "grade": "4.9",
         "teacher": "캘리하영"
       }
     ],
@@ -100,6 +104,7 @@
         "id": "0",
         "class": "lifestyle",
         "link": "sub.html",
+        "date": "오늘",
         "teacher": "타로마스터"
       },
       {
@@ -110,6 +115,7 @@
         "id": "1",
         "class": "craft",
         "link": "sub.html",
+        "date": "오늘",
         "teacher": "조선샵"
       },
       {
@@ -120,6 +126,7 @@
         "id": "2",
         "class": "lifestyle",
         "link": "sub.html",
+        "date": "오늘",
         "teacher": "Garden Park"
       },
       {
@@ -130,6 +137,7 @@
         "id": "2",
         "class": "lifestyle",
         "link": "sub.html",
+        "date": "오늘",
         "teacher": "Garden Park"
       }
     ],
@@ -155,6 +163,7 @@
         "class": "sport",
         "link": "sub.html",
         "ranking": "6",
+        "count": "832",
         "teacher": "진이코치"
       },
       {
@@ -215,6 +224,7 @@
         "id": "4",
         "class": "sport",
         "link": "sub.html",
+        "grade": "4.9",
         "teacher": "나나코치"
       },
       {
@@ -225,6 +235,7 @@
         "id": "5",
         "class": "craft",
         "link": "sub.html",
+        "grade": "4.86",
         "teacher": "민퍼퓸"
       },
       {
@@ -235,6 +246,7 @@
         "id": "6",
         "class": "craft",
         "link": "sub.html",
+        "grade": "4.85",
         "teacher": "레진스"
       },
       {
@@ -245,6 +257,7 @@
         "id": "7",
         "class": "baking",
         "link": "sub.html",
+        "grade": "4.78",
         "teacher": "상상쿠키"
       },
       {
@@ -255,6 +268,7 @@
         "id": "8",
         "class": "drawing",
         "link": "sub.html",
+        "grade": "4.75",
         "teacher": "봉봉아트"
       },
       {
@@ -265,7 +279,8 @@
       "id": "9", 
       "class": "craft",
       "link":"sub.html",
-      "teacher": "제이미"
+        "grade": "4.67",
+        "teacher": "제이미"
       }
     ],
     "newclass2": [
@@ -277,6 +292,7 @@
         "id": "3",
         "class": "craft",
         "link": "sub.html",
+        "date": "오늘",
         "teacher": "Garden Park"
       },
       {
@@ -287,6 +303,7 @@
         "id": "4",
         "class": "sport",
         "link": "sub.html",
+        "date": "1일 전",
         "teacher": "Garden Park"
       },
       {
@@ -297,6 +314,7 @@
         "id": "6",
         "class": "sport",
         "link": "sub.html",
+        "date": "1일 전",
         "teacher": "Garden Park"
       },
       {
@@ -307,6 +325,7 @@
         "id": "7",
         "class": "music",
         "link": "sub.html",
+        "date": "1일 전",
         "teacher": "Garden Park"
       },
       {
@@ -317,6 +336,7 @@
         "id": "8",
         "class": "cook",
         "link": "sub.html",
+        "date": "3일 전",
         "teacher": "Garden Park"
       },
       {
@@ -327,6 +347,7 @@
         "id": "9",
         "class": "music",
         "link": "sub.html",
+        "date": "3일 전",
         "teacher": "Garden Park"
       }
     ],
