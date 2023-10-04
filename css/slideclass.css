@@ -76,6 +76,10 @@
     position: relative;
 }
 
+.class-item .class-info{
+    font-weight: 700;
+}
+
 .class-item .class-txt .class-price{
     text-align: right;
     position: absolute;
@@ -244,9 +248,6 @@
         font-size: 20px;
         margin-right: 3px;
     }
-    .class-item .class-txt {
-        font-size: 14px;
-    }
     .item-box {
         display: flex;
         flex-wrap: wrap;
@@ -308,56 +309,66 @@
     .right-section{
         width: 100%;
     }
-    .class-item .class-count{
-        font-size: 3vw;
-    }
-    
     .class-item .class-count i{
         margin-right: 5px;
     }
-    
-    .class-item .class-count span{
-        font-size: 4vw;
-        font-weight: 900;
-        color: #5de29f;
-    }
-    .class-item .class-txt p{
-        font-size: 2vw;
-        font-weight: 700;
-    }
-    
 }
 @media all and (max-width: 480px){
-    .class-item{
-        height: 150px;
-        width: 200px;
-        border-radius: 15px;
+    .class-item .class-txt .class-teacher{
+        font-size: 3vw;
     }
-    .class-box .class-txt{
-        height: 60px;
-        padding: 8px 10px 5px;
-        font-size: 12px;
+    .class-box{
+        width: 50%;
     }
-    .class-type {
-        padding: 2px 6px;
-        font-size: 12px;
+    .class-item .class-txt{
+        width: 50%;
     }
-    .bestclass-title,
+    .class-item .class-txt p.class-info{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        width: 100%;
+        height: 45px;
+    }
+    .class-item .class-count span{
+        font-size: 4vw;
+    }
+    .class-item .class-count{
+        font-size: 3vw;
+    }
+    .class-type{
+        font-size: 3vw;
+    }
+    .class-ranking{
+        font-size: 15vw;
+        bottom: -3px;
+    }
+}
+@media all and (max-width: 368px){
+    .class-ranking{
+        bottom: -7px;
+    }
+    .bestclass-title p,
+    .goodclass-title p,
+    .aiclass-title p,
+    .newclass-title p {
+        font-size: 25px;
+    }
+    .bestclass-title span,
     .goodclass-title span,
     .aiclass-title > span,
     .newclass-title span{
-        font-size: 15px;
+        font-size: 14px;
     }
-    .bestclass-title,
-    .goodclass-title p,
-    .aiclass-title p,
-    .newclass-title p{
-        font-size: 25px;
+    .class-item .class-txt p.class-info{
+        height: 35px;
     }
-    .bestclass .plus,
-    .aiclass .plus,
-    .newclass .plus{
-        font-size: 12px;
-        top: 40px;
+    .class-item .class-txt{
+        font-size: 14px;
+    }
+    .class-item{
+        gap: 10px;
     }
 }
