@@ -3,31 +3,37 @@
   display: block;
   width: 100%;
   max-width: 1920px;
-  height: 110px;
   font-family: "NanumSquare";
   position: fixed;
   z-index:99999;
-  background-color: transparent;
+  background-color: #111;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   color: #e8eddf;
   min-width: 320px !important;
+}
+.header.hidden {
+  transform: translateY(-100%);
 }
 .header .inner{
   width: 100%;
 }
 .header-top {
-  height: 60px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: height 0.3s ease;
+  /* padding: 11px 0px; */
 }
 .header .logo {
   width: 120px;
   height: auto;
-  /* margin-top: 15px; */
 }
 .cntr {
   display: table;
   height: 100%;
+  position: relative;
+  right: 5px;
 }
 .cntr .cntr-innr {
   display: table-cell;
@@ -62,7 +68,7 @@
 .search.active,
 .search:hover {
   width: 150px;
-  height: 20px;
+  height: 25px;
   margin-right: 0px;
 }
 .search.active:after,
@@ -86,20 +92,78 @@
 .sign-menu {
   display: flex;
   align-items: center;
-  font-size: 15px;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 900;
   flex-wrap: wrap;
-  gap: 0 20px;
+  gap: 0 10px;
 }
 .mb-menu{
   display: flex;
   flex-wrap: wrap;
-  gap: 0 20px;
+  gap: 0 10px;
 }
 .sign-menu i{
   cursor: pointer;
 }
+.sign-menu .fa-magnifying-glass{
+  display: none;
+  font-size: 23px;
+}
 .header-top .fa-bars{
   display: none;
+}
+.mobile-searchbox{
+  position: relative;
+  top: -24px;
+  left: 20px;
+  z-index: 99999999;
+  width: 100vw;
+  height: 70px;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.search-box-back{
+  position: absolute;
+  top: 70px;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.search-box-back h2{
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #a5a3a3;
+}
+.search-box-back a{
+  font-size: 16px;
+  margin: 3px;
+  padding: 5px 8px;
+  display: inline-block;
+  border-radius: 30px;
+  width: auto;
+  height: auto;
+  background-color: #000;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+.mobile-searchbox input{
+  width: 85%;
+  height: 40px;
+  background-color: #000;
+  border: 0;
+  padding: 0 10px;
+  color: #e8eddf;
+}
+.mb-searchbox-close{
+  font-size: 13px;
+  color: #e8eddf;
+  letter-spacing: 1px;
 }
 #header-select{
   width: 60px;
@@ -107,7 +171,8 @@
   background-color: transparent;
   color: #e8eddf;
   font-family: "NanumSquare";
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 900;
   cursor: pointer;
 }
 #header-select option{
@@ -165,7 +230,6 @@
   line-height: 50px;
   justify-content: space-between;
   align-items: center;
-  /* margin-left: 30px; */
 }
 .gnb {
   display: flex;
@@ -174,13 +238,13 @@
 }
 .header-catemenu{
   position: absolute;
-  left: -332px;
+  left: -340px;
   flex-wrap: wrap;
   gap: 0 30px;
   width: 1920px;
   height: 400px;
   background-color: rgba(0,0,0,0.9);
-  top: 110px;
+  top: 100px;
   font-size: 15px;
 }
 .sticky {
@@ -188,7 +252,7 @@
   z-index: 1000;
 }
 .catemenu-txt{
-  margin-left: 332px;
+  margin-left: 340px;
 }
 .depth2{
   width: calc( 90% / 5);
@@ -217,9 +281,9 @@
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  padding: 10px 25px;
+  gap: 5px;
   display: none;
+  right: -5px;
 }
 #username-display {
   font-size: 16px;
@@ -264,7 +328,19 @@
     margin: 0;
   }
   .depth2{
-    width: calc( 90% / 5);
+    width: calc( 100% / 5);
+  }
+}
+@media all and (max-width:1024px) {
+  .header-catemenu{
+    width: 100%;
+    left: 0;
+  }
+  .catemenu-txt{
+    margin: 0;
+  }
+  .depth2{
+    width: calc( 100% / 5);
   }
 }
 @media all and (max-width:768px){
@@ -285,11 +361,11 @@
     gap: 0 25px;
   }
   .header-catemenu{
-    width: 768px;
+    /* width: 768px; */
     font-size: 13px;
   }
   .depth2{
-    width: calc( 90% / 5);
+    width: calc( 100% / 5);
   }
 }
 @media all and (max-width:480px){
@@ -301,6 +377,7 @@
   .header-top{
     display: block;
     width: 100%;
+    padding: 0px;
   }
   .header-top .logo{
     width: 30%;
@@ -342,7 +419,6 @@
     flex-wrap: wrap;
   }
   .mb-menu{
-    display: flex;
     flex-wrap: wrap;
     gap: 0 10px;
     position: absolute;
@@ -351,7 +427,7 @@
     font-size: 13px;
   }
   .sign-menu .fa-magnifying-glass{
-    display: none;
+    display: block;
   }
   .sign-menu .fa-bars{
     display: inline;
@@ -360,6 +436,15 @@
     top: 20px;
   }
   .header-select{
+    display: none;
+  }
+  #login-section a{
+    display: none;
+  }
+  #signup-section a{
+    display: none;
+  }
+  #dashboard-section a{
     display: none;
   }
   .header-bottom{
