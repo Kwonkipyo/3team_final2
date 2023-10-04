@@ -2,13 +2,18 @@
   width: 35%;
 }
 .main-board .board-header h2 {
-  font-size: 35px;
+  font-size: 33px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
+.board-header span{
+  font-size: 14px;
+  opacity: 0.5;
+}
+
 .main-board .board-wrap {
-  margin-top: 50px;
+  margin-top: 70px;
   width: 100%;
   height: auto;
   /* background-color: rgb(255, 0, 0); */
@@ -27,7 +32,6 @@
 .main-board .board-sub-title span {
   font-size: 20px;
   color: #f5cb5c;
-  font-weight: 700;
 }
 
 /* 인기 중고 검색어 */
@@ -54,7 +58,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 50px;
   width: 45%;
   border: 2px solid transparent;
@@ -75,7 +79,7 @@
 
 /* 신규 게시글 */
 .main-board .new-board{
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .main-board .new-board .plus {
   padding-right: 10px;
