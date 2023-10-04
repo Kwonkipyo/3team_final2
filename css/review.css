@@ -81,7 +81,7 @@
     bottom:0px;
     content:"";
     width:100%;
-    height:80px;
+    height:60px;
     background:linear-gradient(to top, #111 10%, transparent);
     z-index: 10;
 }
@@ -152,7 +152,9 @@
 .review-right .reviewtxt{
     line-height: 25px
 }
-
+.review-txt .fa-thumbs-up{
+    cursor: pointer;
+}
 @media all and (max-width:1024px){
     .review{
         max-height:600px;
