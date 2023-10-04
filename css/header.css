@@ -115,11 +115,11 @@
 }
 .mobile-searchbox{
   position: relative;
-  top: -20px;
+  top: -42px;
   left: 20px;
   z-index: 99999999;
   width: 100vw;
-  height: 60px;
+  height: 70px;
   background-color: #111;
   display: flex;
   align-items: center;
@@ -128,7 +128,7 @@
 }
 .search-box-back{
   position: absolute;
-  top: 60px;
+  top: 70px;
   width: 100vw;
   height: 100vh;
   padding: 50px;
@@ -419,7 +419,6 @@
     flex-wrap: wrap;
   }
   .mb-menu{
-    display: flex;
     flex-wrap: wrap;
     gap: 0 10px;
     position: absolute;
@@ -439,8 +438,14 @@
   .header-select{
     display: none;
   }
-  #dashboard-section{
-    opacity: 0;
+  #login-section a{
+    display: none;
+  }
+  #signup-section a{
+    display: none;
+  }
+  #dashboard-section a{
+    display: none;
   }
   .header-bottom{
     display: none;
