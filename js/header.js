@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     // fa-chevron-down 및 fa-chevron-up 아이콘의 표시 여부를 제어
     $(this).find(".fa-chevron-down, .fa-chevron-up").toggle();
-  });
+  });     
   // catemenu-close를 클릭했을 때 header-catemenu를 숨김
   $(document).on("click", function (e) {
     const headerCatemenu = $(".header-catemenu");
@@ -25,60 +25,33 @@ $(document).ready(function () {
       $(".gnb-cate .fa-chevron-up").hide(); // fa-chevron-up 아이콘 숨기기
     }
   });
+  $('#mobile-menu').hide();
   // 헤더 스크롤 이벤트
-  const header = $(".header");
-  const headerTop = $(".header-top");
-  const headerCatemenu = $(".header-catemenu");
-  const userIcon = $(".fa-circle-user");
-
-  // 스크롤 이벤트를 바인딩하기 전에 창 너비를 확인하는 조건 추가
-  if ($(window).width() > 480) {
-    // 480px보다 넓은 화면에 대해서만 스크롤 이벤트 리스너를 추가합니다
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 50) {
-        header.css({
-          "height": "50px",
-          "box-shadow": "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)",
-          "background-color": "#111"
-        });
-        headerTop.hide();
-        userIcon.show();
-      } else {
-        header.css({
-          "height": "auto",
-          "box-shadow": "none",
-          "background-color": "transparent"
-        });
-        headerTop.show();
-        userIcon.hide();
-      }
-      // header-catemenu 위치 조정
-      const headerHeight = header.height();
-      if ($(this).scrollTop() > headerHeight) {
-        headerCatemenu.addClass("sticky");
-      } else {
-        headerCatemenu.removeClass("sticky");
-      }
-    });
-  }
-  $("#inpt_search").on('focus', function () {
-    $(this).parent('label').addClass('active');
-  });
+  let lastScrollTop = 0;
   
-  $("#inpt_search").on('blur', function () {
-    if($(this).val().length == 0)
-      $(this).parent('label').removeClass('active');
-  });
-  // 페이지 새로고침할때마다 스크롤 제일 위로 이동하는 코드
-  $(document).keydown(function(event) {
-    if (event.which == 116) { // F5 키의 keyCode는 116입니다
-        // event.preventDefault(); // 기본 동작을 중지합니다 (페이지 새로 고침을 막음)
-        // $(window).scrollTop(0); // 스크롤을 페이지의 맨 위로 이동
+  window.addEventListener("scroll", () => {
+    if (window.innerWidth > 480) {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      let header = document.querySelector('.header');
+      let headerTop = document.querySelector('.header-top');
+      let headerBottom = document.querySelector('.header-bottom');
+      let headerCatemenu = document.querySelector('.header-catemenu');
+  
+      if (scrollTop > lastScrollTop) {
+        // Scrolling down, hide header-top and set header height to 50px
+        headerTop.style.display = 'none';
+        header.style.height = '50px';
+        headerCatemenu.style.top = '50px';
+      } else {
+        // Scrolling up, show header-top and set header height back to 110px
+        headerTop.style.display = 'flex'; // Adjust the height accordingly
+        header.style.height = '100px';
+        headerCatemenu.style.position = 'absolute';
+        headerCatemenu.style.top = '100px'; // Adjust the top position accordingly
+      }
+      lastScrollTop = scrollTop;
     }
   });
-
-  $('#mobile-menu').hide();
-
   // 모바일 메뉴 열기
   $('#toggle-menu').click(function() {
     $('#mobile-menu').slideToggle();
@@ -97,4 +70,19 @@ $(document).ready(function () {
     $(".mb-cate-depth").slideToggle();
     isOpen = !isOpen;  // Toggle the state
   });
+  
+  // 모바일 검색창
+  let isMobileSearchboxVisible = false;
+
+  $('.fa-magnifying-glass').click(function () {
+    $('.mobile-searchbox').show();
+    isMobileSearchboxVisible = true;
+  });
+  $('.mb-searchbox-close').click(function () {
+    $('.mobile-searchbox').hide();
+    isMobileSearchboxVisible = false;
+  });
+  if (!isMobileSearchboxVisible) {
+    $('.mobile-searchbox').hide();
+  }
 });
