@@ -65,12 +65,32 @@ window.addEventListener("load", function () {
       modal.style.display = "none";
     }
   });
-  // --------------신청버튼넘어가기 (미완성)----------------------
+  // -----------------------------------------------------------
 
   var button = document.getElementById("applyButton");
 
   button.addEventListener("click", function () {
     window.location.href = "payment.html";
+  });
+
+  const fixMenu = document.querySelector('.fix-menu');
+  let isHidden = false; 
+  let lastScrollY = 0; 
+  
+  window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      if (scrollY > lastScrollY) {
+          if (!isHidden) {
+              fixMenu.style.display = 'none'; 
+              isHidden = true;
+          }
+      } else {
+          if (isHidden) {
+              fixMenu.style.display = 'block'; 
+              isHidden = false;
+          }
+      }
+      lastScrollY = scrollY;
   });
 });
 
@@ -109,16 +129,3 @@ function hidePreparation() {
 }
 
 // ----------------------------------------------
-window.addEventListener("scroll", function () {
-  const fixMenu = document.querySelector(".fix-menu");
-  const windowHeight = window.innerHeight;
-  const pageHeight = document.body.clientHeight;
-  const scrollPosition = scrollY + windowHeight;
-
-  if (scrollPosition >= pageHeight -0) {
-    fixMenu.style.top = "9815px";
-  }
-  if (scrollY === 0) {
-    fixMenu.style.top = "0"; 
-  }
-});
