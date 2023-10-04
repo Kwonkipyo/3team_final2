@@ -99,7 +99,6 @@
 }
 
 .class-item .class-info{
-    font-weight: 700;
 }
 
 .class-item .class-txt .class-price{
@@ -123,7 +122,7 @@
 .aiclass-title,
 .newclass-title{
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     align-items: baseline;
 }
 
@@ -131,7 +130,7 @@
 .goodclass-title span,
 .aiclass-title > span,
 .newclass-title span{
-    font-size: 20px;
+    font-size: 18px;
     display: inline;
     margin-right: 10px;
     color: #aeb3a6;
@@ -141,7 +140,7 @@
 .goodclass-title p,
 .aiclass-title p,
 .newclass-title p{
-    font-size: 35px;
+    font-size: 33px;
     display: inline;
 }
 
@@ -200,7 +199,7 @@
     border-radius: 50px;
     transition: 0.2s;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 70px;
 }
 
 .class-plus:hover{
