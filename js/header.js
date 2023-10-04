@@ -77,11 +77,15 @@ $(document).ready(function () {
   $('.fa-magnifying-glass').click(function () {
     $('.mobile-searchbox').show();
     isMobileSearchboxVisible = true;
+    $('body').css('overflow', 'hidden'); // 페이지 스크롤 숨기기
   });
-  $('.mb-searchbox-close').click(function () {
+  
+  $('.mb-searchbox-close, .search-box-back').click(function () {
     $('.mobile-searchbox').hide();
     isMobileSearchboxVisible = false;
+    $('body').css('overflow', 'auto'); // 페이지 스크롤 표시
   });
+  
   if (!isMobileSearchboxVisible) {
     $('.mobile-searchbox').hide();
   }
