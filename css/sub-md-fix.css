@@ -365,6 +365,42 @@
   transform-origin: bottom left;
 }
 
+.fix-class-count{
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  color: #acdbc4;
+  font-weight: 700;
+  font-size: 16px;
+}
+.fix-class-count i{
+  /* transform: rotate(-15deg); */
+  margin-right: 15px;
+  font-weight: 900;
+  font-size: 17px;
+}
+.fix-class-count span{
+  font-size: 25px;
+  font-weight: 900;
+  color: #5de29f;
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(-25deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+.fa-bullhorn {
+  animation: rotate 1s linear infinite;
+}
+
 /* 폰트 스타일 한번 더 저장 */
 body {
   font-family: "NanumSquare" !important;
@@ -426,14 +462,14 @@ body {
   width: 100%;
   border-radius: 5px;
   border: 0;
-  background-color: #178fff;
+  background-color: #17b6ff;
   color: #000000;
   font-family: "NanumSquare" !important;
   font-size: 22px;
   font-weight: 900;
 }
 .fix-right-button button:hover {
-  background-color: #0067c7;
+  background-color: #1290ca;
 }
 
 /* new-fix-menu-modal */
