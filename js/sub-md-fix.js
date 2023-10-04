@@ -73,7 +73,7 @@ window.addEventListener("load", function () {
       }
     }
   });
-  // --------신청버튼넘어가기 (미완성)----------------
+  // ----------------------------------------------------
 
   var button = document.getElementById("md-applyButton");
 
@@ -82,7 +82,7 @@ window.addEventListener("load", function () {
   });
 });
 
-// ------------------------------------------------
+// -----------------------제이쿼리-------------------------
 
 function showPreparationAnother() {
   const preparationSelect = document.getElementById("md-preparation");

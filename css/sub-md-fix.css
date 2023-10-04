@@ -186,7 +186,6 @@
 .md-custom-image > p {
   font-size: 14px;
   text-align: right;
-  width: 65%;
 }
 .md-custom-bottom {
   margin-top: 20px;
@@ -317,12 +316,12 @@
   border-radius: 5px;
   margin-top: 8px;
   padding: 13px 0;
-  background-color: #178fff;
+  background-color: #17b6ff;
   color: #000000;
   font-family: "NanumSquare" !important;
 }
-.md-we-buy:hover {
-  background-color: #0062be;
+.we-buy:hover {
+  background-color: #1290ca;
 }
 .md-we-buy > h2 {
   line-height: 30px;
@@ -661,6 +660,9 @@ body {
   .image-close {
     top: 268px;
     right: 10px;
+  }
+  .fix-class-count{
+    font-size: 14px;
   }
 }
 @media all and (max-width: 380px) {
