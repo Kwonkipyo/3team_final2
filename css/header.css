@@ -68,7 +68,7 @@
 .search.active,
 .search:hover {
   width: 150px;
-  height: 20px;
+  height: 25px;
   margin-right: 0px;
 }
 .search.active:after,
@@ -115,7 +115,7 @@
 }
 .mobile-searchbox{
   position: relative;
-  top: -42px;
+  top: -24px;
   left: 20px;
   z-index: 99999999;
   width: 100vw;
