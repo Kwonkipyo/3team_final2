@@ -51,22 +51,44 @@
     overflow: hidden;
 }
 
-.class-item .class-count{
-    color: #acdbc4;
+.class-item .class-txt-top{
     font-weight: 700;
     margin-bottom: 5px;
 }
 
-.class-item .class-count i{
+.class-item .class-txt-top i{
     transform: rotate(-15deg);
     margin-right: 5px;
 }
 
-.class-item .class-count span{
+.class-item .class-txt-top span{
     font-size: 25px;
     margin-right: 5px;
     font-weight: 900;
+}
+
+.class-item .class-count{
+    color: #acdbc4;
+}
+
+.class-item .class-count span{
     color: #5de29f;
+}
+
+.class-item .class-grade{
+    color: rgb(255, 224, 140);
+}
+
+.class-item .class-grade span{
+    color: rgb(255, 187, 0);
+}
+
+.class-item .class-new{
+    color: #c0e6ff;
+}
+
+.class-item .class-new span{
+    color: #67c2ff;
 }
 
 .class-item .class-txt{
@@ -240,11 +262,11 @@
         padding: 1px 6px;
         font-size: 13px;
     }
-    .class-item .class-count {
+    .class-item .class-txt-top {
         margin-top: 6px;
         font-size: 14px;
     }
-    .class-item .class-count span {
+    .class-item .class-txt-top span {
         font-size: 20px;
         margin-right: 3px;
     }
@@ -309,7 +331,7 @@
     .right-section{
         width: 100%;
     }
-    .class-item .class-count i{
+    .class-item .class-txt-top i{
         margin-right: 5px;
     }
 }
@@ -332,10 +354,10 @@
         width: 100%;
         height: 45px;
     }
-    .class-item .class-count span{
+    .class-item .class-txt-top span{
         font-size: 4vw;
     }
-    .class-item .class-count{
+    .class-item .class-txt-top{
         font-size: 3vw;
     }
     .class-type{
