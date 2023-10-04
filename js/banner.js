@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
         centeredSlides: true,
         loop: true,
         autoplay: {
-            delay: 2500,
+            delay: 100000,
             disableOnInteraction: true,
         },
         pagination: {
