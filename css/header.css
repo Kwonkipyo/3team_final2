@@ -238,6 +238,8 @@
 }
 #dashboard-section i {
   transition: all ease-in 0.15s;
+  font-size: 12px;
+  margin:2px 0 0 5px;
 }
 #dropdown-menu {
   display: none;
@@ -357,25 +359,17 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  .mb-menu{
-    flex-wrap: wrap;
-    gap: 0 10px;
-    position: absolute;
-    top: 24px;
-    right: 20px;
-    font-size: 13px;
-  }
   .sign-menu .fa-magnifying-glass{
     display: block;
     position: absolute;
     right: 20px;
-    top: 24px;
+    top: 36%;
   }
   .sign-menu .fa-bars{
     display: inline;
     font-size: 22px;
     position: absolute;
-    top: 24px;
+    top: 36%;
   }
   .mobile-searchbox{
     height: 70px;

@@ -52,19 +52,19 @@
     }
 }
 @media all and (max-width:768px){
-    .counting-info span:last-child{
-        font-size: 23px;
+    .counting-info span:first-child{
+        font-size: 27px;
     }
 }
 @media all and (max-width:480px){
     .counting{
-        height: 250px;
+        height: 242px;
     }
     .counting .inner{
         padding: 0;
     }
     .counting-container{
-        height: 250px;
+        /* height: 250px; */
         display: flex;
         flex-wrap: wrap;
     }
@@ -75,13 +75,10 @@
         padding: 28px;
     }
     .counting-info:nth-child(2),.counting-info:nth-child(3){
-        background-color: #ffc524;
+        background-color: #dce777;
     }
     .counting-info span{
         font-size: 14px;
-    }
-    .counting-info span:last-child{
-        font-size: 20px;
     }
 }
 @media all and (max-width:320px){
