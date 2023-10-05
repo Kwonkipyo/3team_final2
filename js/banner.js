@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
         centeredSlides: true,
         loop: true,
         autoplay: {
-            delay: 100000,
+            delay: 2500,
             disableOnInteraction: true,
         },
         pagination: {
@@ -22,14 +22,14 @@ window.addEventListener("load", function () {
         slide.addEventListener("click", function () {
             // 각 슬라이드를 클릭할 때 다른 페이지로 이동하는 로직을 여기에 추가
             switch (index) {
-            case 0:
-                window.location.href = "detail.html"; // 첫 번째 슬라이드를 클릭하면 page1.html로 이동
-                break;
             case 1:
-                window.location.href = "detail.html"; // 두 번째 슬라이드를 클릭하면 page2.html로 이동
+                window.location.href = "#"; // 첫 번째 슬라이드를 클릭하면 page1.html로 이동
                 break;
             case 2:
-                window.location.href = "detail.html"; // 세 번째 슬라이드를 클릭하면 page3.html로 이동
+                window.location.href = "group.html"; // 두 번째 슬라이드를 클릭하면 page2.html로 이동
+                break;
+            case 3:
+                window.location.href = "sub.html"; // 세 번째 슬라이드를 클릭하면 page3.html로 이동
                 break;
             // 필요한 만큼 슬라이드에 대한 이동 로직을 추가할 수 있습니다.
             }

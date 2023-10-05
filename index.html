@@ -137,14 +137,9 @@
         <div class="inner">
           <div class="header-top">
             <a href="index.html" class="logo"><img src="images/Class&.png" alt="메인로고"></a>
-            <div class="sign-menu">
-              <!-- <div class="cntr">
-                <div class="cntr-innr">
-                  <label class="search" for="inpt_search">
-                    <input id="inpt_search" type="text" />
-                  </label>
-                </div>
-              </div> -->
+            <div class="sign-menu">              
+              <i class="fa-solid fa-bars" id="toggle-menu" style="color: #e8eddf;"></i>            
+              <i class="fa-solid fa-magnifying-glass" style="color: #e8eddf;"></i>
               <div id="dashboard-section">
                 <div id="username-display"></div>
                 <i class="fa-solid fa-angle-down"></i>
@@ -158,13 +153,8 @@
                   <a href="#" id="logout-button">로그아웃</a>
                 </div>
               </div>
-              <i class="fa-solid fa-bars" id="toggle-menu" style="color: #ffffff;"></i>
-              <div class="mb-menu">
-              <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
               <span id="login-section"><a href="login.html">SIGN IN</a></span>
               <span id="signup-section"><a href="signup.html">SIGN UP</a></span>
-
-            </div> 
               <div class="header-select">
                 <select name="select" id="header-select">
                   <option value="kor">KOR</option>
@@ -173,7 +163,6 @@
                 </select>
               </div>
             </div>
-
             <div class="header-mb-cate" id="mobile-menu">
               <div class="mb-menu-cate">
               <span class="mb-cate-click"><a href="#">카테고리</a>
@@ -282,8 +271,8 @@
               </div>
               <li><a href="group.html">공동구매</a></li>
               <li><a href="#">중고거래</a></li>
-              <li><a href="#">게시판</a></li>
-              <li><a href="#">고객센터</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">Q&A</a></li>
             </ul>
           </div>
         </div>
@@ -295,6 +284,7 @@
                 <a href="sub.html">공예</a>
                 <a href="sub.html">베이킹</a>
                 <a href="sub.html">디저트</a>
+                <a href="sub.html">뜨개질</a>
                 <a href="sub.html">선생님</a>
                 <a href="sub.html">인기 클래스</a>
                 <a href="sub.html">신규 클래스</a>
@@ -321,12 +311,12 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide banner1">
                   <div class="inner">
-                    <img src="images/banner-img1.png" alt="">
+                    <img src="images/banner-img1.png" alt="배너이미지1">
                     <div class="banner-txt">
                       <p>황금같은 <span>추석 연휴</span> 에는 중고거래 <span>포인트가 2배!</span></p>
                       <a href="#">바로가기</a>
                     </div>
-                    <img src="images/banner-img2.png" alt="">
+                    <img src="images/banner-img2.png" alt="배너이미지2">
                   </div>
                 </div>
                 <div class="swiper-slide banner2">
@@ -335,12 +325,12 @@
                       <p><span>첫 공동구매</span> 시 <br><span><b>30%</b> 쿠폰 증정</span></p>
                       <!-- <a href="#">바로가기</a> -->
                     </div>
-                    <img src="images/banner-img3.png" alt="">
+                    <img src="images/banner-img3.png" alt="배너이미지3">
                   </div>
                 </div>
                 <div class="swiper-slide banner3">
                   <div class="inner">
-                    <img src="images/banner-img4.png" alt="">
+                    <img src="images/banner-img4.png" alt="배너이미지4">
                     <div class="banner-txt">
                       <span>Class3 패키지로 시작해요!</span>
                       <p>개별구매 클래스를 3가지 골라 담아 저렴한 가격에 만나보세요</p>
@@ -782,8 +772,8 @@
                 권 * 하 (수강생)
                 <br>23.10.13
                 <p><i class="fa-solid fa-star"></i> 5.0</p>
-                <a href="detail.html" class="review-class">
-                  <img src="images/newclass-acc.jpg" alt="">
+                <a href="sub.html" class="review-class">
+                  <img src="images/newclass-acc.jpg" alt="리뷰이미지">
                   <p>전통의 현대적 재해석, 비밀장신구와 함께 엮는 전통 매듭 액세서리</p>
                 </a>
               </span>
@@ -792,35 +782,44 @@
                 간단한 재료와 기술을 임에도 직접 만들어보는 과정에서 창의적인 아이디어를 발휘하고 배울 수 있었습니다~
                 선생님 너무 친절하시고 잘 알려주셔서 다른 강의도 들어보려고 합니다ㅎㅎ
               </p>
-              <span><i class="fa-regular fa-thumbs-up"></i> 184명이 이 리뷰에 만족합니다.</span>
+              <span>
+                <i class="fa-thumbs-up fa-regular" style="color: #e8eddf;" id="thumbs-up-icon1"></i>
+                <span id="like-count1">184</span>명이 이 리뷰에 만족합니다.
+              </span>
           </div>
           <div class="review-txt">
               <span>
                 박 * 진(수강생)
                 <br>2023.10.02
                 <p><i class="fa-solid fa-star"></i> 4.9</p>
-                <a href="detail.html" class="review-class">
-                  <img src="images/review-img.jpg" alt="">
+                <a href="sub.html" class="review-class">
+                  <img src="images/review-img.jpg" alt="리뷰이미지">
                   <p>초보 탈출! 사진과 카메라 기초부터 제대로 배우는 클래스</p>
                 </a>
               </span>
               <h2 class="reviewtxt">진짜 카메라 초보탈출 했어요!</h2>
               <p class="reviewtxt">사진에 관심이 가서 사진 클래스를 들었는데 정말 최고였어요~ 카메라 렌즈를 통해 보여지는 세계의 아름다움을 발견하고, 그 아름다움을 담아내는 방법을 배우며 창의적인 사고를 기를 수 있었던 시간이었습니다ㅎㅎ 촬영하는 동안에는 자연스럽게 창의적인 아이디어가 떠오르고, 다양한 각도와 조명을 활용하여 독특한 작품을 만들어낼 수 있었어요. JDZ선생님 너무 친절히 잘 알려주세요~</p>
-              <span><i class="fa-regular fa-thumbs-up"></i> 257명이 이 리뷰에 만족합니다.</span>
+              <span>
+                <i class="fa-thumbs-up fa-regular" style="color: #e8eddf;" id="thumbs-up-icon2"></i>
+                <span id="like-count2">257</span>명이 이 리뷰에 만족합니다.
+              </span>
           </div>
           <div class="review-txt">
               <span>
                 김 * 현(수강생)
                 <br>2023.09.27
                 <p><i class="fa-solid fa-star"></i> 5.0</p>
-                <a href="detail.html" class="review-class">
-                  <img src="images/dlclass-baking2.jpg" alt="">
+                <a href="sub.html" class="review-class">
+                  <img src="images/dlclass-baking2.jpg" alt="리뷰이미지">
                   <p>초보자도 누구나 집에서 쉽게 귀여운 머랭쿠키 만들기</p>
                 </a>
               </span>
               <h2 class="reviewtxt">집에서도 머랭쿠키를 만들 수 있어 좋았습니다.</h2>
               <p class="reviewtxt">최근에 베이킹에 푹 빠져서 베이킹 클래스를 들었는데 집에서도 이렇게 잘 만들게 될 지 몰랐습니다ㅎㅎ 강의를 그대로 따라했는데 머랭쿠키가 맛도 좋고 이쁘게 잘 나와서 다음 강의도 듣고 싶네요!</p>
-              <span><i class="fa-regular fa-thumbs-up"></i> 207명이 이 리뷰에 만족합니다.</span>
+              <span>
+                <i class="fa-thumbs-up fa-regular" style="color: #e8eddf;" id="thumbs-up-icon3"></i>
+                <span id="like-count3">207</span>명이 이 리뷰에 만족합니다.
+              </span>
           </div>
         </div>
           </div>
@@ -832,14 +831,11 @@
         <div class="inner">
           <div class="footer-left">
             <img src="images/Class&.png" alt="푸터로고" class="footer-logo">
-            <br>
             <span>당신의 가벼운 취미생활을 함께합니다 | 클래스엔 CLASS&</span>
-            <div class="footer-selector"> 
-              <select id="language-select" name="language">
-                <option value="kor">한국어</option>
-                <option value="eng">ENGLISH</option>
-                <option value="jap">日本語</option>
-              </select>
+            <div class="footer-inq"> 
+              <p>고객센터</p>
+              <span>오전 10시 ~ 오후 6시 (주말, 공휴일 제외)</span>
+              <button>문의하기</button>
             </div>
           </div>
           <div class="footer-center">
@@ -853,11 +849,11 @@
             </div>
             <div class="footer-copy">
               <p>
-              (주) Class&CEO: OOO주소: 서울시 강남구 테헤란로 OOO, 6층 7층 02-5x1-6xx2
+              (주)Class& | CEO : OOO | 주소 : 대구 중구 중앙대로 394 제일빌딩 5F | 0507-1414-1018
               <br>
-              이메일: ooo@class.co.kr개인정보책임관리자: OOO
+              이메일 : ooo@class&.co.kr | 개인정보책임관리자 : OOO
               <br>
-              사업자등록번호: 81x-8x-0x0xx8통신판매업 신고번호: 제 2xxx-서울xx-01xxx
+              사업자등록번호 : 012-34-56789 | 통신판매업 신고번호 : 제 2023-대구중구-1234호
               </p>
             </div>
           </div>
@@ -880,7 +876,7 @@
               <li><a href="group.html"><i class="fa-solid fa-people-group" style="color: #ffffff;"></i>공동구매</a></li>
               <li><a href="#"><i class="fa-solid fa-gift" style="color: #ffffff;"></i>중고거래</a></li>
               <li><a href="sub.html"><i class="fa-solid fa-graduation-cap" style="color: #ffffff;"></i>클래스</a></li>
-              <li><a href="group.html"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i>게시판</a></li>
+              <li><a href="group.html"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i>이벤트</a></li>
               <li><a href="login.html"><i class="fa-regular fa-address-card" style="color: #ffffff;"></i>
                 마이페이지</a></li>
             </ul>
