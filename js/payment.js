@@ -77,20 +77,4 @@ window.addEventListener("load", function () {
     window.location.href = "index.html";
   });
 
-// 작성자 닉네임 불러오기
-showInitialDashboard();
-
-// 대시보드 화면 표시
-function showInitialDashboard() {
-  // localStorage에서 사용자 이름 가져오기
-  var usernick = localStorage.getItem("usernick");
-
-  if (usernick) {
-    document.getElementById("boardWriter").textContent = `${usernick}`;
-  } else {
-    alert("로그인 후 작성 가능합니다.");
-    window.location.href = "login.html";
-  }
-}
-
 });

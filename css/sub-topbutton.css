@@ -9,10 +9,11 @@
   z-index: 9999;
   width: auto;
   transition: 0.3s ease;
+  margin-bottom: 60px;
 }
 .top-btn {
   display: block;
-  background-color: #e45e5e96;
+  background-color: #f5cc5c75;
   border-radius: 50%;
   width: 50px;
   line-height: 50px;
@@ -42,8 +43,8 @@
   background-color: red;
 }
 .top-chat-button:hover {
-  scale: 1.5;
-  transform: translate(-10px, -20px);
+  scale: 1.2;
+  transform: translate(-10px, -15px);
 }
 .top-chat-button:hover p {
   opacity: 1;
@@ -55,45 +56,89 @@
   transition: 0.3s;
   opacity: 0;
 }
+
+/* 반응형 */
 @media all and (max-width: 1024px) {
-  .top-button{
-    margin-bottom: 60px;
+  .top-button {
+    margin-bottom: 70px;
   }
-  .top-chat-button{
-    width: 50px;
-  }
-}
-@media all and (max-width: 768px) {
-  .top-btn{
-    width: 30px;
-    line-height: 30px;
-  }
-  .top-chat-button{
+  .top-btn {
     width: 40px;
+    line-height: 40px;
   }
-  .top-chat-button:hover{
-    scale: 1.2;
+  .top-chat-button {
+    width: 55px;
   }
 }
-@media all and (max-width: 480px) {
-  .top-button{
+
+
+@media all and (max-width: 768px) {
+  .top-button {
     right: 20px;
     bottom: 20px;
+    margin-bottom: 330px;
   }
-  .top-btn{
-    width: 30px;
-    line-height: 30px;
+  .top-btn {
+    width: 40px;
+    line-height: 40px;
   }
-  .top-chat-button{
-    width: 30px;
+  .top-chat-button {
+    width: 60px;
   }
-  .top-chat-button::after{
+  .top-chat-button::after {
+    top: 15px;
     width: 15px;
     height: 15px;
-    line-height: 15px;
     font-size: 10px;
+    line-height: 15px;
   }
-  .top-chat-button:hover{
-    scale: 1.2;
+  .top-chat-button:hover {
+    transform: translate(-7px, -10px);
+  }
+}
+
+@media all and (max-width: 480px){
+  .top-button {
+    right: 0;
+    bottom: 60px;
+    margin-bottom: -300px;
+  }
+  .top-btn{
+    position: relative;
+    border-radius: 10px 0 0 10px;
+    width: 25px;
+    height: 50px;
+  }
+  .top-btn::after{
+    content: "TOP";
+    writing-mode: vertical-lr;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  .top-btn img{
+    display: none;
+  }
+  .top-chat-button {
+    /* width: 80px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    position: relative; */
+    right: 8px;
+  }
+  .top-chat-button::after {
+    /* content: "5";
+    position: absolute;
+    right: -5px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: red; */
   }
 }
