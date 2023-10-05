@@ -1,38 +1,12 @@
 .banner{
     margin-bottom: 0;
     height: auto;
-    /* margin-top: 140px; */
     padding-top: 100px;
 }
 
-/*  */
-/* .banner-wrap {
-    width: 100%;
-    background-color: #252525;
-    border-radius: 30px;
-} */
-
-/* .banner .banner-wrap:hover{
-    opacity: 0.8;
-} */
-
-/* .banner .banner1 .banner-slide-img2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 400px;
-} */
-/*  */
-
-/* .banner .inner{
-    height: 200px;
-} */
-
 .banner .sw-banner {
     width: 100%;
-    /* height: 100%; */
     height: 500px;
-    /* border-radius: 30px; */
 }
 
 .banner .swiper-slide {
@@ -49,7 +23,6 @@
 
 .banner .banner1{
     display: flex;
-    /* position: relative; */
     align-items: center;
     justify-content: center;
 }
@@ -67,8 +40,7 @@
     position: absolute;
     left: 20px;
     bottom: 0;
-    /* width: 250px; */
-    width: 300px;
+    width: 500px;
 }
 
 .banner .banner1 img:last-child{
@@ -87,19 +59,12 @@
 }
 
 .banner .banner1 .banner-txt p{
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 30px;
 }
 
-.banner .banner-txt a{
-    padding: 5px 15px;
-    font-weight: 700;
-    background-color: rgb(194, 116, 0);
-    border-radius: 50px;
-}
-
 .banner .banner1 .banner-txt p span{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 900;
     color: #fff;
     position: relative;
@@ -134,28 +99,20 @@
 }
 
 .banner .banner2 .banner-txt p{
-    /* font-size: 20px; */
     font-size: 30px;
 }
 
 .banner .banner2 .banner-txt span{
-    /* font-size: 25px; */
     font-size: 35px;
     font-weight: 900;
     color: #fff;
 }
 
 .banner .banner2 .banner-txt span b{
-    /* font-size: 45px; */
     font-size: 55px;
     font-weight: 900;
     color: rgb(255, 60, 60);
 }
-
-/* .banner .banner2 .banner-txt a{
-    margin-left: 50px;
-    margin-top: 40px;
-} */
 
 .banner .banner2 img{
     width: 50%;
@@ -221,22 +178,15 @@
         margin-left: 7%;
     }
     .banner .banner2 .banner-txt p{
-        /* font-size: 18px; */
         font-size: 25px;
     }
     .banner .banner2 .banner-txt span{
-        /* font-size: 23px; */
         font-size: 30px;
         font-weight: 900;
     }
     .banner .banner2 .banner-txt span b{
-        /* font-size: 38px; */
         font-size: 50px;
     }
-    /* .banner .banner2 .banner-txt a{
-        margin-left: 30px;
-        margin-top: 40px;
-    } */
     
     /* banner3 */
     .banner .banner3{
@@ -252,25 +202,29 @@
     /* banner1 */
     .banner .banner1 img:first-child{
         bottom: 0;
-        /* width: 250px; */
+        width: 400px;
     }
     .banner .banner1 img:last-child{
         bottom: 0;
-        /* width: 250px; */
+        width: 200px;
+    }
+    .banner .banner1 .banner-txt{
+        width: 250px;
+        text-align: center;
+        margin-bottom: 70px;
     }
     .banner .banner1 .banner-txt p{
-        font-size: 18px;
+        font-size: 35px;
         margin-bottom: 30px;
     }
     .banner .banner1 .banner-txt p span{
-        font-size: 27px;
+        font-size: 25px;
     }
     
     /* banner2 */
     .banner .banner2 .inner {
         display: flex;
         flex-flow: row;
-        /* justify-content: space-between; */
     }
     .banner .banner-txt a{
         padding: 3px 10px;
@@ -282,23 +236,15 @@
         margin-left: 5%;
     }
     .banner .banner2 .banner-txt p{
-        /* font-size: 15px; */
         font-size: 18px;
     }
     .banner .banner2 .banner-txt span{
-        /* font-size: 20px; */
         font-size: 23px;
         font-weight: 900;
     }
     .banner .banner2 .banner-txt span b{
-        /* font-size: 33px; */
         font-size: 43px;
     }
-    /* .banner .banner2 .banner-txt a{
-        position: absolute;
-        left: 1%;
-        bottom: 30px;
-    } */
     
     /* banner3 */
     .banner .banner3{
@@ -326,13 +272,12 @@
     
     /* banner1 */
     .banner .banner1 img:first-child{
-        width: 200px;
+        width: 300px;
     }
     .banner .banner1 img:last-child{
-        width: 200px;
+        width: 150px;
     }
     .banner .banner1 .banner-txt{
-        width: 250px;
         text-align: center;
         margin-bottom: 70px;
     }
@@ -361,10 +306,8 @@
     }
     .banner .banner2 img{
         max-width: none;
-        /* width: 500px; */
         width: 120%;
         position: absolute;
-        /* top: -100px; */
         top: -15%;
         left: -10%;
         margin: 0;

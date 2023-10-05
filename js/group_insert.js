@@ -110,29 +110,14 @@ window.addEventListener("load", function () {
   });
 
   // ====================
-  // 최소값과 최대값 설정
-  var minValue = 5;
-  var maxValue = 10;
+  const appIcon = document.querySelector(".applicant i");
+  const appTextInfo = document.querySelector(".app-textInfo");
 
-  // boardNum 엘리먼트와 버튼 엘리먼트 가져오기
-  var boardNum = document.getElementById("boardNum");
-  var downBtn = document.querySelector(".boardNum-btn.down");
-  var upBtn = document.querySelector(".boardNum-btn.up");
-
-  // Down 버튼 클릭 시
-  downBtn.addEventListener("click", function () {
-    var currentValue = parseInt(boardNum.value);
-    if (currentValue > minValue) {
-      boardNum.value = currentValue - 1;
-    }
+  appIcon.addEventListener("mouseover", function () {
+    appTextInfo.style.display = "block";
   });
-
-  // Up 버튼 클릭 시
-  upBtn.addEventListener("click", function () {
-    var currentValue = parseInt(boardNum.value);
-    if (currentValue < maxValue) {
-      boardNum.value = currentValue + 1;
-    }
+  appIcon.addEventListener("mouseout", function () {
+    appTextInfo.style.display = "none";
   });
 
   // ====================
@@ -147,8 +132,12 @@ window.addEventListener("load", function () {
       // 그러므로 json 글자를 객체로 변환해서 활용한다.
       let obj = JSON.parse(str);
 
+      BEST_CLASS = obj.bestclass;
+      BEST2_CLASS = obj.bestclass2;
       AI_CLASS = obj.aiclass;
+      AI2_CLASS = obj.aiclass2;
       NEW_CLASS = obj.newclass;
+      NEW2_CLASS = obj.newclass2;
     }
   };
 
@@ -161,6 +150,7 @@ window.addEventListener("load", function () {
   document
     .getElementById("searchButton")
     .addEventListener("click", function () {
+      document.querySelector(".applicant").style.display = "none";
       // #searchClass 입력 필드의 값을 가져옴
       const searchKeyword = document.getElementById("searchClass").value.trim();
 
@@ -190,7 +180,13 @@ window.addEventListener("load", function () {
 
   // data.json에서 클래스 검색 함수
   function searchClasses(keyword) {
-    const allClasses = AI_CLASS.concat(NEW_CLASS); // AI 클래스와 신규 클래스를 합침
+    const allClasses = BEST_CLASS.concat(
+      BEST2_CLASS,
+      AI_CLASS,
+      AI2_CLASS,
+      NEW_CLASS,
+      NEW2_CLASS
+    ); // AI 클래스와 신규 클래스를 합침
     const results = [];
 
     // 모든 클래스를 순회하면서 키워드와 일치하는 것을 찾음
@@ -214,12 +210,35 @@ window.addEventListener("load", function () {
       // 검색 결과를 리스트로 출력
       for (const classObj of results) {
         const listItem = document.createElement("li");
-        listItem.textContent = classObj.name;
+
+        // 클래스 이미지를 표시
+        const image = document.createElement("img");
+        image.src = "images/" + classObj.pic; // classObj에서 이미지 URL을 가져와서 설정
+        image.alt = classObj.name; // 이미지의 대체 텍스트 설정
+        listItem.appendChild(image); // 이미지를 리스트 아이템에 추가
+
+        const text = document.createElement("p");
+        text.textContent = classObj.name;
+        listItem.appendChild(text);
+
         searchResultsElement.appendChild(listItem);
 
         listItem.addEventListener("click", function () {
           document.getElementById("searchClass").value = classObj.name;
           document.querySelector(".applicant").style.display = "flex";
+
+          const boardNumWrap = document.querySelector(".boardNum-wrap");
+          const numPeople = document.createElement("p");
+
+          for (const textNum of NEW_CLASS) {
+            if (classObj.name.includes(textNum.name.toLowerCase())) {
+              numPeople.textContent = "5명";
+              boardNumWrap.appendChild(numPeople);
+            } else {
+              numPeople.textContent = "10명";
+              boardNumWrap.appendChild(numPeople);
+            }
+          }
         });
       }
     }
