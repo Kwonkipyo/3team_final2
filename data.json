@@ -64,7 +64,7 @@
       {
         "name": "기초부터 배우는 무궁무진한 레터링 케이크의 비법",
         "price": 43000,
-        "tag": "공예",
+        "tag": "베이킹 · 디저트",
         "pic": "dlclass-cake.jpg",
         "id": "1",
         "class": "baking",
@@ -97,48 +97,48 @@
     ],
     "newclass": [
       {
-        "name": "고민으로 잠 못드는 당신을 위한 타로클래스",
+        "name": "언제 어디서나 힐링악기 칼림바와 함께 마음을 두드려요",
         "price": 20300,
-        "tag": "라이프스타일",
-        "pic": "newclass-tarot.jpg",
+        "tag": "음악",
+        "pic": "bestclass-calimba.jpg",
         "id": "0",
-        "class": "lifestyle",
+        "class": "music",
         "link": "sub.html",
         "date": "오늘",
-        "teacher": "타로마스터"
+        "teacher": "알찬"
       },
       {
-        "name": "전통의 현대적 재해석, 비밀장신구와 함께 엮는 전통 매듭 액세서리",
+        "name": "소망을 담아 그리는 길상의 그림, 나비와 새를 곁들인 민화 꽃그림 그리기",
         "price": 32000,
-        "tag": "공예",
-        "pic": "newclass-acc.jpg",
+        "tag": "드로잉",
+        "pic": "bestclass-drawing2.jpg",
         "id": "1",
+        "class": "drawing",
+        "link": "sub.html",
+        "date": "오늘",
+        "teacher": "면art"
+      },
+      {
+        "name": "해금, 특별하고 아름다운 나만의 반려악기",
+        "price": 37000,
+        "tag": "음악",
+        "pic": "bestclass-haegeum.jpg",
+        "id": "2",
+        "class": "music",
+        "link": "sub.html",
+        "date": "오늘",
+        "teacher": "쏜스카이"
+      },
+      {
+        "name": "귀여운 동물로 소품 완성! 멘티자수와 함께하는 프랑스자수",
+        "price": 37000,
+        "tag": "공예",
+        "pic": "bestclass-france.jpg",
+        "id": "2",
         "class": "craft",
         "link": "sub.html",
         "date": "오늘",
-        "teacher": "조선샵"
-      },
-      {
-        "name": "나의 리틀 포레스트, 가드너에게 배우는 셀프 홈가드닝",
-        "price": 37000,
-        "tag": "라이프스타일",
-        "pic": "newclass-plant.jpg",
-        "id": "2",
-        "class": "lifestyle",
-        "link": "sub.html",
-        "date": "오늘",
-        "teacher": "Garden Park"
-      },
-      {
-        "name": "나의 리틀 포레스트, 가드너에게 배우는 셀프 홈가드닝",
-        "price": 37000,
-        "tag": "라이프스타일",
-        "pic": "newclass-plant.jpg",
-        "id": "2",
-        "class": "lifestyle",
-        "link": "sub.html",
-        "date": "오늘",
-        "teacher": "Garden Park"
+        "teacher": "멘티자수"
       }
     ],
     "bestclass2": [
@@ -285,70 +285,70 @@
     ],
     "newclass2": [
       {
-        "name": "퇴근 후 만나는 나의 가죽 공방, 가죽공예 기초부터 완성까지",
+        "name": "소중한 나를 위해, 직접 만드는 특별한 천연 비누",
         "price": 39000,
         "tag": "공예",
-        "pic": "newclass-leather.jpg",
+        "pic": "bestclass-soaf.jpg",
         "id": "3",
         "class": "craft",
         "link": "sub.html",
         "date": "오늘",
-        "teacher": "Garden Park"
+        "teacher": "소프링"
       },
       {
-        "name": "비보이 & 비걸을 위한 브레이킹 입문 클래스",
+        "name": "하루 10분! 맛과 건강을 모두 챙긴 초간단 다이어트 요리",
         "price": 43000,
-        "tag": "운동",
-        "pic": "newclass-dance.jpg",
+        "tag": "요리 · 음료",
+        "pic": "bestclass-cook.jpg",
         "id": "4",
-        "class": "sport",
+        "class": "cook",
         "link": "sub.html",
         "date": "1일 전",
-        "teacher": "Garden Park"
+        "teacher": "쿠니쿠니"
       },
       {
-        "name": "누워만 있어도 피로가 풀리는 홈필라테스 배우기",
+        "name": "HIIT로 짧고 굵게! 고효율 운동루틴으로 만드는 비키니바디",
         "price": 23000,
         "tag": "운동",
-        "pic": "newclass-ex.jpg",
+        "pic": "bestclass-fit.jpg",
         "id": "6",
         "class": "sport",
         "link": "sub.html",
         "date": "1일 전",
-        "teacher": "Garden Park"
+        "teacher": "고민수 코치"
       },
       {
-        "name": "기초부터 응용까지, 취미는 기타",
+        "name": "'오늘의 그림'과 나만의 감성 네온사인 만들기",
         "price": 27000,
-        "tag": "음악",
-        "pic": "newclass-guitar.jpg",
+        "tag": "공예",
+        "pic": "bestclass-neon.jpg",
         "id": "7",
-        "class": "music",
+        "class": "craft",
         "link": "sub.html",
         "date": "1일 전",
-        "teacher": "Garden Park"
+        "teacher": "오늘의 그림"
       },
       {
-        "name": "아기자기한 캐릭터푸드 만들기",
+        "name": "나만의 공간에서, 나만의 레시피로 만드는 칵테일",
         "price": 35000,
         "tag": "요리 · 음료",
-        "pic": "newclass-cook.jpg",
+        "pic": "bestclass-drinking.jpg",
         "id": "8",
         "class": "cook",
         "link": "sub.html",
         "date": "3일 전",
-        "teacher": "Garden Park"
+        "teacher": "리니비니"
       },
       {
-        "name": "초보용 반주법과 기본 피아노 코드 배우기",
+        "name": "선과 여백의 작가 성립, 묵직한 질감과 선명한 색감의 오일파스텔",
         "price": 49900,
-        "tag": "음악",
-        "pic": "newclass-piano.jpg",
+        "tag": "드로잉",
+        "pic": "bestclass-drawing.jpg",
         "id": "9",
-        "class": "music",
+        "class": "drawing",
         "link": "sub.html",
         "date": "3일 전",
-        "teacher": "Garden Park"
+        "teacher": "성밀"
       }
     ],
     "search": [

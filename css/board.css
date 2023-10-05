@@ -50,9 +50,6 @@
   gap: 5%;
 }
 
-.main-board .best-search-wrap .search-item-box:last-child{
-}
-
 .main-board .best-search-wrap .search-item {
   background-color: #333533;
   display: flex;
@@ -83,6 +80,7 @@
 }
 .main-board .new-board .plus {
   padding-right: 10px;
+  cursor: pointer;
 }
 
 .main-board .new-board-wrap .new-board-item-box {
