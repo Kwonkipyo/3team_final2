@@ -1,13 +1,3 @@
-// ---------------------------------------------------
-
-function showAlert(event) {
-  alert("로그인 후 이용해주세요.");
-
-  event.preventDefault();
-
-  window.location.href = "login.html";
-}
-// ----------------------------------------------------
 window.addEventListener("load", function () {
   showInitialDashboard();
 
@@ -66,7 +56,6 @@ window.addEventListener("load", function () {
       document.getElementById("dashboard-section").style.display = "none";
     }
   }
-
   // top 버튼 스크롤 기능
   const topBtnBox = document.getElementById("top-button");
   const topBtn = document.getElementById("top-btn");
@@ -79,7 +68,7 @@ window.addEventListener("load", function () {
     event.preventDefault();
     if (window.scrollY === 0) {
       window.scrollTo({
-        top: bannerBoxTop - 100,
+        top: bannerBoxTop - 120,
         behavior: "smooth",
       });
     } else {
@@ -101,9 +90,16 @@ window.addEventListener("load", function () {
     let footerTop = footer.getBoundingClientRect().top;
 
     if (window.innerHeight >= footerTop) {
-      topBtnBox.style.bottom = "180px";
+      topBtnBox.style.bottom = "30px";
     } else {
       topBtnBox.style.bottom = "30px";
     }
   });
 });
+
+// -------------------------------------------
+function showAlert(event) {
+  alert("로그인 후 이용해주세요.");
+  event.preventDefault();
+  window.location.href = "login.html";
+}

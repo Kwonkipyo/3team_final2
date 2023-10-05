@@ -76,4 +76,5 @@ window.addEventListener("load", function () {
     alert("결제가 완료되었습니다. 당신의 취미 생활을 응원합니다.");
     window.location.href = "index.html";
   });
+
 });

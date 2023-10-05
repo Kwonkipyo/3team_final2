@@ -73,25 +73,63 @@ window.addEventListener("load", function () {
     window.location.href = "payment.html";
   });
 
-  const fixMenu = document.querySelector('.fix-menu');
-  let isHidden = false; 
-  let lastScrollY = 0; 
-  
-  window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-      if (scrollY > lastScrollY) {
-          if (!isHidden) {
-              fixMenu.style.display = 'none'; 
-              isHidden = true;
-          }
+  const fixMenu = document.querySelector(".fix-menu");
+  let lastScrollY = 0;
+
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+    if (scrollY > lastScrollY) {
+      // 스크롤 다운 중일 때는 항상 숨김
+      fixMenu.style.display = "none";
+    } else {
+      // 스크롤 업 중일 때는 브라우저 창 크기에 따라 결정
+      if (window.innerWidth <= 1024) {
+        fixMenu.style.display = "none";
       } else {
-          if (isHidden) {
-              fixMenu.style.display = 'block'; 
-              isHidden = false;
-          }
+        fixMenu.style.display = "block";
       }
-      lastScrollY = scrollY;
+    }
+    lastScrollY = scrollY;
   });
+
+  // 창 크기 변경 이벤트를 처리하여 창 크기에 따라 초기 설정을 변경합니다.
+  window.addEventListener("resize", () => {
+    if (window.innerWidth <= 1024) {
+      fixMenu.style.display = "none";
+    } else {
+      fixMenu.style.display = "block";
+    }
+  });
+
+  // 페이지 로드 시 초기 설정
+  window.addEventListener("load", () => {
+    if (window.innerWidth <= 1024) {
+      fixMenu.style.display = "none";
+    }
+  });
+
+  // ------------클래스 신청하기 버튼 클릭 시 효과--------------------
+
+  // 대시보드 버튼 엘리먼트 가져오기
+  var dashboardButton = document.getElementById("applyButton");
+
+  // 버튼 클릭 이벤트 리스너 추가
+  dashboardButton.addEventListener("click", function () {
+    showInitialDashboard();
+  });
+
+  // 대시보드 화면 표시
+  function showInitialDashboard() {
+    // localStorage에서 사용자 이름 가져오기
+    var usernick = localStorage.getItem("usernick");
+
+    if (usernick) {
+      document.getElementById("boardWriter").textContent = `${usernick}`;
+    } else {
+      alert("로그인 후 이용해주세요.");
+      window.location.href = "login.html";
+    }
+  }
 });
 
 // -------------------------제이쿼리-----------------------------

@@ -12,7 +12,7 @@
 }
 .top-btn {
   display: block;
-  background-color: #e45e5e96;
+  background-color: #f5cc5c75;
   border-radius: 50%;
   width: 50px;
   line-height: 50px;
@@ -42,8 +42,8 @@
   background-color: red;
 }
 .top-chat-button:hover {
-  scale: 1.5;
-  transform: translate(-10px, -20px);
+  scale: 1.2;
+  transform: translate(-10px, -15px);
 }
 .top-chat-button:hover p {
   opacity: 1;
@@ -55,45 +55,23 @@
   transition: 0.3s;
   opacity: 0;
 }
+
+/* 반응형 */
 @media all and (max-width: 1024px) {
-  .top-button{
-    margin-bottom: 60px;
+  .top-button {
+    margin-bottom: 50px;
   }
-  .top-chat-button{
-    width: 50px;
-  }
-}
-@media all and (max-width: 768px) {
-  .top-btn{
-    width: 30px;
-    line-height: 30px;
-  }
-  .top-chat-button{
+  .top-btn {
     width: 40px;
+    line-height: 40px;
   }
-  .top-chat-button:hover{
-    scale: 1.2;
+  .top-chat-button {
+    width: 60px;
   }
 }
-@media all and (max-width: 480px) {
+/* mobile */
+@media all and (max-width: 768px) {
   .top-button{
-    right: 20px;
-    bottom: 20px;
-  }
-  .top-btn{
-    width: 30px;
-    line-height: 30px;
-  }
-  .top-chat-button{
-    width: 30px;
-  }
-  .top-chat-button::after{
-    width: 15px;
-    height: 15px;
-    line-height: 15px;
-    font-size: 10px;
-  }
-  .top-chat-button:hover{
-    scale: 1.2;
+    display: none;
   }
 }

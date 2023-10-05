@@ -4,14 +4,14 @@ let scrollStarted = false;
 document.addEventListener('DOMContentLoaded', () => {
   // Set your target counts and increment values here
   const targetUserCount = 124873;
-  const targetTeacherCount = 243;
-  const targetClassCount = 386;
-  const targetLectureCount = 34816;
+  const targetTeacherCount = 182434;
+  const targetClassCount = 2486;
+  const targetLectureCount = 234816;
 
-  const userIncrement = 413;  // Increment for user count
-  const teacherIncrement = 1;  // Increment for teacher count
-  const classIncrement = 1;  // Increment for class count
-  const lectureIncrement = 134;  // Increment for lecture count
+  const userIncrement = 349;  // Increment for user count
+  const teacherIncrement = 489;  // Increment for teacher count
+  const classIncrement = 7;  // Increment for class count
+  const lectureIncrement = 653;  // Increment for lecture count
 
   // Call the function to start counting
   startCounting(

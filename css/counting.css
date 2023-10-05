@@ -4,8 +4,7 @@
     background-color: #f5cb5c;
     color: #242423;
     margin-top: 0;
-    margin-bottom: 150px;
-    /* margin-top: 30px; */
+    margin-bottom: 120px;
 }
 .counting-container{
     width: 100%;
@@ -30,10 +29,18 @@
     margin-bottom: 5px;
     color: #242423;
 }
-.counting-info span:last-child{
-    font-size: 24px;
+.counting-info span:first-child{
+    font-size: 40px;
     font-weight: 900;
-    color: #111;
+    margin-bottom: 5px;
+}
+.counting-info span:last-child{
+    font-size: 16px;
+    font-weight: 900;
+    opacity: 0.7;
+}
+.counting-info span:last-child i{
+    margin-left: 5px;
 }
 @media all and (max-width:1024px){
     .counting{
@@ -45,19 +52,19 @@
     }
 }
 @media all and (max-width:768px){
-    .counting-info span:last-child{
-        font-size: 23px;
+    .counting-info span:first-child{
+        font-size: 27px;
     }
 }
 @media all and (max-width:480px){
     .counting{
-        height: 250px;
+        height: 242px;
     }
     .counting .inner{
         padding: 0;
     }
     .counting-container{
-        height: 250px;
+        /* height: 250px; */
         display: flex;
         flex-wrap: wrap;
     }
@@ -68,13 +75,10 @@
         padding: 28px;
     }
     .counting-info:nth-child(2),.counting-info:nth-child(3){
-        background-color: #ffc524;
+        background-color: #dce777;
     }
     .counting-info span{
         font-size: 14px;
-    }
-    .counting-info span:last-child{
-        font-size: 20px;
     }
 }
 @media all and (max-width:320px){

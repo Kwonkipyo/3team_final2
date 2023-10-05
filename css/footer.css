@@ -25,7 +25,6 @@
 .footer-inq p{
     font-weight: 900;
     font-size: 14px;
-    color: #fff;
 }
 .footer-inq button{
     width: 80%;
@@ -93,8 +92,7 @@
 .footer-sns h1{
     font-size: 13px;
     font-weight: 900;
-    margin-bottom: 5px;
-    color: #fff;
+    margin-bottom: 10px;
 }
 .footer-sns i{
     font-size: 25px;
