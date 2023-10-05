@@ -77,6 +77,7 @@
 /* 신규 게시글 */
 .main-board .new-board{
   margin-top: 70px;
+  height: 400px;
 }
 .main-board .new-board .plus {
   padding-right: 10px;

@@ -1,13 +1,3 @@
-// ---------------------------------------------------
-
-function showAlert(event) {
-  alert("로그인 후 이용해주세요.");
-
-  event.preventDefault();
-
-  window.location.href = "login.html";
-}
-// ----------------------------------------------------
 window.addEventListener("load", function () {
   showInitialDashboard();
 
@@ -66,7 +56,6 @@ window.addEventListener("load", function () {
       document.getElementById("dashboard-section").style.display = "none";
     }
   }
-
   // top 버튼 스크롤 기능
   const topBtnBox = document.getElementById("top-button");
   const topBtn = document.getElementById("top-btn");
@@ -107,3 +96,10 @@ window.addEventListener("load", function () {
     }
   });
 });
+
+// -------------------------------------------
+function showAlert(event) {
+  alert("로그인 후 이용해주세요.");
+  event.preventDefault();
+  window.location.href = "login.html";
+}
