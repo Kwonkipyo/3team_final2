@@ -35,9 +35,6 @@ body{
     user-select:none;
     /* overflow-x: hidden; */
 }
-body.menu-open {
-    overflow: hidden;
-}
 body.sticky-header {
     padding-top: 110px;
   }
