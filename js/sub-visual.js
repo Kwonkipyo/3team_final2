@@ -21,7 +21,7 @@ window.addEventListener("load", function () {
     $({ count: currentCount }).animate(
       { count: currentCount },
       {
-        duration: 500,
+        duration: 100,
         step: function () {
           $(".heart-count").text(Math.ceil(this.count));
         },

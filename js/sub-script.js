@@ -68,7 +68,7 @@ window.addEventListener("load", function () {
     event.preventDefault();
     if (window.scrollY === 0) {
       window.scrollTo({
-        top: bannerBoxTop - 100,
+        top: bannerBoxTop - 120,
         behavior: "smooth",
       });
     } else {
@@ -90,7 +90,7 @@ window.addEventListener("load", function () {
     let footerTop = footer.getBoundingClientRect().top;
 
     if (window.innerHeight >= footerTop) {
-      topBtnBox.style.bottom = "180px";
+      topBtnBox.style.bottom = "320px";
     } else {
       topBtnBox.style.bottom = "30px";
     }
