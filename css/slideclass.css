@@ -248,7 +248,7 @@
     }
     .bestclass-title span,
     .goodclass-title span,
-    .aiclass-title > span,
+    .aiclass-title span,
     .newclass-title span{
         font-size: 17px;
         margin-right: 5px;

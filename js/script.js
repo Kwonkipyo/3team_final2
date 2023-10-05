@@ -116,20 +116,11 @@ window.addEventListener("load", function () {
     let footerTop = footer.getBoundingClientRect().top;
     
     if (window.innerHeight >= footerTop) {
-      topBtnBox.style.bottom = "392px";
-      if (window.innerWidth <= 768) {
-        topBtnBox.style.bottom = "30px"; 
-      }
-      if (window.innerWidth <= 480) {
-        topBtnBox.style.bottom = "80px"; // 480px 미만에서는 80px로 설정
-      }
+      topBtnBox.style.bottom = "180px";
     } else {
       topBtnBox.style.bottom = "30px";
-      if (window.innerWidth <= 768) {
-        topBtnBox.style.bottom = "30px"; 
-      }
       if (window.innerWidth <= 480) {
-        topBtnBox.style.bottom = "80px"; // 480px 미만에서는 80px로 설정
+        topBtnBox.style.bottom = "80px"; // 480px 미만에서는 60px로 설정
       }
     }
   });
