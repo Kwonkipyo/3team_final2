@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const targetClassCount = 386;
   const targetLectureCount = 34816;
 
-  const userIncrement = 413;  // Increment for user count
+  const userIncrement = 409;  // Increment for user count
   const teacherIncrement = 1;  // Increment for teacher count
-  const classIncrement = 1;  // Increment for class count
-  const lectureIncrement = 134;  // Increment for lecture count
+  const classIncrement = 2;  // Increment for class count
+  const lectureIncrement = 132;  // Increment for lecture count
 
   // Call the function to start counting
   startCounting(

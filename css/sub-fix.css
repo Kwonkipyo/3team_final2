@@ -1,14 +1,13 @@
 /*---------- fix-menu -----------*/
 .fix-menu {
   position: sticky;
-  top: 14%;
+  top: 13.5%;
   right: 0;
   width: 100%;
   height: auto;
-  max-height: 750px;
+  max-height: 808px;
   max-width: 340px;
   display: block;
-  transition: display 0.8s ease;
 }
 .fix-menu-box {
   width: 100%;
