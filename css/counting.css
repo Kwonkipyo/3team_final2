@@ -35,13 +35,6 @@
     font-weight: 900;
     color: #111;
 }
-
-@media all and (max-width:1919px){
-    .counting{
-        position: relative;
-        top:-6.93px;
-    }
-}
 @media all and (max-width:1024px){
     .counting{
         height: 150px;

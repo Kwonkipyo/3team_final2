@@ -23,7 +23,6 @@
   justify-content: space-between;
   align-items: center;
   transition: height 0.3s ease;
-  /* padding: 11px 0px; */
 }
 .header .logo {
   width: 120px;
@@ -34,9 +33,9 @@
   align-items: center;
   justify-content: space-between;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 800;
   flex-wrap: wrap;
-  gap: 0 10px;
+  gap: 0 20px;
 }
 .mb-menu{
   display: flex;
@@ -49,7 +48,7 @@
 .sign-menu .fa-magnifying-glass{
   position: relative;
   top: 2px;
-  font-size: 20px;
+  font-size: 17px;
 }
 .header-top .fa-bars{
   display: none;
@@ -235,7 +234,7 @@
 }
 #username-display {
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 800;
 }
 #dashboard-section i {
   transition: all ease-in 0.15s;
@@ -311,10 +310,11 @@
   .header{
     background-color: #111;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    height: 70px;
+    height: auto;
   }
   .header-top{
     display: block;
+    height: auto;
     width: 100%;
     padding: 0px;
   }
@@ -322,11 +322,11 @@
     width: 30%;
     display: block;
     margin: 0 auto;
-    text-align: center;
   }
   .logo img{
     width: 100%;
-    margin:20px 0;
+    height: 30%;
+    margin: 20px 0;
   }
   .header-mb-cate{
     display: block;
@@ -367,12 +367,15 @@
   }
   .sign-menu .fa-magnifying-glass{
     display: block;
+    position: absolute;
+    right: 20px;
+    top: 24px;
   }
   .sign-menu .fa-bars{
     display: inline;
-    font-size: 27px;
+    font-size: 22px;
     position: absolute;
-    top: 20px;
+    top: 24px;
   }
   .mobile-searchbox{
     height: 70px;
@@ -389,7 +392,7 @@
   #signup-section a{
     display: none;
   }
-  #dashboard-section a{
+  #dashboard-section #username-display,.fa-angle-down{
     display: none;
   }
   .header-bottom{
@@ -424,7 +427,10 @@
     gap: 0 10px;
   }
   .sign-menu .fa-magnifying-glass{
-    display: none;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 24px;
   }
   .sign-menu .fa-bars{
     display: block;
