@@ -61,30 +61,45 @@ $(document).ready(function () {
   // 모바일 메뉴 닫기
   $('#close-menu').click(function() {
     $('#mobile-menu').slideUp();
-    $('body').removeClass('menu-open');  // Remove the class
+    $('body').removeClass('menu-open');
   });
-
-  $(".mb-cate-depth").slideUp(); // 처음에 숨겨두기
+  
+  $(".mb-cate-depth").slideUp(); // Initially hide
   
   $(".mb-cate-click").click(function(){
     $(".mb-cate-depth").slideToggle();
-    isOpen = !isOpen;  // Toggle the state
+    isOpen = !isOpen;
   });
   
-  // 모바일 검색창
   let isMobileSearchboxVisible = false;
-
+  
   $('.fa-magnifying-glass').click(function () {
     $('.mobile-searchbox').show();
     isMobileSearchboxVisible = true;
-    $('body').css('overflow', 'hidden'); // 페이지 스크롤 숨기기
+    // $('body').css('overflow', 'hidden');
   });
   
   $('.mb-searchbox-close, .search-box-back').click(function () {
+    closeSearchbox();
+  });
+  
+  // Event listener for Enter key
+  $(document).on('keypress', function (e) {
+    if (e.which === 13) { // Enter key is pressed
+      if (isMobileSearchboxVisible) {
+        // Navigate to sub.html when Enter is pressed
+        window.location.href = 'sub.html';
+        closeSearchbox();
+      }
+    }
+  });
+  
+  function closeSearchbox() {
+    $('.mobile-searchbox input[type="text"]').val('');
     $('.mobile-searchbox').hide();
     isMobileSearchboxVisible = false;
-    $('body').css('overflow', 'auto'); // 페이지 스크롤 표시
-  });
+    $('body').css('overflow', 'auto');
+  }
   
   if (!isMobileSearchboxVisible) {
     $('.mobile-searchbox').hide();
