@@ -9,7 +9,6 @@
   z-index: 9999;
   width: auto;
   transition: 0.3s ease;
-  margin-bottom: 60px;
 }
 .top-btn {
   display: block;
@@ -60,23 +59,7 @@
 /* 반응형 */
 @media all and (max-width: 1024px) {
   .top-button {
-    margin-bottom: 70px;
-  }
-  .top-btn {
-    width: 40px;
-    line-height: 40px;
-  }
-  .top-chat-button {
-    width: 55px;
-  }
-}
-
-
-@media all and (max-width: 768px) {
-  .top-button {
-    right: 20px;
-    bottom: 20px;
-    margin-bottom: 330px;
+    margin-bottom: 50px;
   }
   .top-btn {
     width: 40px;
@@ -85,60 +68,10 @@
   .top-chat-button {
     width: 60px;
   }
-  .top-chat-button::after {
-    top: 15px;
-    width: 15px;
-    height: 15px;
-    font-size: 10px;
-    line-height: 15px;
-  }
-  .top-chat-button:hover {
-    transform: translate(-7px, -10px);
-  }
 }
-
-@media all and (max-width: 480px){
-  .top-button {
-    right: 0;
-    bottom: 60px;
-    margin-bottom: -300px;
-  }
-  .top-btn{
-    position: relative;
-    border-radius: 10px 0 0 10px;
-    width: 25px;
-    height: 50px;
-  }
-  .top-btn::after{
-    content: "TOP";
-    writing-mode: vertical-lr;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-  }
-  .top-btn img{
+/* mobile */
+@media all and (max-width: 768px) {
+  .top-button{
     display: none;
-  }
-  .top-chat-button {
-    /* width: 80px;
-    margin-bottom: 10px;
-    transition: 0.3s;
-    position: relative; */
-    right: 8px;
-  }
-  .top-chat-button::after {
-    /* content: "5";
-    position: absolute;
-    right: -5px;
-    top: 15px;
-    width: 20px;
-    height: 20px;
-    font-size: 12px;
-    font-weight: 900;
-    line-height: 20px;
-    text-align: center;
-    border-radius: 10px;
-    background-color: red; */
   }
 }
