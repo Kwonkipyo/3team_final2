@@ -73,7 +73,7 @@ window.addEventListener("load", function () {
       return;
     }
 
-    alert("결제가 완료되었습니다. 당신의 취미 생활을 응원합니다.");
+    alert("결제가 완료되었습니다. 즐거운 취미 생활 되세요!");
     window.location.href = "index.html";
   });
 

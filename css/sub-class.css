@@ -1,7 +1,7 @@
 /* 메인 내용 */
 .main-content {
   display: inline-block;
-  margin-top: 150px;
+  margin-top: 67px;
   width: 800px;
 }
 
@@ -76,6 +76,7 @@
   padding: 10px 20px;
   cursor: pointer;
   border: solid 1px #eee;
+  transition: 0.2s;
 }
 .class-info-banner-bt p{
   color: #111;
