@@ -16,111 +16,6 @@ window.addEventListener("load", function () {
   }
 
   // ====================
-  const postTitleInput = document.getElementById("boardTitle"); // 제목
-  const postWriterInput = document.getElementById("boardWriter"); // 작성자
-  const postClassInput = document.getElementById("searchClass"); // 클래스
-  const postNumInput = document.getElementById("boardNum"); // 신청자수
-  const postContentInput = document.getElementById("boardContent"); // 내용
-  const postImageInput = document.getElementById("boardImage"); // 이미지
-
-  var tDate = new Date();
-  var today =
-    tDate.getFullYear() + "." + (tDate.getMonth() + 1) + "." + tDate.getDate();
-
-  const boardForm = document.getElementById("board_form");
-
-  // 저장된 게시글 배열
-  let posts = [];
-
-  // 로컬 스토리지에 저장된 게시글 불러오기
-  if (localStorage.getItem("posts")) {
-    posts = JSON.parse(localStorage.getItem("posts"));
-    // posts 배열의 각 요소를 순환하면서 반복문 내부에서 post 변수를 통해 현재 요소에
-    // 접근할 수 있게 함. 반복문을 사용하면 posts 배열의 모든 요소를 차례대로 처리 가능
-  }
-
-  // 게시글 작성 버튼 클릭 이벤트 처리
-  boardForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const title = postTitleInput.value;
-    const writer = postWriterInput.innerText;
-    const hobbyClass = postClassInput.value;
-    const userNum = postNumInput.value;
-    const content = postContentInput.value;
-    const imageFile = postImageInput.files[0];
-    const date = today;
-
-    var count = posts.length + 12632;
-
-    if (title && hobbyClass && userNum && content) {
-      const reader = new FileReader();
-      reader.onload = function () {
-        // 새 게시글 객체 생성
-        const newPost = {
-          count,
-          title,
-          writer,
-          hobbyClass,
-          userNum,
-          content,
-          image: reader.result,
-          date,
-        };
-
-        // 배열에 게시글 추가
-        posts.push(newPost);
-        // 로컬 스토리지에 게시글 저장
-        localStorage.setItem("posts", JSON.stringify(posts));
-        localStorage.setItem("count", count);
-        localStorage.setItem("title", title);
-        localStorage.setItem("writer", writer);
-        localStorage.setItem("date", date);
-        localStorage.setItem("userNum", userNum);
-
-        // 입력 필드 초기화
-        postTitleInput.value = "";
-        postWriterInput.value = "";
-        postClassInput.value = "";
-        postNumInput.value = "";
-        postContentInput.value = "";
-        postImageInput.value = "";
-
-        alert("신청이 완료 되었습니다. 게시판 페이지로 이동합니다.");
-        window.location.href =
-          "group.html?count=" +
-          encodeURIComponent(count) +
-          "?title=" +
-          encodeURIComponent(title) +
-          "?writer=" +
-          encodeURIComponent(writer) +
-          "?date=" +
-          encodeURIComponent(date) +
-          "?userNum=" +
-          encodeURIComponent(userNum);
-      };
-
-      if (imageFile) {
-        reader.readAsDataURL(imageFile); // 이미지 파일을 base64로 읽기
-      } else {
-        // 이미지가 없을 경우도 처리
-        reader.onload();
-      }
-    }
-  });
-
-  // ====================
-  const appIcon = document.querySelector(".applicant i");
-  const appTextInfo = document.querySelector(".app-textInfo");
-
-  appIcon.addEventListener("mouseover", function () {
-    appTextInfo.style.display = "block";
-  });
-  appIcon.addEventListener("mouseout", function () {
-    appTextInfo.style.display = "none";
-  });
-
-  // ====================
   // data.json을 로딩. 연결시켜준다.
   const xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function (event) {
@@ -243,8 +138,116 @@ window.addEventListener("load", function () {
           // 이전에 존재하는 내용을 초기화하고 새로운 내용을 추가합니다.
           boardNumWrap.innerHTML = "";
           boardNumWrap.appendChild(numPeople);
+
+          console.log(numPeople.textContent);
         });
       }
     }
   }
+
+  // ====================
+  const postTitleInput = document.getElementById("boardTitle"); // 제목
+  const postWriterInput = document.getElementById("boardWriter"); // 작성자
+  const postClassInput = document.getElementById("searchClass"); // 클래스
+  // const postNumInput = document.getElementById("boardNum"); // 신청자수
+  const postContentInput = document.getElementById("boardContent"); // 내용
+  const postImageInput = document.getElementById("boardImage"); // 이미지
+
+  var tDate = new Date();
+  var today =
+    tDate.getFullYear() + "." + (tDate.getMonth() + 1) + "." + tDate.getDate();
+
+  const boardForm = document.getElementById("board_form");
+
+  // 저장된 게시글 배열
+  let posts = [];
+
+  // 로컬 스토리지에 저장된 게시글 불러오기
+  if (localStorage.getItem("posts")) {
+    posts = JSON.parse(localStorage.getItem("posts"));
+    // posts 배열의 각 요소를 순환하면서 반복문 내부에서 post 변수를 통해 현재 요소에
+    // 접근할 수 있게 함. 반복문을 사용하면 posts 배열의 모든 요소를 차례대로 처리 가능
+  }
+
+  // 게시글 작성 버튼 클릭 이벤트 처리
+  boardForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const title = postTitleInput.value;
+    const writer = postWriterInput.innerText;
+    const hobbyClass = postClassInput.value;
+    // const userNum = postNumInput.value;
+    const userNum = postNumPeople.innerText;
+    const content = postContentInput.value;
+    const imageFile = postImageInput.files[0];
+    const date = today;
+
+    var count = posts.length + 12632;
+
+    if (title && hobbyClass && userNum && content) {
+      const reader = new FileReader();
+      reader.onload = function () {
+        // 새 게시글 객체 생성
+        const newPost = {
+          count,
+          title,
+          writer,
+          hobbyClass,
+          userNum,
+          content,
+          image: reader.result,
+          date,
+        };
+
+        // 배열에 게시글 추가
+        posts.push(newPost);
+        // 로컬 스토리지에 게시글 저장
+        localStorage.setItem("posts", JSON.stringify(posts));
+        localStorage.setItem("count", count);
+        localStorage.setItem("title", title);
+        localStorage.setItem("writer", writer);
+        localStorage.setItem("date", date);
+        localStorage.setItem("userNum", userNum);
+
+        // 입력 필드 초기화
+        postTitleInput.value = "";
+        postWriterInput.value = "";
+        postClassInput.value = "";
+        postNumInput.value = "";
+        postContentInput.value = "";
+        postImageInput.value = "";
+
+        alert("신청이 완료 되었습니다. 게시판 페이지로 이동합니다.");
+        window.location.href =
+          "group.html?count=" +
+          encodeURIComponent(count) +
+          "?title=" +
+          encodeURIComponent(title) +
+          "?writer=" +
+          encodeURIComponent(writer) +
+          "?date=" +
+          encodeURIComponent(date) +
+          "?userNum=" +
+          encodeURIComponent(userNum);
+      };
+
+      if (imageFile) {
+        reader.readAsDataURL(imageFile); // 이미지 파일을 base64로 읽기
+      } else {
+        // 이미지가 없을 경우도 처리
+        reader.onload();
+      }
+    }
+  });
+
+  // ====================
+  const appIcon = document.querySelector(".applicant i");
+  const appTextInfo = document.querySelector(".app-textInfo");
+
+  appIcon.addEventListener("mouseover", function () {
+    appTextInfo.style.display = "block";
+  });
+  appIcon.addEventListener("mouseout", function () {
+    appTextInfo.style.display = "none";
+  });
 });
