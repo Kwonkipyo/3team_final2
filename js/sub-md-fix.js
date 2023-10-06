@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
   const unitPrice = 25500;
 
   quantityElement.textContent = quantity;
-  priceElement.textContent = formatPrice(quantity * unitPrice); 
+  priceElement.textContent = formatPrice(quantity * unitPrice);
 
   increaseButton.addEventListener("click", function () {
     quantity++;
@@ -74,19 +74,37 @@ window.addEventListener("load", function () {
     }
   });
 
-  // ------------클래스 신청하기 버튼 클릭 시 효과--------------------
+  // -----------------------------------------------------------
 
-  // 대시보드 버튼 엘리먼트 가져오기
-  var dashboardButton = document.getElementById("md-applyButton");
+  function setFocusOnClick() {
+    var div1 = document.getElementById("md-weClass");
+    var div2 = document.getElementById("md-meClass");
 
-  // 버튼 클릭 이벤트 리스너 추가
-  dashboardButton.addEventListener("click", function () {
-    showInitialDashboard();
-  });
+    div1.addEventListener("click", function () {
+      div1.focus();
+      div1.classList.add("focused");
+      div2.classList.remove("focused");
+    });
 
-  // 대시보드 화면 표시
+    div2.addEventListener("click", function () {
+      div2.focus();
+      div2.classList.add("focused");
+      div1.classList.remove("focused");
+    });
+  }
+
+  function navigateToPaymentPage() {
+    if (
+      document.getElementById("md-weClass").classList.contains("focused") ||
+      document.getElementById("md-meClass").classList.contains("focused")
+    ) {
+      window.location.href = "payment.html";
+    } else {
+      alert("수강권과 준비물을 선택 주세요.");
+    }
+  }
+
   function showInitialDashboard() {
-    // localStorage에서 사용자 이름 가져오기
     var usernick = localStorage.getItem("usernick");
 
     if (usernick) {
@@ -97,6 +115,14 @@ window.addEventListener("load", function () {
     }
   }
 
+  setFocusOnClick();
+
+  // "클래스 신청하기" 버튼 클릭 시 효과 및 대시보드 표시 이벤트 리스너 추가
+  var applyButton = document.getElementById("md-applyButton");
+  applyButton.addEventListener("click", function () {
+    navigateToPaymentPage();
+    showInitialDashboard();
+  });
 });
 
 // -----------------------제이쿼리-------------------------
@@ -106,7 +132,7 @@ function showPreparationAnother() {
   const customDiv = document.getElementById("md-customDiv");
 
   if (preparationSelect.value === "md-option") {
-    customDiv.style.display = "none"; 
+    customDiv.style.display = "none";
   } else {
     customDiv.style.display = "block";
   }
@@ -114,10 +140,10 @@ function showPreparationAnother() {
 
 function hidePreparationAnother() {
   const customDiv = document.getElementById("md-customDiv");
-  customDiv.style.display = "none"; 
+  customDiv.style.display = "none";
 
   const preparationSelect = document.getElementById("md-preparation");
-  preparationSelect.selectedIndex = 0; 
+  preparationSelect.selectedIndex = 0;
 }
 
 function openImageModal(clickedImg) {
@@ -125,12 +151,12 @@ function openImageModal(clickedImg) {
   const imageModal = document.getElementById("image-modal");
 
   enlargedImage.src = clickedImg.getAttribute("data-src");
-  imageModal.style.display = "block"; 
+  imageModal.style.display = "block";
 }
 
 function closeImageModal() {
   const imageModal = document.getElementById("image-modal");
-  imageModal.style.display = "none"; 
+  imageModal.style.display = "none";
 }
 
 // -----------------------------------------------
