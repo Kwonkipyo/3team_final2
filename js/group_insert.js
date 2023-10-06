@@ -231,14 +231,18 @@ window.addEventListener("load", function () {
           const numPeople = document.createElement("p");
 
           for (const textNum of NEW_CLASS) {
-            if (classObj.name.includes(textNum.name.toLowerCase())) {
+            if (textNum.name.includes(classObj.name)) {
               numPeople.textContent = "5명";
-              boardNumWrap.appendChild(numPeople);
+              break;
             } else {
               numPeople.textContent = "10명";
-              boardNumWrap.appendChild(numPeople);
+              break;
             }
           }
+
+          // 이전에 존재하는 내용을 초기화하고 새로운 내용을 추가합니다.
+          boardNumWrap.innerHTML = "";
+          boardNumWrap.appendChild(numPeople);
         });
       }
     }
