@@ -90,7 +90,7 @@ window.addEventListener("load", function () {
     let footerTop = footer.getBoundingClientRect().top;
 
     if (window.innerHeight >= footerTop) {
-      topBtnBox.style.bottom = "320px";
+      topBtnBox.style.bottom = "30px";
     } else {
       topBtnBox.style.bottom = "30px";
     }

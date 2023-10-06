@@ -73,7 +73,7 @@ $(document).ready(function () {
   
   let isMobileSearchboxVisible = false;
   
-  $('.fa-magnifying-glass').click(function () {
+  $('.sign-menu .fa-magnifying-glass').click(function () {
     $('.mobile-searchbox').show();
     isMobileSearchboxVisible = true;
     // $('body').css('overflow', 'hidden');
