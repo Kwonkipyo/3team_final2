@@ -22,7 +22,7 @@ section {
   font-weight: bold;
   color: #e8eddf;
 }
-.group-header .sub-inner{
+.group-header .sub-inner {
   margin-top: 50px;
 }
 .group-banner {
@@ -52,7 +52,7 @@ section {
 .group-banner-right button {
   background-color: transparent;
   border: none;
-  font-family: 'NanumSquare';
+  font-family: "NanumSquare";
 }
 .group-banner-right button a:hover {
   background-color: #c29b31;
@@ -91,7 +91,7 @@ section {
   font-weight: bold;
   color: #f5cb5c;
 }
-.board-tap .taps a:hover{
+.board-tap .taps a:hover {
   color: #f7db8f;
 }
 .searchbox {
@@ -102,6 +102,7 @@ section {
   white-space: nowrap;
   display: flex;
   align-items: center;
+  height: 40px;
 }
 .searchbox input {
   font-size: 15px;
@@ -189,6 +190,10 @@ section {
 .board-list-title tbody tr td:last-child {
   color: blue;
 }
+.board-list-title tbody tr td img {
+  width: 15%;
+  margin-left: 5px;
+}
 .board-list-title .group-tag {
   display: inline-block;
   border-radius: 50px;
@@ -198,10 +203,10 @@ section {
   background-color: royalblue;
   color: #e8eddf;
 }
-#postList > tr:hover{
+#postList > tr:hover {
   background-color: #242423;
 }
-#post-notice > .notice:hover{
+#post-notice > .notice:hover {
   background-color: #e2c77b;
 }
 .paging {
@@ -214,7 +219,7 @@ section {
   font-size: 14px;
   color: #666;
 }
-.paging i:hover{
+.paging i:hover {
   color: #f5cb5c;
 }
 .paging a {
@@ -226,7 +231,7 @@ section {
   color: #f5cb5c;
   border-bottom: 1px solid #666;
 }
-.paging-num:hover{
+.paging-num:hover {
   color: #f5cb5c;
   border-bottom: 1px solid #666;
 }
@@ -235,7 +240,7 @@ section {
   justify-content: center;
   font-size: 17px;
   color: #000;
-  font-family: 'NanumSquare';
+  font-family: "NanumSquare";
   font-weight: 700;
 }
 .board-btn a {

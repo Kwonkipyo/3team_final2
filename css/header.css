@@ -386,7 +386,7 @@
   #signup-section a{
     display: none;
   }
-  #dashboard-section #username-display,.fa-angle-down{
+  #dashboard-section #username-display, .header .fa-angle-down{
     display: none;
   }
   .header-bottom{
