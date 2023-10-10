@@ -149,7 +149,6 @@ window.addEventListener("load", function () {
   const postTitleInput = document.getElementById("boardTitle"); // 제목
   const postWriterInput = document.getElementById("boardWriter"); // 작성자
   const postClassInput = document.getElementById("searchClass"); // 클래스
-  // const postNumInput = document.getElementById("boardNum"); // 신청자수
   const postContentInput = document.getElementById("boardContent"); // 내용
   const postImageInput = document.getElementById("boardImage"); // 이미지
 
@@ -176,11 +175,12 @@ window.addEventListener("load", function () {
     const title = postTitleInput.value;
     const writer = postWriterInput.innerText;
     const hobbyClass = postClassInput.value;
-    // const userNum = postNumInput.value;
-    const userNum = postNumPeople.innerText;
     const content = postContentInput.value;
     const imageFile = postImageInput.files[0];
     const date = today;
+
+    // numPeople 값을 가져옵니다.
+    const userNum = document.querySelector(".boardNum-wrap p").textContent;
 
     var count = posts.length + 12632;
 
@@ -213,7 +213,6 @@ window.addEventListener("load", function () {
         postTitleInput.value = "";
         postWriterInput.value = "";
         postClassInput.value = "";
-        postNumInput.value = "";
         postContentInput.value = "";
         postImageInput.value = "";
 
