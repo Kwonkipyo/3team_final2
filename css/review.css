@@ -155,6 +155,10 @@
 }
 .review-txt .fa-thumbs-up{
     cursor: pointer;
+    transition: scale 0.3s;
+}
+.review-txt .fa-thumbs-up:hover{
+    scale: 1.4;
 }
 @media all and (max-width:1024px){
     .review{
