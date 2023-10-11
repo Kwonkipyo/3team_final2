@@ -85,7 +85,7 @@
     },
     {
       "name": "캘리그라피 전문가와 찾아가는 나만의 손글씨",
-      "price": 3600,
+      "price": 23600,
       "tag": "라이프스타일",
       "pic": "dlclass-calli.jpg",
       "id": "3",
@@ -98,7 +98,7 @@
   "newclass": [
     {
       "name": "언제 어디서나 힐링악기 칼림바와 함께 마음을 두드려요",
-      "price": 20300,
+      "price": 22000,
       "tag": "음악",
       "pic": "bestclass-calimba.jpg",
       "id": "0",
@@ -120,7 +120,7 @@
     },
     {
       "name": "해금, 특별하고 아름다운 나만의 반려악기",
-      "price": 37000,
+      "price": 47000,
       "tag": "음악",
       "pic": "bestclass-haegeum.jpg",
       "id": "2",
@@ -218,7 +218,7 @@
   "aiclass2": [
     {
       "name": "근력 강화, 체지방을 감소시키는 나만의 시간, 다이어트 요가 클래스",
-      "price": 5000,
+      "price": 25000,
       "tag": "운동",
       "pic": "dlclass-yoga.jpg",
       "id": "4",
@@ -251,7 +251,7 @@
     },
     {
       "name": "초보자도 누구나 집에서 쉽게 귀여운 머랭쿠키 만들기",
-      "price": 20300,
+      "price": 20000,
       "tag": "베이킹 · 디저트",
       "pic": "dlclass-baking2.jpg",
       "id": "7",
@@ -341,7 +341,7 @@
     },
     {
       "name": "선과 여백의 작가 성립, 묵직한 질감과 선명한 색감의 오일파스텔",
-      "price": 49900,
+      "price": 39900,
       "tag": "드로잉",
       "pic": "bestclass-drawing.jpg",
       "id": "9",
