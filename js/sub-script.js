@@ -57,6 +57,7 @@ window.addEventListener("load", function () {
       document.getElementById("dashboard-section").style.display = "none";
     }
   }
+
   // top 버튼 스크롤 기능
   const topBtnBox = document.getElementById("top-button");
   const topBtn = document.getElementById("top-btn");
@@ -69,7 +70,7 @@ window.addEventListener("load", function () {
     event.preventDefault();
     if (window.scrollY === 0) {
       window.scrollTo({
-        top: bannerBoxTop - 120,
+        top: bannerBoxTop - 100,
         behavior: "smooth",
       });
     } else {
@@ -87,11 +88,9 @@ window.addEventListener("load", function () {
       topBtnImg.style.transform = "rotate(180deg)";
     }
 
-    let footer = document.querySelector(".footer");
-    let footerTop = footer.getBoundingClientRect().top;
-
-    if (window.innerHeight >= footerTop) {
-      topBtnBox.style.bottom = "30px";
+    // 미디어 쿼리를 사용하여 화면 너비가 1024px 이하일 때만 bottom 값을 80px로 설정
+    if (window.innerWidth <= 1024) {
+      topBtnBox.style.bottom = "90px";
     } else {
       topBtnBox.style.bottom = "30px";
     }

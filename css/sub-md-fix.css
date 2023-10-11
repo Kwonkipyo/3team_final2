@@ -87,14 +87,14 @@
 }
 .md-we-class-info-text {
   display: none;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   text-align: center;
-  width: 80%;
+  width: 220px;
   height: 40px;
   line-height: 40px;
-  bottom: 42px;
-  right: -250px;
+  bottom: 40px;
+  right: -220px;
   font-size: 14px;
   border: solid 1px #ccc;
   border-radius: 2px;
@@ -158,9 +158,10 @@
   text-overflow: ellipsis;
   color: #e8eddf;
   font-family: "NanumSquare" !important;
+  cursor: pointer;
 }
 #md-customDiv {
-  display: none; /* 초기에는 숨김 */
+  display: none;
   margin-bottom: 25px;
 }
 
@@ -294,7 +295,6 @@
   line-height: 30px;
   font-size: 20px;
   font-weight: 900;
-  /* color: #ffffff; */
 }
 
 /* span이랑 합친 we박스 */
@@ -316,25 +316,25 @@
   border-radius: 5px;
   margin-top: 8px;
   padding: 13px 0;
-  background-color: #17b6ff;
+  background-color: #178fff;
   color: #000000;
   font-family: "NanumSquare" !important;
 }
-.we-buy:hover {
-  background-color: #1290ca;
+.md-we-buy:hover {
+  background-color: #0062be;
 }
 .md-we-buy > h2 {
   line-height: 30px;
   font-size: 20px;
   font-weight: 900;
-  /* color: #ffffff; */
 }
 .md-button-box h2 i {
   font-size: 17px;
   font-weight: 900;
   transition: 0.3s;
 }
-.md-button-box h2:hover i {
+.md-button-box .md-me-buy:hover i,
+.md-button-box .md-we-buy:hover i {
   transform: translateX(3px);
 }
 
@@ -358,13 +358,12 @@
   transition: transform 0.3s ease;
 }
 
-/* 버튼 호버 시 밑줄이 나타나도록 변경 */
 .md-we-buy:hover + .md-linked-text::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-.fix-class-count{
+.md-fix-class-count{
   display: flex;
   align-items: center;
   padding-top: 20px;
@@ -372,17 +371,17 @@
   font-weight: 700;
   font-size: 16px;
 }
-.fix-class-count i{
-  /* transform: rotate(-15deg); */
-  margin-right: 15px;
-  font-weight: 900;
-  font-size: 17px;
-}
-.fix-class-count span{
+.md-fix-class-count span{
   font-size: 25px;
   font-weight: 900;
   color: #5de29f;
 }
+.md-fix-class-count i{
+  margin-right: 15px;
+  font-weight: 900;
+  font-size: 17px;
+}
+
 
 @keyframes rotate {
   0% {
@@ -406,6 +405,7 @@ body {
 }
 
 /* -------------------------------------------------------------------- */
+
 /* new-fix-menu */
 .new-fix-menu {
   width: 100%;
@@ -589,7 +589,6 @@ body {
     font-size: 22px;
   }
 }
-/* 반응형 */
 
 @media all and (max-width: 768px) {
   .fix-left-button button {
@@ -661,10 +660,8 @@ body {
     top: 268px;
     right: 10px;
   }
-  .fix-class-count{
-    font-size: 14px;
-  }
 }
+
 @media all and (max-width: 380px) {
   .md-fix-title-menu{
     width: 235px;
@@ -699,5 +696,8 @@ body {
     top: 270px;
     right: 11px;
     font-size: 20px;
+  }
+  .md-fix-class-count{
+    font-size: 14px
   }
 }

@@ -12,7 +12,6 @@ window.addEventListener("load", function () {
 
   increaseButton.addEventListener("click", function () {
     quantity++;
-
     quantityElement.textContent = quantity;
     priceElement.textContent = formatPrice(quantity * unitPrice);
   });
@@ -20,7 +19,6 @@ window.addEventListener("load", function () {
   decreaseButton.addEventListener("click", function () {
     if (quantity > 1) {
       quantity--;
-
       quantityElement.textContent = quantity;
       priceElement.textContent = formatPrice(quantity * unitPrice);
     }
@@ -58,23 +56,24 @@ window.addEventListener("load", function () {
   });
 
   // ----------------------------------------------------------
+  
+  // 하단 픽스메뉴 footer에 도착하면 사라지는 코드
+  // window.addEventListener("scroll", function () {
+  //   var newFixMenu = document.querySelector(".new-fix-menu-box");
+  //   var footer = document.querySelector(".footer");
 
-  window.addEventListener("scroll", function () {
-    var newFixMenu = document.querySelector(".new-fix-menu-box");
-    var footer = document.querySelector(".footer");
+  //   if (newFixMenu && footer) {
+  //     var footerTop = footer.getBoundingClientRect().top;
 
-    if (newFixMenu && footer) {
-      var footerTop = footer.getBoundingClientRect().top;
+  //     if (footerTop > window.innerHeight - 100) {
+  //       newFixMenu.style.display = "flex";
+  //     } else {
+  //       newFixMenu.style.display = "none";
+  //     }
+  //   }
+  // });
 
-      if (footerTop > window.innerHeight - 100) {
-        newFixMenu.style.display = "flex";
-      } else {
-        newFixMenu.style.display = "none";
-      }
-    }
-  });
-
-  // -----------------------------------------------------------
+  // ----------------------------------------------------------
 
   function setFocusOnClick() {
     var div1 = document.getElementById("md-weClass");
@@ -100,7 +99,7 @@ window.addEventListener("load", function () {
     ) {
       window.location.href = "payment.html";
     } else {
-      alert("수강권과 준비물을 선택 주세요.");
+      alert("수강권과 준비물을 선택해 주세요.");
     }
   }
 
@@ -110,14 +109,13 @@ window.addEventListener("load", function () {
     if (usernick) {
       document.getElementById("boardWriter").textContent = `${usernick}`;
     } else {
-      alert("로그인 후 이용해주세요.");
+      alert("로그인 후 이용해 주세요.");
       window.location.href = "login.html";
     }
   }
 
   setFocusOnClick();
 
-  // "클래스 신청하기" 버튼 클릭 시 효과 및 대시보드 표시 이벤트 리스너 추가
   var applyButton = document.getElementById("md-applyButton");
   applyButton.addEventListener("click", function () {
     navigateToPaymentPage();
@@ -125,7 +123,7 @@ window.addEventListener("load", function () {
   });
 });
 
-// -----------------------제이쿼리-------------------------
+// ------------------------제이쿼리----------------------------
 
 function showPreparationAnother() {
   const preparationSelect = document.getElementById("md-preparation");
@@ -190,4 +188,3 @@ window.onclick = function (event) {
     fixModal.style.display = "none";
   }
 };
-// -------------------------------------------------
