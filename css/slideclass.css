@@ -349,6 +349,9 @@
     .class-item .class-txt-top i{
         margin-right: 5px;
     }
+    .item-wrap2 {
+        margin-top: 30px;
+    }
 }
 @media all and (max-width: 480px){
     .class-item .class-txt .class-teacher{
